@@ -1,0 +1,1757 @@
+2025-11-18 10:57:57.406 [main] INFO  com.example.demo.DemoApplication [node3:8083] - Starting DemoApplication using Java 1.8.0_161 on zhouwenwudeMBP with PID 7169 (/Users/markchou/Downloads/demo/target/classes started by markchou in /Users/markchou/Downloads/demo)
+2025-11-18 10:57:57.409 [main] DEBUG com.example.demo.DemoApplication [node3:8083] - Running with Spring Boot v2.6.13, Spring v5.3.23
+2025-11-18 10:57:57.410 [main] INFO  com.example.demo.DemoApplication [node3:8083] - The following 1 profile is active: "local"
+2025-11-18 10:57:57.411 [main] DEBUG o.s.boot.SpringApplication [node3:8083] - Loading source class com.example.demo.DemoApplication
+2025-11-18 10:57:57.490 [main] INFO  c.a.c.n.c.NacosConfigDataLoader [node3:8083] - [Nacos Config] Load config[dataId=nacos-demo-service.properties, group=DEFAULT_GROUP] success
+2025-11-18 10:57:57.492 [main] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [node3:8083] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7249dadf
+2025-11-18 10:57:58.525 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 10:57:58.527 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-11-18 10:57:58.549 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 14 ms. Found 0 Elasticsearch repository interfaces.
+2025-11-18 10:57:58.764 [main] DEBUG o.s.b.a.AutoConfigurationPackages [node3:8083] - @EnableAutoConfiguration was declared on a class in the package 'com.example.demo'. Automatic @Repository and @Entity scanning is enabled.
+2025-11-18 10:57:58.872 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 10:57:58.873 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-11-18 10:57:58.900 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2025-11-18 10:57:58.930 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 56 ms. Found 1 Elasticsearch repository interfaces.
+2025-11-18 10:57:58.936 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 10:57:58.937 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-11-18 10:57:58.943 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2025-11-18 10:57:58.946 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 8 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-11-18 10:57:58.960 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 10:57:58.960 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-18 10:57:58.972 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-11-18 10:57:58.977 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
+2025-11-18 10:57:58.993 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 10:57:58.995 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-18 10:57:59.013 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-11-18 10:57:59.013 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-11-18 10:57:59.014 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-11-18 10:57:59.251 [main] INFO  o.s.cloud.context.scope.GenericScope [node3:8083] - BeanFactory id=12d418f6-72ba-339f-b5a9-6f2d0d29f169
+2025-11-18 10:58:00.139 [main] DEBUG o.s.b.w.e.t.TomcatServletWebServerFactory [node3:8083] - Code archive: /Users/markchou/.m2/repository/org/springframework/boot/spring-boot/2.6.13/spring-boot-2.6.13.jar
+2025-11-18 10:58:00.139 [main] DEBUG o.s.b.w.e.t.TomcatServletWebServerFactory [node3:8083] - Code archive: /Users/markchou/.m2/repository/org/springframework/boot/spring-boot/2.6.13/spring-boot-2.6.13.jar
+2025-11-18 10:58:00.140 [main] DEBUG o.s.b.w.e.t.TomcatServletWebServerFactory [node3:8083] - None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2025-11-18 10:58:00.166 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node3:8083] - Tomcat initialized with port(s): 8083 (http)
+2025-11-18 10:58:00.175 [main] INFO  o.a.catalina.core.StandardService [node3:8083] - Starting service [Tomcat]
+2025-11-18 10:58:00.175 [main] INFO  o.a.catalina.core.StandardEngine [node3:8083] - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-11-18 10:58:00.329 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [node3:8083] - Initializing Spring embedded WebApplicationContext
+2025-11-18 10:58:00.329 [main] DEBUG o.s.b.w.s.c.ServletWebServerApplicationContext [node3:8083] - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2025-11-18 10:58:00.329 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [node3:8083] - Root WebApplicationContext: initialization completed in 2837 ms
+2025-11-18 10:58:00.350 [main] DEBUG o.s.b.w.s.ServletContextInitializerBeans [node3:8083] - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2025-11-18 10:58:00.351 [main] DEBUG o.s.b.w.s.ServletContextInitializerBeans [node3:8083] - Mapping servlets: dispatcherServlet urls=[/]
+2025-11-18 10:58:00.373 [main] DEBUG o.s.b.w.s.f.OrderedRequestContextFilter [node3:8083] - Filter 'requestContextFilter' configured for use
+2025-11-18 10:58:00.374 [main] DEBUG o.s.b.w.s.f.OrderedCharacterEncodingFilter [node3:8083] - Filter 'characterEncodingFilter' configured for use
+2025-11-18 10:58:00.374 [main] DEBUG o.s.b.w.s.f.OrderedFormContentFilter [node3:8083] - Filter 'formContentFilter' configured for use
+2025-11-18 10:58:01.227 [main] INFO  com.zaxxer.hikari.HikariDataSource [node3:8083] - HikariPool-1 - Starting...
+2025-11-18 10:58:01.461 [main] INFO  com.zaxxer.hikari.HikariDataSource [node3:8083] - HikariPool-1 - Start completed.
+2025-11-18 10:58:02.918 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [node3:8083] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 10:58:04.993 [main] DEBUG o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [node3:8083] - Application Admin MBean registered with name 'org.springframework.boot:type=Admin,name=SpringApplication'
+2025-11-18 10:58:05.136 [main] WARN  org.elasticsearch.client.RestClient [node3:8083] - request [HEAD http://localhost:9200/products?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned 1 warnings: [299 Elasticsearch-7.17.0-bee86328705acaa9a6daede7140defd4d9ec56bd "[ignore_throttled] parameter is deprecated because frozen indices have been deprecated. Consider cold or frozen tiers in place of frozen indices."]
+2025-11-18 10:58:05.235 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [node3:8083] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-18 10:58:06.110 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node3:8083] - Tomcat started on port(s): 8083 (http) with context path ''
+2025-11-18 10:58:06.126 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [node3:8083] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-11-18 10:58:06.126 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [node3:8083] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-11-18 10:58:06.268 [main] INFO  c.a.c.n.r.NacosServiceRegistry [node3:8083] - nacos registry, DEFAULT_GROUP nacos-demo-service 192.168.31.227:8083 register finished
+2025-11-18 10:58:06.296 [main] DEBUG o.s.b.a.l.ConditionEvaluationReportLoggingListener [node3:8083] - 
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+   AopAutoConfiguration matched:
+      - @ConditionalOnProperty (spring.aop.auto=true) matched (OnPropertyCondition)
+
+   AopAutoConfiguration.AspectJAutoProxyingConfiguration matched:
+      - @ConditionalOnClass found required class 'org.aspectj.weaver.Advice' (OnClassCondition)
+
+   AopAutoConfiguration.AspectJAutoProxyingConfiguration.CglibAutoProxyConfiguration matched:
+      - @ConditionalOnProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+   AutoServiceRegistrationAutoConfiguration matched:
+      - @ConditionalOnProperty (spring.cloud.service-registry.auto-registration.enabled) matched (OnPropertyCondition)
+
+   AutoServiceRegistrationConfiguration matched:
+      - @ConditionalOnProperty (spring.cloud.service-registry.auto-registration.enabled) matched (OnPropertyCondition)
+
+   CompatibilityVerifierAutoConfiguration matched:
+      - @ConditionalOnProperty (spring.cloud.compatibility-verifier.enabled) matched (OnPropertyCondition)
+
+   ConfigurationPropertiesRebinderAutoConfiguration matched:
+      - @ConditionalOnBean (types: org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor; SearchStrategy: all) found bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor' (OnBeanCondition)
+
+   ConfigurationPropertiesRebinderAutoConfiguration#configurationPropertiesBeans matched:
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.context.properties.ConfigurationPropertiesBeans; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesRebinderAutoConfiguration#configurationPropertiesRebinder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.context.properties.ConfigurationPropertiesRebinder; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   DataSourceAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+      - @ConditionalOnMissingBean (types: io.r2dbc.spi.ConnectionFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceAutoConfiguration.PooledDataSourceConfiguration matched:
+      - AnyNestedCondition 1 matched 1 did not; NestedCondition on DataSourceAutoConfiguration.PooledDataSourceCondition.PooledDataSourceAvailable PooledDataSource found supported DataSource; NestedCondition on DataSourceAutoConfiguration.PooledDataSourceCondition.ExplicitType @ConditionalOnProperty (spring.datasource.type) did not find property 'type' (DataSourceAutoConfiguration.PooledDataSourceCondition)
+      - @ConditionalOnMissingBean (types: javax.sql.DataSource,javax.sql.XADataSource; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceConfiguration.Hikari matched:
+      - @ConditionalOnClass found required class 'com.zaxxer.hikari.HikariDataSource' (OnClassCondition)
+      - @ConditionalOnProperty (spring.datasource.type=com.zaxxer.hikari.HikariDataSource) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: javax.sql.DataSource; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceInitializationConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.jdbc.datasource.init.DatabasePopulator' (OnClassCondition)
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a single bean 'dataSource'; @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.sql.init.SqlDataSourceScriptDatabaseInitializer,org.springframework.boot.autoconfigure.sql.init.SqlR2dbcScriptDatabaseInitializer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceJmxConfiguration matched:
+      - @ConditionalOnProperty (spring.jmx.enabled=true) matched (OnPropertyCondition)
+
+   DataSourceJmxConfiguration.Hikari matched:
+      - @ConditionalOnClass found required class 'com.zaxxer.hikari.HikariDataSource' (OnClassCondition)
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a single bean 'dataSource' (OnBeanCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.HikariPoolDataSourceMetadataProviderConfiguration matched:
+      - @ConditionalOnClass found required class 'com.zaxxer.hikari.HikariDataSource' (OnClassCondition)
+
+   DataSourceTransactionManagerAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.jdbc.core.JdbcTemplate', 'org.springframework.transaction.TransactionManager' (OnClassCondition)
+
+   DataSourceTransactionManagerAutoConfiguration.JdbcTransactionManagerConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a single bean 'dataSource' (OnBeanCondition)
+
+   DispatcherServletAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   DispatcherServletAutoConfiguration.DispatcherServletConfiguration matched:
+      - @ConditionalOnClass found required class 'javax.servlet.ServletRegistration' (OnClassCondition)
+      - Default DispatcherServlet did not find dispatcher servlet beans (DispatcherServletAutoConfiguration.DefaultDispatcherServletCondition)
+
+   DispatcherServletAutoConfiguration.DispatcherServletRegistrationConfiguration matched:
+      - @ConditionalOnClass found required class 'javax.servlet.ServletRegistration' (OnClassCondition)
+      - DispatcherServlet Registration did not find servlet registration bean (DispatcherServletAutoConfiguration.DispatcherServletRegistrationCondition)
+
+   DispatcherServletAutoConfiguration.DispatcherServletRegistrationConfiguration#dispatcherServletRegistration matched:
+      - @ConditionalOnBean (names: dispatcherServlet types: org.springframework.web.servlet.DispatcherServlet; SearchStrategy: all) found bean 'dispatcherServlet' (OnBeanCondition)
+
+   ElasticsearchDataAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate' (OnClassCondition)
+
+   ElasticsearchDataConfiguration.RestClientConfiguration matched:
+      - @ConditionalOnClass found required class 'org.elasticsearch.client.RestHighLevelClient' (OnClassCondition)
+
+   ElasticsearchRepositoriesAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.elasticsearch.client.Client', 'org.springframework.data.elasticsearch.repository.ElasticsearchRepository' (OnClassCondition)
+      - @ConditionalOnProperty (spring.data.elasticsearch.repositories.enabled=true) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactoryBean; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ElasticsearchRestClientAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.elasticsearch.client.RestClientBuilder' (OnClassCondition)
+
+   ElasticsearchRestClientConfigurations.RestClientBuilderConfiguration matched:
+      - @ConditionalOnMissingBean (types: org.elasticsearch.client.RestClientBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration matched:
+      - @ConditionalOnWebApplication (required) found 'session' scope (OnWebApplicationCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration.TomcatWebServerFactoryCustomizerConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.apache.catalina.startup.Tomcat', 'org.apache.coyote.UpgradeProtocol' (OnClassCondition)
+
+   ErrorMvcAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   ErrorMvcAutoConfiguration#basicErrorController matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.error.ErrorController; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration#errorAttributes matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.error.ErrorAttributes; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration.DefaultErrorViewResolverConfiguration#conventionErrorViewResolver matched:
+      - @ConditionalOnBean (types: org.springframework.web.servlet.DispatcherServlet; SearchStrategy: all) found bean 'dispatcherServlet'; @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.web.servlet.error.ErrorViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration.WhitelabelErrorViewConfiguration matched:
+      - @ConditionalOnProperty (server.error.whitelabel.enabled) matched (OnPropertyCondition)
+      - ErrorTemplate Missing did not find error template view (ErrorMvcAutoConfiguration.ErrorTemplateMissingCondition)
+
+   ErrorMvcAutoConfiguration.WhitelabelErrorViewConfiguration#beanNameViewResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.BeanNameViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration.WhitelabelErrorViewConfiguration#defaultErrorView matched:
+      - @ConditionalOnMissingBean (names: error; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   GenericCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.GenericCacheConfiguration automatic cache type (CacheCondition)
+
+   HibernateJpaAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean', 'javax.persistence.EntityManager', 'org.hibernate.engine.spi.SessionImplementor' (OnClassCondition)
+
+   HibernateJpaConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a single bean 'dataSource' (OnBeanCondition)
+
+   HttpClientConfiguration.ApacheHttpClientConfiguration matched:
+      - @ConditionalOnClass found required class 'org.apache.http.client.HttpClient' (OnClassCondition)
+      - @ConditionalOnProperty (spring.cloud.httpclientfactories.apache.enabled) matched (OnPropertyCondition)
+
+   HttpClientConfiguration.ApacheHttpClientConfiguration#apacheHttpClientBuilder matched:
+      - @ConditionalOnMissingBean (types: org.apache.http.impl.client.HttpClientBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HttpClientConfiguration.ApacheHttpClientConfiguration#apacheHttpClientFactory matched:
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.commons.httpclient.ApacheHttpClientFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HttpClientConfiguration.ApacheHttpClientConfiguration#connManFactory matched:
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.commons.httpclient.ApacheHttpClientConnectionManagerFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HttpEncodingAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.filter.CharacterEncodingFilter' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnProperty (server.servlet.encoding.enabled) matched (OnPropertyCondition)
+
+   HttpEncodingAutoConfiguration#characterEncodingFilter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.filter.CharacterEncodingFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HttpMessageConvertersAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.HttpMessageConverter' (OnClassCondition)
+      - NoneNestedConditions 0 matched 1 did not; NestedCondition on HttpMessageConvertersAutoConfiguration.NotReactiveWebApplicationCondition.ReactiveWebApplication did not find reactive web application classes (HttpMessageConvertersAutoConfiguration.NotReactiveWebApplicationCondition)
+
+   HttpMessageConvertersAutoConfiguration#messageConverters matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.http.HttpMessageConverters; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HttpMessageConvertersAutoConfiguration.StringHttpMessageConverterConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.StringHttpMessageConverter' (OnClassCondition)
+
+   HttpMessageConvertersAutoConfiguration.StringHttpMessageConverterConfiguration#stringHttpMessageConverter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.http.converter.StringHttpMessageConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'com.fasterxml.jackson.databind.ObjectMapper' (OnClassCondition)
+
+   JacksonAutoConfiguration.Jackson2ObjectMapperBuilderCustomizerConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.json.Jackson2ObjectMapperBuilder' (OnClassCondition)
+
+   JacksonAutoConfiguration.JacksonObjectMapperBuilderConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.json.Jackson2ObjectMapperBuilder' (OnClassCondition)
+
+   JacksonAutoConfiguration.JacksonObjectMapperBuilderConfiguration#jacksonObjectMapperBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.http.converter.json.Jackson2ObjectMapperBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration.JacksonObjectMapperConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.json.Jackson2ObjectMapperBuilder' (OnClassCondition)
+
+   JacksonAutoConfiguration.JacksonObjectMapperConfiguration#jacksonObjectMapper matched:
+      - @ConditionalOnMissingBean (types: com.fasterxml.jackson.databind.ObjectMapper; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration.ParameterNamesModuleConfiguration matched:
+      - @ConditionalOnClass found required class 'com.fasterxml.jackson.module.paramnames.ParameterNamesModule' (OnClassCondition)
+
+   JacksonAutoConfiguration.ParameterNamesModuleConfiguration#parameterNamesModule matched:
+      - @ConditionalOnMissingBean (types: com.fasterxml.jackson.module.paramnames.ParameterNamesModule; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonHttpMessageConvertersConfiguration.MappingJackson2HttpMessageConverterConfiguration matched:
+      - @ConditionalOnClass found required class 'com.fasterxml.jackson.databind.ObjectMapper' (OnClassCondition)
+      - @ConditionalOnProperty (spring.mvc.converters.preferred-json-mapper=jackson) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: com.fasterxml.jackson.databind.ObjectMapper; SearchStrategy: all) found bean 'jacksonObjectMapper' (OnBeanCondition)
+
+   JacksonHttpMessageConvertersConfiguration.MappingJackson2HttpMessageConverterConfiguration#mappingJackson2HttpMessageConverter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.http.converter.json.MappingJackson2HttpMessageConverter ignored: org.springframework.hateoas.server.mvc.TypeConstrainedMappingJackson2HttpMessageConverter,org.springframework.data.rest.webmvc.alps.AlpsJsonHttpMessageConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JdbcTemplateAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'org.springframework.jdbc.core.JdbcTemplate' (OnClassCondition)
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a single bean 'dataSource' (OnBeanCondition)
+
+   JdbcTemplateConfiguration matched:
+      - @ConditionalOnMissingBean (types: org.springframework.jdbc.core.JdbcOperations; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JedisConnectionConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.apache.commons.pool2.impl.GenericObjectPool', 'org.springframework.data.redis.connection.jedis.JedisConnection', 'redis.clients.jedis.Jedis' (OnClassCondition)
+      - @ConditionalOnProperty (spring.redis.client-type=jedis) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.data.redis.connection.RedisConnectionFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JmxAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.jmx.export.MBeanExporter' (OnClassCondition)
+      - @ConditionalOnProperty (spring.jmx.enabled=true) matched (OnPropertyCondition)
+
+   JmxAutoConfiguration#mbeanExporter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.jmx.export.MBeanExporter; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   JmxAutoConfiguration#mbeanServer matched:
+      - @ConditionalOnMissingBean (types: javax.management.MBeanServer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JmxAutoConfiguration#objectNamingStrategy matched:
+      - @ConditionalOnMissingBean (types: org.springframework.jmx.export.naming.ObjectNamingStrategy; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration#entityManagerFactory matched:
+      - @ConditionalOnMissingBean (types: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean,javax.persistence.EntityManagerFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration#entityManagerFactoryBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration#jpaVendorAdapter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.orm.jpa.JpaVendorAdapter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration#transactionManager matched:
+      - @ConditionalOnMissingBean (types: org.springframework.transaction.TransactionManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration.JpaWebConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnProperty (spring.jpa.open-in-view=true) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor,org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaRepositoriesAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.data.jpa.repository.JpaRepository' (OnClassCondition)
+      - @ConditionalOnProperty (spring.data.jpa.repositories.enabled=true) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: javax.sql.DataSource; SearchStrategy: all) found bean 'dataSource'; @ConditionalOnMissingBean (types: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean,org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JtaAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'javax.transaction.Transaction' (OnClassCondition)
+      - @ConditionalOnProperty (spring.jta.enabled) matched (OnPropertyCondition)
+
+   LifecycleAutoConfiguration#defaultLifecycleProcessor matched:
+      - @ConditionalOnMissingBean (names: lifecycleProcessor; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   LifecycleMvcEndpointAutoConfiguration#environmentManager matched:
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.context.environment.EnvironmentManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MultipartAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.servlet.Servlet', 'org.springframework.web.multipart.support.StandardServletMultipartResolver', 'javax.servlet.MultipartConfigElement' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnProperty (spring.servlet.multipart.enabled) matched (OnPropertyCondition)
+
+   MultipartAutoConfiguration#multipartConfigElement matched:
+      - @ConditionalOnMissingBean (types: javax.servlet.MultipartConfigElement,org.springframework.web.multipart.commons.CommonsMultipartResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MultipartAutoConfiguration#multipartResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.multipart.MultipartResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MybatisPlusAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.apache.ibatis.session.SqlSessionFactory', 'com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean' (OnClassCondition)
+      - @ConditionalOnBean (types: javax.sql.DataSource; SearchStrategy: all) found bean 'dataSource' (OnBeanCondition)
+
+   MybatisPlusAutoConfiguration#sqlSessionFactory matched:
+      - @ConditionalOnMissingBean (types: org.apache.ibatis.session.SqlSessionFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MybatisPlusAutoConfiguration#sqlSessionTemplate matched:
+      - @ConditionalOnMissingBean (types: org.mybatis.spring.SqlSessionTemplate; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MybatisPlusAutoConfiguration.MapperScannerRegistrarNotFoundConfiguration matched:
+      - @ConditionalOnMissingBean (types: org.mybatis.spring.mapper.MapperFactoryBean; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   NacosConfigAutoConfiguration matched:
+      - @ConditionalOnProperty (spring.cloud.nacos.config.enabled) matched (OnPropertyCondition)
+
+   NacosConfigAutoConfiguration#nacosConfigProperties matched:
+      - @ConditionalOnMissingBean (types: com.alibaba.cloud.nacos.NacosConfigProperties; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   NacosDiscoveryAutoConfiguration matched:
+      - @ConditionalOnProperty (spring.cloud.discovery.enabled) matched; @ConditionalOnProperty (spring.cloud.nacos.discovery.enabled) matched (OnPropertyCondition)
+
+   NacosDiscoveryAutoConfiguration#nacosProperties matched:
+      - @ConditionalOnMissingBean (types: com.alibaba.cloud.nacos.NacosDiscoveryProperties; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   NacosDiscoveryAutoConfiguration#nacosServiceDiscovery matched:
+      - @ConditionalOnMissingBean (types: com.alibaba.cloud.nacos.discovery.NacosServiceDiscovery; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   NacosDiscoveryClientConfiguration matched:
+      - @ConditionalOnProperty (spring.cloud.discovery.enabled) matched; @ConditionalOnProperty (spring.cloud.discovery.blocking.enabled) matched; @ConditionalOnProperty (spring.cloud.nacos.discovery.enabled) matched (OnPropertyCondition)
+
+   NacosServiceAutoConfiguration matched:
+      - @ConditionalOnProperty (spring.cloud.discovery.enabled) matched; @ConditionalOnProperty (spring.cloud.nacos.discovery.enabled) matched (OnPropertyCondition)
+
+   NacosServiceRegistryAutoConfiguration matched:
+      - @ConditionalOnProperty (spring.cloud.service-registry.auto-registration.enabled) matched; @ConditionalOnProperty (spring.cloud.nacos.discovery.enabled) matched (OnPropertyCondition)
+
+   NacosServiceRegistryAutoConfiguration#nacosAutoServiceRegistration matched:
+      - @ConditionalOnBean (types: org.springframework.cloud.client.serviceregistry.AutoServiceRegistrationProperties; SearchStrategy: all) found bean 'spring.cloud.service-registry.auto-registration-org.springframework.cloud.client.serviceregistry.AutoServiceRegistrationProperties' (OnBeanCondition)
+
+   NacosServiceRegistryAutoConfiguration#nacosRegistration matched:
+      - @ConditionalOnBean (types: org.springframework.cloud.client.serviceregistry.AutoServiceRegistrationProperties; SearchStrategy: all) found bean 'spring.cloud.service-registry.auto-registration-org.springframework.cloud.client.serviceregistry.AutoServiceRegistrationProperties' (OnBeanCondition)
+
+   NamedParameterJdbcTemplateConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: org.springframework.jdbc.core.JdbcTemplate; SearchStrategy: all) found a single bean 'jdbcTemplate'; @ConditionalOnMissingBean (types: org.springframework.jdbc.core.namedparam.NamedParameterJdbcOperations; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   NettyAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'io.netty.util.NettyRuntime' (OnClassCondition)
+
+   NoOpCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.NoOpCacheConfiguration automatic cache type (CacheCondition)
+
+   PersistenceExceptionTranslationAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor' (OnClassCondition)
+
+   PersistenceExceptionTranslationAutoConfiguration#persistenceExceptionTranslationPostProcessor matched:
+      - @ConditionalOnProperty (spring.dao.exceptiontranslation.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   PropertyPlaceholderAutoConfiguration#propertySourcesPlaceholderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.context.support.PropertySourcesPlaceholderConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ReactiveElasticsearchRepositoriesAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.data.elasticsearch.client.reactive.ReactiveElasticsearchClient', 'org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository' (OnClassCondition)
+      - @ConditionalOnProperty (spring.data.elasticsearch.repositories.enabled=true) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.data.elasticsearch.repository.support.ReactiveElasticsearchRepositoryFactoryBean; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RedisAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.data.redis.core.RedisOperations' (OnClassCondition)
+
+   RedisAutoConfiguration#stringRedisTemplate matched:
+      - @ConditionalOnSingleCandidate (types: org.springframework.data.redis.connection.RedisConnectionFactory; SearchStrategy: all) found a single bean 'redisConnectionFactory'; @ConditionalOnMissingBean (types: org.springframework.data.redis.core.StringRedisTemplate; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RedisCacheConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.data.redis.connection.RedisConnectionFactory' (OnClassCondition)
+      - Cache org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration automatic cache type (CacheCondition)
+
+   RedisRepositoriesAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.data.redis.repository.configuration.EnableRedisRepositories' (OnClassCondition)
+      - @ConditionalOnProperty (spring.data.redis.repositories.enabled=true) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: org.springframework.data.redis.connection.RedisConnectionFactory; SearchStrategy: all) found bean 'redisConnectionFactory'; @ConditionalOnMissingBean (types: org.springframework.data.redis.repository.support.RedisRepositoryFactoryBean; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RefreshAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.cloud.context.scope.refresh.RefreshScope' (OnClassCondition)
+      - @ConditionalOnProperty (spring.cloud.refresh.enabled) matched (OnPropertyCondition)
+
+   RefreshAutoConfiguration#configDataContextRefresher matched:
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.context.refresh.ConfigDataContextRefresher; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - NoneNestedConditions 0 matched 3 did not; NestedCondition on ConditionalOnBootstrapDisabled.OnBootstrapDisabledCondition.OnBootstrapEnabled @ConditionalOnProperty (spring.cloud.bootstrap.enabled) did not find property 'spring.cloud.bootstrap.enabled'; NestedCondition on ConditionalOnBootstrapDisabled.OnBootstrapDisabledCondition.OnUseLegacyProcessingEnabled @ConditionalOnProperty (spring.config.use-legacy-processing) did not find property 'spring.config.use-legacy-processing'; NestedCondition on ConditionalOnBootstrapDisabled.OnBootstrapDisabledCondition.OnBootstrapMarkerClassPresent @ConditionalOnClass did not find required class 'org.springframework.cloud.bootstrap.marker.Marker' (ConditionalOnBootstrapDisabled.OnBootstrapDisabledCondition)
+
+   RefreshAutoConfiguration#loggingRebinder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.logging.LoggingRebinder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RefreshAutoConfiguration#refreshScope matched:
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.context.scope.refresh.RefreshScope; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RefreshAutoConfiguration.JpaInvokerConfiguration matched:
+      - @ConditionalOnClass found required class 'javax.persistence.EntityManagerFactory' (OnClassCondition)
+
+   RestTemplateAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.client.RestTemplate' (OnClassCondition)
+      - NoneNestedConditions 0 matched 1 did not; NestedCondition on RestTemplateAutoConfiguration.NotReactiveWebApplicationCondition.ReactiveWebApplication did not find reactive web application classes (RestTemplateAutoConfiguration.NotReactiveWebApplicationCondition)
+
+   RestTemplateAutoConfiguration#restTemplateBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.client.RestTemplateBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RestTemplateAutoConfiguration#restTemplateBuilderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.web.client.RestTemplateBuilderConfigurer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ServletWebServerFactoryAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'javax.servlet.ServletRequest' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   ServletWebServerFactoryAutoConfiguration#tomcatServletWebServerFactoryCustomizer matched:
+      - @ConditionalOnClass found required class 'org.apache.catalina.startup.Tomcat' (OnClassCondition)
+
+   ServletWebServerFactoryConfiguration.EmbeddedTomcat matched:
+      - @ConditionalOnClass found required classes 'javax.servlet.Servlet', 'org.apache.catalina.startup.Tomcat', 'org.apache.coyote.UpgradeProtocol' (OnClassCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.server.ServletWebServerFactory; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   SimpleCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration automatic cache type (CacheCondition)
+
+   SimpleDiscoveryClientAutoConfiguration#simpleDiscoveryProperties matched:
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.client.discovery.simple.SimpleDiscoveryProperties; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringApplicationAdminJmxAutoConfiguration matched:
+      - @ConditionalOnProperty (spring.application.admin.enabled=true) matched (OnPropertyCondition)
+
+   SpringApplicationAdminJmxAutoConfiguration#springApplicationAdminRegistrar matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDataWebAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.data.web.PageableHandlerMethodArgumentResolver', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.data.web.PageableHandlerMethodArgumentResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDataWebAutoConfiguration#pageableCustomizer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.data.web.config.PageableHandlerMethodArgumentResolverCustomizer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDataWebAutoConfiguration#sortCustomizer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.data.web.config.SortHandlerMethodArgumentResolverCustomizer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SqlInitializationAutoConfiguration matched:
+      - @ConditionalOnProperty (spring.sql.init.enabled) matched (OnPropertyCondition)
+      - NoneNestedConditions 0 matched 1 did not; NestedCondition on SqlInitializationAutoConfiguration.SqlInitializationModeCondition.ModeIsNever @ConditionalOnProperty (spring.sql.init.mode=never) did not find property 'mode' (SqlInitializationAutoConfiguration.SqlInitializationModeCondition)
+
+   TaskExecutionAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor' (OnClassCondition)
+
+   TaskExecutionAutoConfiguration#applicationTaskExecutor matched:
+      - @ConditionalOnMissingBean (types: java.util.concurrent.Executor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskExecutionAutoConfiguration#taskExecutorBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.TaskExecutorBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskSchedulingAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler' (OnClassCondition)
+
+   TaskSchedulingAutoConfiguration#taskSchedulerBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.TaskSchedulerBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
+
+   TransactionAutoConfiguration#platformTransactionManagerCustomizers matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration matched:
+      - @ConditionalOnBean (types: org.springframework.transaction.TransactionManager; SearchStrategy: all) found bean 'transactionManager'; @ConditionalOnMissingBean (types: org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration.CglibAutoProxyConfiguration matched:
+      - @ConditionalOnProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+   TransactionAutoConfiguration.TransactionTemplateConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: org.springframework.transaction.PlatformTransactionManager; SearchStrategy: all) found a single bean 'transactionManager' (OnBeanCondition)
+
+   TransactionAutoConfiguration.TransactionTemplateConfiguration#transactionTemplate matched:
+      - @ConditionalOnMissingBean (types: org.springframework.transaction.support.TransactionOperations; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   UtilAutoConfiguration matched:
+      - @ConditionalOnProperty (spring.cloud.util.enabled) matched (OnPropertyCondition)
+
+   UtilAutoConfiguration#inetUtils matched:
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.commons.util.InetUtils; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   UtilIPv6AutoConfiguration matched:
+      - @ConditionalOnProperty (spring.cloud.discovery.enabled) matched; @ConditionalOnProperty (spring.cloud.nacos.discovery.enabled) matched (OnPropertyCondition)
+
+   UtilIPv6AutoConfiguration#inetIPv6Utils matched:
+      - @ConditionalOnMissingBean (types: com.alibaba.cloud.nacos.util.InetIPv6Utils; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration#formContentFilter matched:
+      - @ConditionalOnProperty (spring.mvc.formcontent.filter.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.filter.FormContentFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#flashMapManager matched:
+      - @ConditionalOnMissingBean (names: flashMapManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#localeResolver matched:
+      - @ConditionalOnMissingBean (names: localeResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#themeResolver matched:
+      - @ConditionalOnMissingBean (names: themeResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#defaultViewResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.InternalResourceViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#requestContextFilter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.context.request.RequestContextListener,org.springframework.web.filter.RequestContextFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#viewResolver matched:
+      - @ConditionalOnBean (types: org.springframework.web.servlet.ViewResolver; SearchStrategy: all) found beans 'defaultViewResolver', 'beanNameViewResolver', 'mvcViewResolver'; @ConditionalOnMissingBean (names: viewResolver types: org.springframework.web.servlet.view.ContentNegotiatingViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebSocketServletAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.servlet.Servlet', 'javax.websocket.server.ServerContainer' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   WebSocketServletAutoConfiguration.TomcatWebSocketConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.apache.catalina.startup.Tomcat', 'org.apache.tomcat.websocket.server.WsSci' (OnClassCondition)
+
+   WebSocketServletAutoConfiguration.TomcatWebSocketConfiguration#websocketServletWebServerCustomizer matched:
+      - @ConditionalOnMissingBean (names: websocketServletWebServerCustomizer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   ActiveMQAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.jms.ConnectionFactory' (OnClassCondition)
+
+   AopAutoConfiguration.AspectJAutoProxyingConfiguration.JdkDynamicAutoProxyConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.aop.proxy-target-class=false) did not find property 'proxy-target-class' (OnPropertyCondition)
+
+   AopAutoConfiguration.ClassProxyingConfiguration:
+      Did not match:
+         - @ConditionalOnMissingClass found unwanted class 'org.aspectj.weaver.Advice' (OnClassCondition)
+
+   ArtemisAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.jms.ConnectionFactory' (OnClassCondition)
+
+   AsyncLoadBalancerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.cloud.client.loadbalancer.LoadBalancerClient; SearchStrategy: all) did not find any beans of type org.springframework.cloud.client.loadbalancer.LoadBalancerClient (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.web.client.AsyncRestTemplate' (OnClassCondition)
+
+   AtomikosJtaConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.atomikos.icatch.jta.UserTransactionManager' (OnClassCondition)
+
+   BatchAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.batch.core.launch.JobLauncher' (OnClassCondition)
+
+   CacheAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.cache.interceptor.CacheAspectSupport; SearchStrategy: all) did not find any beans of type org.springframework.cache.interceptor.CacheAspectSupport (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.cache.CacheManager' (OnClassCondition)
+
+   CacheAutoConfiguration.CacheManagerEntityManagerFactoryDependsOnPostProcessor:
+      Did not match:
+         - Ancestor org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean' (OnClassCondition)
+
+   CaffeineCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.github.benmanes.caffeine.cache.Caffeine' (OnClassCondition)
+
+   CassandraAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.api.core.CqlSession' (OnClassCondition)
+
+   CassandraDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.api.core.CqlSession' (OnClassCondition)
+
+   CassandraReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.api.core.CqlSession' (OnClassCondition)
+
+   CassandraReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.cassandra.ReactiveSession' (OnClassCondition)
+
+   CassandraRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.api.core.CqlSession' (OnClassCondition)
+
+   ClientHttpConnectorAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   CloudHypermediaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.hateoas.Link' (OnClassCondition)
+
+   CodecsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   CommonsClientAutoConfiguration.ActuatorConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.endpoint.annotation.Endpoint' (OnClassCondition)
+
+   CommonsClientAutoConfiguration.DiscoveryLoadBalancerConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.health.HealthIndicator' (OnClassCondition)
+
+   CouchbaseAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Cluster' (OnClassCondition)
+
+   CouchbaseCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Cluster' (OnClassCondition)
+
+   CouchbaseDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Bucket' (OnClassCondition)
+
+   CouchbaseReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Cluster' (OnClassCondition)
+
+   CouchbaseReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Cluster' (OnClassCondition)
+
+   CouchbaseRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Bucket' (OnClassCondition)
+
+   DataSourceAutoConfiguration.EmbeddedDatabaseConfiguration:
+      Did not match:
+         - EmbeddedDataSource spring.datasource.url is set (DataSourceAutoConfiguration.EmbeddedDatabaseCondition)
+
+   DataSourceConfiguration.Dbcp2:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.commons.dbcp2.BasicDataSource' (OnClassCondition)
+
+   DataSourceConfiguration.Generic:
+      Did not match:
+         - @ConditionalOnProperty (spring.datasource.type) did not find property 'spring.datasource.type' (OnPropertyCondition)
+
+   DataSourceConfiguration.OracleUcp:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'oracle.ucp.jdbc.PoolDataSourceImpl', 'oracle.jdbc.OracleConnection' (OnClassCondition)
+
+   DataSourceConfiguration.Tomcat:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.tomcat.jdbc.pool.DataSource' (OnClassCondition)
+
+   DataSourceInitializationConfiguration.InitializationSpecificCredentialsDataSourceInitializationConfiguration:
+      Did not match:
+         - AnyNestedCondition 0 matched 2 did not; NestedCondition on DataSourceInitializationConfiguration.InitializationSpecificCredentialsDataSourceInitializationConfiguration.DifferentCredentialsCondition.DataCredentials @ConditionalOnProperty (spring.datasource.data-username) did not find property 'data-username'; NestedCondition on DataSourceInitializationConfiguration.InitializationSpecificCredentialsDataSourceInitializationConfiguration.DifferentCredentialsCondition.SchemaCredentials @ConditionalOnProperty (spring.datasource.schema-username) did not find property 'schema-username' (DataSourceInitializationConfiguration.InitializationSpecificCredentialsDataSourceInitializationConfiguration.DifferentCredentialsCondition)
+
+   DataSourceInitializationConfiguration.SharedCredentialsDataSourceInitializationConfiguration:
+      Did not match:
+         - DataSource Initialization did not find configured properties spring.datasource.data-username, spring.datasource.schema-password, spring.datasource.schema[0], spring.datasource.data[0], spring.datasource.data, spring.datasource.schema-username, spring.datasource.data-password, spring.datasource.initialization-mode, spring.datasource.schema, spring.datasource.sql-script-encoding, spring.datasource.separator, spring.datasource.platform, spring.datasource.continue-on-error (DataSourceInitializationConfiguration.SharedCredentialsDataSourceInitializationConfiguration.DataSourceInitializationCondition)
+
+   DataSourceJmxConfiguration.TomcatDataSourceJmxConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.tomcat.jdbc.pool.DataSourceProxy' (OnClassCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.CommonsDbcp2PoolDataSourceMetadataProviderConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.commons.dbcp2.BasicDataSource' (OnClassCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.OracleUcpPoolDataSourceMetadataProviderConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'oracle.ucp.jdbc.PoolDataSource', 'oracle.jdbc.OracleConnection' (OnClassCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.TomcatDataSourcePoolMetadataProviderConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.tomcat.jdbc.pool.DataSource' (OnClassCondition)
+
+   DataSourceTransactionManagerAutoConfiguration.JdbcTransactionManagerConfiguration#transactionManager:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.transaction.TransactionManager; SearchStrategy: all) found beans of type 'org.springframework.transaction.TransactionManager' transactionManager (OnBeanCondition)
+
+   DispatcherServletAutoConfiguration.DispatcherServletConfiguration#multipartResolver:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.web.multipart.MultipartResolver; SearchStrategy: all) did not find any beans of type org.springframework.web.multipart.MultipartResolver (OnBeanCondition)
+
+   EhCacheCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'net.sf.ehcache.Cache' (OnClassCondition)
+
+   ElasticsearchDataConfiguration.BaseConfiguration#elasticsearchConverter:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.data.elasticsearch.core.convert.ElasticsearchConverter; SearchStrategy: all) found beans of type 'org.springframework.data.elasticsearch.core.convert.ElasticsearchConverter' elasticsearchEntityMapper (OnBeanCondition)
+
+   ElasticsearchDataConfiguration.BaseConfiguration#elasticsearchCustomConversions:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.data.elasticsearch.core.convert.ElasticsearchCustomConversions; SearchStrategy: all) found beans of type 'org.springframework.data.elasticsearch.core.convert.ElasticsearchCustomConversions' elasticsearchCustomConversions (OnBeanCondition)
+
+   ElasticsearchDataConfiguration.BaseConfiguration#mappingContext:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.data.elasticsearch.core.mapping.SimpleElasticsearchMappingContext; SearchStrategy: all) found beans of type 'org.springframework.data.elasticsearch.core.mapping.SimpleElasticsearchMappingContext' elasticsearchMappingContext (OnBeanCondition)
+
+   ElasticsearchDataConfiguration.ReactiveRestClientConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   ElasticsearchDataConfiguration.RestClientConfiguration#elasticsearchTemplate:
+      Did not match:
+         - @ConditionalOnMissingBean (names: elasticsearchTemplate types: org.springframework.data.elasticsearch.core.ElasticsearchOperations; SearchStrategy: all) found beans of type 'org.springframework.data.elasticsearch.core.ElasticsearchOperations' elasticsearchRestTemplate, elasticsearchOperations and found beans named elasticsearchTemplate (OnBeanCondition)
+
+   ElasticsearchRestClientConfigurations.RestClientSnifferConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.elasticsearch.client.sniff.Sniffer' (OnClassCondition)
+
+   ElasticsearchRestClientConfigurations.RestHighLevelClientConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.elasticsearch.client.RestHighLevelClient,org.elasticsearch.client.RestClient; SearchStrategy: all) found beans of type 'org.elasticsearch.client.RestHighLevelClient' elasticsearchClient (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.elasticsearch.client.RestHighLevelClient' (OnClassCondition)
+
+   EmbeddedLdapAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.unboundid.ldap.listener.InMemoryDirectoryServer' (OnClassCondition)
+
+   EmbeddedMongoAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.MongoClientSettings' (OnClassCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration.JettyWebServerFactoryCustomizerConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.eclipse.jetty.server.Server', 'org.eclipse.jetty.util.Loader', 'org.eclipse.jetty.webapp.WebAppContext' (OnClassCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration.NettyWebServerFactoryCustomizerConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.netty.http.server.HttpServer' (OnClassCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration.UndertowWebServerFactoryCustomizerConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'io.undertow.Undertow', 'org.xnio.SslClientAuthMode' (OnClassCondition)
+
+   ErrorWebFluxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+
+   FlywayAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.flywaydb.core.Flyway' (OnClassCondition)
+
+   FreeMarkerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'freemarker.template.Configuration' (OnClassCondition)
+
+   GroovyTemplateAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'groovy.text.markup.MarkupTemplateEngine' (OnClassCondition)
+
+   GsonAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.google.gson.Gson' (OnClassCondition)
+
+   GsonHttpMessageConvertersConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.google.gson.Gson' (OnClassCondition)
+
+   H2ConsoleAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.h2.server.web.WebServlet' (OnClassCondition)
+
+   HazelcastAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.hazelcast.core.HazelcastInstance' (OnClassCondition)
+
+   HazelcastCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.hazelcast.core.HazelcastInstance' (OnClassCondition)
+
+   HazelcastJpaDependencyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.hazelcast.core.HazelcastInstance' (OnClassCondition)
+
+   HttpClientConfiguration.OkHttpClientConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'okhttp3.OkHttpClient' (OnClassCondition)
+
+   HttpHandlerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.DispatcherHandler' (OnClassCondition)
+
+   HypermediaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.hateoas.EntityModel' (OnClassCondition)
+
+   InfinispanCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.infinispan.spring.embedded.provider.SpringEmbeddedCacheManager' (OnClassCondition)
+
+   InfluxDbAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.influxdb.InfluxDB' (OnClassCondition)
+
+   IntegrationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.integration.config.EnableIntegration' (OnClassCondition)
+
+   JCacheCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.cache.Caching' (OnClassCondition)
+
+   JacksonHttpMessageConvertersConfiguration.MappingJackson2XmlHttpMessageConverterConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.fasterxml.jackson.dataformat.xml.XmlMapper' (OnClassCondition)
+
+   JdbcRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.jdbc.repository.config.AbstractJdbcConfiguration' (OnClassCondition)
+
+   JerseyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.glassfish.jersey.server.spring.SpringComponentProvider' (OnClassCondition)
+
+   JmsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.jms.Message' (OnClassCondition)
+
+   JndiConnectionFactoryAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.jms.core.JmsTemplate' (OnClassCondition)
+
+   JndiDataSourceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.datasource.jndi-name) did not find property 'jndi-name' (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+
+   JndiJtaConfiguration:
+      Did not match:
+         - @ConditionalOnJndi JNDI environment is not available (OnJndiCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.transaction.jta.JtaTransactionManager' (OnClassCondition)
+
+   JooqAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.jooq.DSLContext' (OnClassCondition)
+
+   JpaRepositoriesAutoConfiguration#entityManagerFactoryBootstrapExecutorCustomizer:
+      Did not match:
+         - AnyNestedCondition 0 matched 2 did not; NestedCondition on JpaRepositoriesAutoConfiguration.BootstrapExecutorCondition.LazyBootstrapMode @ConditionalOnProperty (spring.data.jpa.repositories.bootstrap-mode=lazy) did not find property 'bootstrap-mode'; NestedCondition on JpaRepositoriesAutoConfiguration.BootstrapExecutorCondition.DeferredBootstrapMode @ConditionalOnProperty (spring.data.jpa.repositories.bootstrap-mode=deferred) did not find property 'bootstrap-mode' (JpaRepositoriesAutoConfiguration.BootstrapExecutorCondition)
+
+   JsonbAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.json.bind.Jsonb' (OnClassCondition)
+
+   JsonbHttpMessageConvertersConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.json.bind.Jsonb' (OnClassCondition)
+
+   KafkaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.kafka.core.KafkaTemplate' (OnClassCondition)
+
+   LdapAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.ldap.core.ContextSource' (OnClassCondition)
+
+   LdapRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.ldap.repository.LdapRepository' (OnClassCondition)
+
+   LettuceConnectionConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.lettuce.core.RedisClient' (OnClassCondition)
+
+   LiquibaseAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'liquibase.change.DatabaseChange' (OnClassCondition)
+
+   LoadBalancerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.cloud.client.loadbalancer.LoadBalancerClient; SearchStrategy: all) did not find any beans of type org.springframework.cloud.client.loadbalancer.LoadBalancerClient (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.web.client.RestTemplate' (OnClassCondition)
+
+   LoadBalancerAutoConfiguration.RetryAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.retry.support.RetryTemplate' (OnClassCondition)
+         - Ancestor org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
+
+   LoadBalancerAutoConfiguration.RetryInterceptorAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.retry.support.RetryTemplate' (OnClassCondition)
+         - Ancestor org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
+
+   LoadBalancerBeanPostProcessorAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   LoadBalancerNacosAutoConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.cloud.loadbalancer.nacos.enabled=true) did not find property 'spring.cloud.loadbalancer.nacos.enabled' (OnPropertyCondition)
+
+   MailSenderAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.mail.internet.MimeMessage' (OnClassCondition)
+
+   MailSenderValidatorAutoConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.mail.test-connection) did not find property 'test-connection' (OnPropertyCondition)
+
+   MessageSourceAutoConfiguration:
+      Did not match:
+         - ResourceBundle did not find bundle with basename messages (MessageSourceAutoConfiguration.ResourceBundleCondition)
+
+   MongoAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.client.MongoClient' (OnClassCondition)
+
+   MongoDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.client.MongoClient' (OnClassCondition)
+
+   MongoReactiveAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.reactivestreams.client.MongoClient' (OnClassCondition)
+
+   MongoReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.reactivestreams.client.MongoClient' (OnClassCondition)
+
+   MongoReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.reactivestreams.client.MongoClient' (OnClassCondition)
+
+   MongoRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.client.MongoClient' (OnClassCondition)
+
+   MustacheAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.samskivert.mustache.Mustache' (OnClassCondition)
+
+   NacosConfigAutoConfiguration#smartConfigurationPropertiesRebinder:
+      Did not match:
+         - no matched (NonDefaultBehaviorCondition)
+      Matched:
+         - @ConditionalOnMissingBean (types: org.springframework.cloud.context.properties.ConfigurationPropertiesRebinder; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   NacosConfigEndpointAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.endpoint.annotation.Endpoint' (OnClassCondition)
+
+   NacosConfigServerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.cloud.config.server.config.ConfigServerProperties' (OnClassCondition)
+
+   NacosDiscoveryClientConfiguration#gatewayLocatorHeartBeatPublisher:
+      Did not match:
+         - @ConditionalOnProperty (spring.cloud.gateway.discovery.locator.enabled) did not find property 'spring.cloud.gateway.discovery.locator.enabled' (OnPropertyCondition)
+
+   NacosDiscoveryClientConfiguration#nacosWatch:
+      Did not match:
+         - @ConditionalOnProperty (spring.cloud.nacos.discovery.watch.enabled) did not find property 'spring.cloud.nacos.discovery.watch.enabled' (OnPropertyCondition)
+
+   NacosDiscoveryEndpointAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.endpoint.annotation.Endpoint' (OnClassCondition)
+
+   NacosReactiveDiscoveryClientConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   Neo4jAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
+   Neo4jDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
+   Neo4jReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
+   Neo4jReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
+   Neo4jRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
+   OAuth2ClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+
+   OAuth2ResourceServerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.oauth2.server.resource.BearerTokenAuthenticationToken' (OnClassCondition)
+
+   ProjectInfoAutoConfiguration#buildProperties:
+      Did not match:
+         - @ConditionalOnResource did not find resource '${spring.info.build.location:classpath:META-INF/build-info.properties}' (OnResourceCondition)
+
+   ProjectInfoAutoConfiguration#gitProperties:
+      Did not match:
+         - GitResource did not find git info at classpath:git.properties (ProjectInfoAutoConfiguration.GitResourceAvailableCondition)
+
+   QuartzAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.quartz.Scheduler' (OnClassCondition)
+
+   R2dbcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.r2dbc.spi.ConnectionFactory' (OnClassCondition)
+
+   R2dbcDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.r2dbc.core.R2dbcEntityTemplate' (OnClassCondition)
+
+   R2dbcInitializationConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'io.r2dbc.spi.ConnectionFactory', 'org.springframework.r2dbc.connection.init.DatabasePopulator' (OnClassCondition)
+
+   R2dbcRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.r2dbc.spi.ConnectionFactory' (OnClassCondition)
+
+   R2dbcTransactionManagerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.r2dbc.connection.R2dbcTransactionManager' (OnClassCondition)
+
+   RSocketMessagingAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.rsocket.RSocket' (OnClassCondition)
+
+   RSocketRequesterAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.rsocket.RSocket' (OnClassCondition)
+
+   RSocketSecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.rsocket.core.SecuritySocketAcceptorInterceptor' (OnClassCondition)
+
+   RSocketServerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.rsocket.core.RSocketServer' (OnClassCondition)
+
+   RSocketStrategiesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.rsocket.RSocket' (OnClassCondition)
+
+   RabbitAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.rabbitmq.client.Channel' (OnClassCondition)
+
+   ReactiveCommonsClientAutoConfiguration.ReactiveDiscoveryLoadBalancerConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.boot.actuate.health.ReactiveHealthIndicator', 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   ReactiveCompositeDiscoveryClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   ReactiveElasticsearchRestClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.netty.http.client.HttpClient' (OnClassCondition)
+
+   ReactiveMultipartAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+
+   ReactiveOAuth2ClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   ReactiveOAuth2ResourceServerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity' (OnClassCondition)
+
+   ReactiveSecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   ReactiveUserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.authentication.ReactiveAuthenticationManager' (OnClassCondition)
+
+   ReactiveWebServerFactoryAutoConfiguration:
+      Did not match:
+         - @ConditionalOnWebApplication did not find reactive web application classes (OnWebApplicationCondition)
+
+   ReactorLoadBalancerClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   RedisAutoConfiguration#redisTemplate:
+      Did not match:
+         - @ConditionalOnMissingBean (names: redisTemplate; SearchStrategy: all) found beans named redisTemplate (OnBeanCondition)
+
+   RedisReactiveAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   RefreshAutoConfiguration#legacyContextRefresher:
+      Did not match:
+         - AnyNestedCondition 0 matched 3 did not; NestedCondition on ConditionalOnBootstrapEnabled.OnBootstrapEnabledCondition.OnBootstrapEnabled @ConditionalOnProperty (spring.cloud.bootstrap.enabled) did not find property 'spring.cloud.bootstrap.enabled'; NestedCondition on ConditionalOnBootstrapEnabled.OnBootstrapEnabledCondition.OnUseLegacyProcessingEnabled @ConditionalOnProperty (spring.config.use-legacy-processing) did not find property 'spring.config.use-legacy-processing'; NestedCondition on ConditionalOnBootstrapEnabled.OnBootstrapEnabledCondition.OnBootstrapMarkerClassPresent @ConditionalOnClass did not find required class 'org.springframework.cloud.bootstrap.marker.Marker' (ConditionalOnBootstrapEnabled.OnBootstrapEnabledCondition)
+
+   RefreshEndpointAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.autoconfigure.endpoint.EndpointAutoConfiguration' (OnClassCondition)
+
+   RepositoryRestMvcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration' (OnClassCondition)
+
+   ResourceServerTokenRelayAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration' (OnClassCondition)
+
+   Saml2RelyingPartyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (OnClassCondition)
+
+   SecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.authentication.DefaultAuthenticationEventPublisher' (OnClassCondition)
+
+   SecurityFilterAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.config.http.SessionCreationPolicy' (OnClassCondition)
+
+   SendGridAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.sendgrid.SendGrid' (OnClassCondition)
+
+   ServiceRegistryAutoConfiguration.ServiceRegistryEndpointConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.endpoint.annotation.Endpoint' (OnClassCondition)
+
+   ServletWebServerFactoryAutoConfiguration.ForwardedHeaderFilterConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (server.forward-headers-strategy=framework) did not find property 'server.forward-headers-strategy' (OnPropertyCondition)
+
+   ServletWebServerFactoryConfiguration.EmbeddedJetty:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.eclipse.jetty.server.Server', 'org.eclipse.jetty.util.Loader', 'org.eclipse.jetty.webapp.WebAppContext' (OnClassCondition)
+
+   ServletWebServerFactoryConfiguration.EmbeddedUndertow:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'io.undertow.Undertow', 'org.xnio.SslClientAuthMode' (OnClassCondition)
+
+   SessionAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.session.Session' (OnClassCondition)
+
+   SimpleReactiveDiscoveryClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   SolrAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.solr.client.solrj.impl.CloudSolrClient' (OnClassCondition)
+
+   TaskSchedulingAutoConfiguration#taskScheduler:
+      Did not match:
+         - @ConditionalOnBean (names: org.springframework.context.annotation.internalScheduledAnnotationProcessor; SearchStrategy: all) did not find any beans named org.springframework.context.annotation.internalScheduledAnnotationProcessor (OnBeanCondition)
+
+   ThymeleafAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.thymeleaf.spring5.SpringTemplateEngine' (OnClassCondition)
+
+   TransactionAutoConfiguration#transactionalOperator:
+      Did not match:
+         - @ConditionalOnSingleCandidate (types: org.springframework.transaction.ReactiveTransactionManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration.JdkDynamicAutoProxyConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.aop.proxy-target-class=false) did not find property 'proxy-target-class' (OnPropertyCondition)
+
+   UserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+
+   ValidationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.validation.executable.ExecutableValidator' (OnClassCondition)
+
+   WebClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   WebFluxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+
+   WebMvcAutoConfiguration#hiddenHttpMethodFilter:
+      Did not match:
+         - @ConditionalOnProperty (spring.mvc.hiddenmethod.filter.enabled) did not find property 'enabled' (OnPropertyCondition)
+
+   WebMvcAutoConfiguration.ResourceChainCustomizerConfiguration:
+      Did not match:
+         - @ConditionalOnEnabledResourceChain did not find class org.webjars.WebJarAssetLocator (OnEnabledResourceChainCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#beanNameViewResolver:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.BeanNameViewResolver; SearchStrategy: all) found beans of type 'org.springframework.web.servlet.view.BeanNameViewResolver' beanNameViewResolver (OnBeanCondition)
+
+   WebServiceTemplateAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.ws.client.core.WebServiceTemplate' (OnClassCondition)
+
+   WebServicesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.ws.transport.http.MessageDispatcherServlet' (OnClassCondition)
+
+   WebSessionIdResolverAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.core.publisher.Mono' (OnClassCondition)
+
+   WebSocketMessagingAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurer' (OnClassCondition)
+
+   WebSocketReactiveAutoConfiguration:
+      Did not match:
+         - @ConditionalOnWebApplication did not find reactive web application classes (OnWebApplicationCondition)
+
+   WebSocketServletAutoConfiguration.Jetty10WebSocketConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.eclipse.jetty.websocket.javax.server.internal.JavaxWebSocketServerContainer', 'org.eclipse.jetty.websocket.server.JettyWebSocketServerContainer' (OnClassCondition)
+
+   WebSocketServletAutoConfiguration.JettyWebSocketConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer' (OnClassCondition)
+
+   WebSocketServletAutoConfiguration.UndertowWebSocketConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.undertow.websockets.jsr.Bootstrap' (OnClassCondition)
+
+   WritableEnvironmentEndpointAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.autoconfigure.env.EnvironmentEndpointProperties' (OnClassCondition)
+
+   XADataSourceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.boot.jdbc.XADataSourceWrapper; SearchStrategy: all) did not find any beans of type org.springframework.boot.jdbc.XADataSourceWrapper (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'javax.transaction.TransactionManager', 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
+
+    org.springframework.cloud.client.ReactiveCommonsClientAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
+
+    org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClientAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.LifecycleAutoConfiguration
+
+    org.springframework.cloud.client.CommonsClientAutoConfiguration
+
+    org.springframework.cloud.commons.httpclient.HttpClientConfiguration
+
+    org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration
+
+    org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration
+
+    org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClientAutoConfiguration
+
+    org.springframework.cloud.client.serviceregistry.ServiceRegistryAutoConfiguration
+
+    org.springframework.cloud.autoconfigure.LifecycleMvcEndpointAutoConfiguration
+
+    org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration
+
+    org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration
+
+
+
+2025-11-18 10:58:06.299 [main] DEBUG o.s.b.c.p.s.ConfigurationPropertySourcesPropertyResolver$DefaultResolver [node3:8083] - Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
+2025-11-18 10:58:06.301 [main] INFO  com.example.demo.DemoApplication [node3:8083] - Started DemoApplication in 11.056 seconds (JVM running for 12.001)
+2025-11-18 10:58:06.302 [main] DEBUG o.s.b.a.ApplicationAvailabilityBean [node3:8083] - Application availability state LivenessState changed to CORRECT
+2025-11-18 10:58:06.317 [main] INFO  c.a.c.n.r.NacosContextRefresher [node3:8083] - [Nacos Config] Listening config: dataId=nacos-demo-service.properties, group=DEFAULT_GROUP
+2025-11-18 10:58:06.318 [main] DEBUG o.s.b.a.ApplicationAvailabilityBean [node3:8083] - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2025-11-18 10:58:06.318 [main] INFO  com.example.demo.DemoApplication [node3:8083] - 应用启动完成，开始测试日志输出
+2025-11-18 10:58:55.109 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder [node3:8083] - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-11-18 10:58:55.109 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter [node3:8083] - [NotifyCenter] Start destroying Publisher
+2025-11-18 10:58:55.109 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter [node3:8083] - [NotifyCenter] Destruction of the end
+2025-11-18 10:58:55.110 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder [node3:8083] - [HttpClientBeanHolder] Destruction of the end
+2025-11-18 10:58:55.110 [SpringApplicationShutdownHook] DEBUG o.s.b.a.ApplicationAvailabilityBean [node3:8083] - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2025-11-18 10:58:55.110 [SpringApplicationShutdownHook] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [node3:8083] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7249dadf, started on Tue Nov 18 10:57:57 CST 2025
+2025-11-18 10:58:55.110 [SpringApplicationShutdownHook] DEBUG o.s.b.c.p.s.ConfigurationPropertySourcesPropertyResolver$DefaultResolver [node3:8083] - Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
+2025-11-18 10:58:55.129 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry [node3:8083] - De-registering from Nacos Server now...
+2025-11-18 10:58:55.135 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry [node3:8083] - De-registration finished.
+2025-11-18 10:58:55.148 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [node3:8083] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 10:58:55.151 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [node3:8083] - HikariPool-1 - Shutdown initiated...
+2025-11-18 10:58:55.160 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [node3:8083] - HikariPool-1 - Shutdown completed.
+2025-11-18 11:18:06.002 [main] INFO  c.a.c.n.c.NacosConfigDataLoader [node3:8083] - [Nacos Config] Load config[dataId=nacos-demo-service.properties, group=DEFAULT_GROUP] success
+2025-11-18 11:18:06.047 [main] ERROR o.s.boot.SpringApplication [node3:8083] - Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.util.PropertySetter@7cc9ce8 - Could not invoke method addDestination in class net.logstash.logback.appender.LogstashTcpSocketAppender with parameter of type java.lang.String java.lang.reflect.InvocationTargetException
+ERROR in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - No destination was configured. Use <destination> to add one or more destinations to the appender
+ERROR in ch.qos.logback.core.joran.conditional.IfAction - Could not find Janino library on the class path. Skipping conditional processing.
+ERROR in ch.qos.logback.core.joran.conditional.IfAction - See also http://logback.qos.ch/codes.html#ifJanino
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:344)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:15)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.util.PropertySetter@7cc9ce8 - Could not invoke method addDestination in class net.logstash.logback.appender.LogstashTcpSocketAppender with parameter of type java.lang.String java.lang.reflect.InvocationTargetException
+ERROR in net.logstash.logback.appender.LogstashTcpSocketAppender[LOGSTASH] - No destination was configured. Use <destination> to add one or more destinations to the appender
+ERROR in ch.qos.logback.core.joran.conditional.IfAction - Could not find Janino library on the class path. Skipping conditional processing.
+ERROR in ch.qos.logback.core.joran.conditional.IfAction - See also http://logback.qos.ch/codes.html#ifJanino
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:329)
+	... 18 common frames omitted
+2025-11-18 11:18:06.060 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder [node3:8083] - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-11-18 11:18:06.060 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter [node3:8083] - [NotifyCenter] Start destroying Publisher
+2025-11-18 11:18:06.061 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter [node3:8083] - [NotifyCenter] Destruction of the end
+2025-11-18 11:18:06.061 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder [node3:8083] - [HttpClientBeanHolder] Destruction of the end
+2025-11-18 11:21:02.540 [main] INFO  c.a.c.n.c.NacosConfigDataLoader [node3:8083] - [Nacos Config] Load config[dataId=nacos-demo-service.properties, group=DEFAULT_GROUP] success
+2025-11-18 11:21:02.604 [main] ERROR o.s.boot.SpringApplication [node3:8083] - Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.conditional.IfAction - Could not find Janino library on the class path. Skipping conditional processing.
+ERROR in ch.qos.logback.core.joran.conditional.IfAction - See also http://logback.qos.ch/codes.html#ifJanino
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:344)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:15)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.conditional.IfAction - Could not find Janino library on the class path. Skipping conditional processing.
+ERROR in ch.qos.logback.core.joran.conditional.IfAction - See also http://logback.qos.ch/codes.html#ifJanino
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:329)
+	... 18 common frames omitted
+2025-11-18 11:21:02.607 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter [node3:8083] - [NotifyCenter] Start destroying Publisher
+2025-11-18 11:21:02.607 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder [node3:8083] - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-11-18 11:21:02.608 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter [node3:8083] - [NotifyCenter] Destruction of the end
+2025-11-18 11:21:02.608 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder [node3:8083] - [HttpClientBeanHolder] Destruction of the end
+2025-11-18 11:29:21.512 [main] INFO  com.example.demo.DemoApplication [node3:8083] - Starting DemoApplication using Java 1.8.0_161 on zhouwenwudeMBP with PID 7587 (/Users/markchou/Downloads/demo/target/classes started by markchou in /Users/markchou/Downloads/demo)
+2025-11-18 11:29:21.517 [main] DEBUG com.example.demo.DemoApplication [node3:8083] - Running with Spring Boot v2.6.13, Spring v5.3.23
+2025-11-18 11:29:21.518 [main] INFO  com.example.demo.DemoApplication [node3:8083] - The following 1 profile is active: "local"
+2025-11-18 11:29:21.571 [main] INFO  c.a.c.n.c.NacosConfigDataLoader [node3:8083] - [Nacos Config] Load config[dataId=nacos-demo-service.properties, group=DEFAULT_GROUP] success
+2025-11-18 11:29:22.577 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 11:29:22.578 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-11-18 11:29:22.603 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 11 ms. Found 0 Elasticsearch repository interfaces.
+2025-11-18 11:29:22.944 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 11:29:22.945 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-11-18 11:29:22.970 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2025-11-18 11:29:22.995 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 50 ms. Found 1 Elasticsearch repository interfaces.
+2025-11-18 11:29:23.002 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 11:29:23.003 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-11-18 11:29:23.008 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2025-11-18 11:29:23.012 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 8 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-11-18 11:29:23.023 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 11:29:23.024 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-18 11:29:23.043 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-11-18 11:29:23.051 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interfaces.
+2025-11-18 11:29:23.068 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 11:29:23.069 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-18 11:29:23.090 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-11-18 11:29:23.091 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-11-18 11:29:23.091 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2025-11-18 11:29:23.369 [main] INFO  o.s.cloud.context.scope.GenericScope [node3:8083] - BeanFactory id=12d418f6-72ba-339f-b5a9-6f2d0d29f169
+2025-11-18 11:29:24.098 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node3:8083] - Tomcat initialized with port(s): 8083 (http)
+2025-11-18 11:29:24.111 [main] INFO  o.a.catalina.core.StandardService [node3:8083] - Starting service [Tomcat]
+2025-11-18 11:29:24.112 [main] INFO  o.a.catalina.core.StandardEngine [node3:8083] - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-11-18 11:29:24.399 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [node3:8083] - Initializing Spring embedded WebApplicationContext
+2025-11-18 11:29:24.399 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [node3:8083] - Root WebApplicationContext: initialization completed in 2825 ms
+2025-11-18 11:29:25.247 [main] INFO  com.zaxxer.hikari.HikariDataSource [node3:8083] - HikariPool-1 - Starting...
+2025-11-18 11:29:25.457 [main] INFO  com.zaxxer.hikari.HikariDataSource [node3:8083] - HikariPool-1 - Start completed.
+2025-11-18 11:29:26.871 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [node3:8083] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 11:29:28.869 [main] WARN  org.elasticsearch.client.RestClient [node3:8083] - request [HEAD http://localhost:9200/products?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned 1 warnings: [299 Elasticsearch-7.17.0-bee86328705acaa9a6daede7140defd4d9ec56bd "[ignore_throttled] parameter is deprecated because frozen indices have been deprecated. Consider cold or frozen tiers in place of frozen indices."]
+2025-11-18 11:29:28.982 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [node3:8083] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-18 11:29:29.745 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node3:8083] - Tomcat started on port(s): 8083 (http) with context path ''
+2025-11-18 11:29:29.765 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [node3:8083] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-11-18 11:29:29.765 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [node3:8083] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-11-18 11:29:29.901 [main] INFO  c.a.c.n.r.NacosServiceRegistry [node3:8083] - nacos registry, DEFAULT_GROUP nacos-demo-service 192.168.31.227:8083 register finished
+2025-11-18 11:29:29.917 [main] INFO  com.example.demo.DemoApplication [node3:8083] - Started DemoApplication in 10.461 seconds (JVM running for 11.295)
+2025-11-18 11:29:29.935 [main] INFO  c.a.c.n.r.NacosContextRefresher [node3:8083] - [Nacos Config] Listening config: dataId=nacos-demo-service.properties, group=DEFAULT_GROUP
+2025-11-18 11:29:29.936 [main] INFO  com.example.demo.DemoApplication [node3:8083] - 应用启动完成，开始测试日志输出
+2025-11-18 11:30:38.496 [http-nio-8083-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [node3:8083] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-18 11:30:38.497 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet [node3:8083] - Initializing Servlet 'dispatcherServlet'
+2025-11-18 11:30:38.500 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet [node3:8083] - Completed initialization in 2 ms
+2025-11-18 11:30:38.565 [http-nio-8083-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node3:8083] - AOP请求头中的数据：{}
+2025-11-18 11:30:38.565 [http-nio-8083-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node3:8083] - 接口请求路径：/api
+2025-11-18 11:30:38.565 [http-nio-8083-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node3:8083] - 登录IP：192.168.31.227
+2025-11-18 11:30:38.565 [http-nio-8083-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node3:8083] - │ 方法: DemoController.request
+2025-11-18 11:30:38.565 [http-nio-8083-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node3:8083] - │ 参数: {}
+2025-11-18 11:30:38.622 [http-nio-8083-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node3:8083] - 请求耗时：57 ms
+2025-11-18 11:39:53.794 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter [node3:8083] - [NotifyCenter] Start destroying Publisher
+2025-11-18 11:39:53.794 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder [node3:8083] - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-11-18 11:39:53.796 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter [node3:8083] - [NotifyCenter] Destruction of the end
+2025-11-18 11:39:53.797 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder [node3:8083] - [HttpClientBeanHolder] Destruction of the end
+2025-11-18 11:39:53.817 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry [node3:8083] - De-registering from Nacos Server now...
+2025-11-18 11:39:53.821 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry [node3:8083] - De-registration finished.
+2025-11-18 11:39:53.840 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [node3:8083] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 11:39:53.845 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [node3:8083] - HikariPool-1 - Shutdown initiated...
+2025-11-18 11:39:53.856 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [node3:8083] - HikariPool-1 - Shutdown completed.
+2025-11-18 11:39:59.409 [main] INFO  com.example.demo.DemoApplication [node3:8083] - Starting DemoApplication using Java 1.8.0_161 on zhouwenwudeMBP with PID 7968 (/Users/markchou/Downloads/demo/target/classes started by markchou in /Users/markchou/Downloads/demo)
+2025-11-18 11:39:59.415 [main] INFO  com.example.demo.DemoApplication [node3:8083] - The following 1 profile is active: "local"
+2025-11-18 11:39:59.470 [main] INFO  c.a.c.n.c.NacosConfigDataLoader [node3:8083] - [Nacos Config] Load config[dataId=nacos-demo-service.properties, group=DEFAULT_GROUP] success
+2025-11-18 11:40:00.283 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 11:40:00.284 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-11-18 11:40:00.296 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 6 ms. Found 0 Elasticsearch repository interfaces.
+2025-11-18 11:40:00.576 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 11:40:00.577 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-11-18 11:40:00.606 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2025-11-18 11:40:00.632 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 54 ms. Found 1 Elasticsearch repository interfaces.
+2025-11-18 11:40:00.639 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 11:40:00.641 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-11-18 11:40:00.646 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2025-11-18 11:40:00.649 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 7 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-11-18 11:40:00.663 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 11:40:00.665 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-18 11:40:00.687 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-11-18 11:40:00.698 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interfaces.
+2025-11-18 11:40:00.719 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 11:40:00.721 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-18 11:40:00.734 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-11-18 11:40:00.735 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-11-18 11:40:00.735 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-11-18 11:40:01.004 [main] INFO  o.s.cloud.context.scope.GenericScope [node3:8083] - BeanFactory id=12d418f6-72ba-339f-b5a9-6f2d0d29f169
+2025-11-18 11:40:01.722 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node3:8083] - Tomcat initialized with port(s): 8083 (http)
+2025-11-18 11:40:01.730 [main] INFO  o.a.catalina.core.StandardService [node3:8083] - Starting service [Tomcat]
+2025-11-18 11:40:01.731 [main] INFO  o.a.catalina.core.StandardEngine [node3:8083] - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-11-18 11:40:01.877 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [node3:8083] - Initializing Spring embedded WebApplicationContext
+2025-11-18 11:40:01.878 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [node3:8083] - Root WebApplicationContext: initialization completed in 2405 ms
+2025-11-18 11:40:02.705 [main] INFO  com.zaxxer.hikari.HikariDataSource [node3:8083] - HikariPool-1 - Starting...
+2025-11-18 11:40:02.927 [main] INFO  com.zaxxer.hikari.HikariDataSource [node3:8083] - HikariPool-1 - Start completed.
+2025-11-18 11:40:04.072 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [node3:8083] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 11:40:05.814 [main] WARN  org.elasticsearch.client.RestClient [node3:8083] - request [HEAD http://localhost:9200/products?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned 1 warnings: [299 Elasticsearch-7.17.0-bee86328705acaa9a6daede7140defd4d9ec56bd "[ignore_throttled] parameter is deprecated because frozen indices have been deprecated. Consider cold or frozen tiers in place of frozen indices."]
+2025-11-18 11:40:05.895 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [node3:8083] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-18 11:40:06.669 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node3:8083] - Tomcat started on port(s): 8083 (http) with context path ''
+2025-11-18 11:40:06.688 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [node3:8083] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-11-18 11:40:06.688 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [node3:8083] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-11-18 11:40:06.829 [main] INFO  c.a.c.n.r.NacosServiceRegistry [node3:8083] - nacos registry, DEFAULT_GROUP nacos-demo-service 192.168.31.227:8083 register finished
+2025-11-18 11:40:06.845 [main] INFO  com.example.demo.DemoApplication [node3:8083] - Started DemoApplication in 9.355 seconds (JVM running for 10.131)
+2025-11-18 11:40:06.865 [main] INFO  c.a.c.n.r.NacosContextRefresher [node3:8083] - [Nacos Config] Listening config: dataId=nacos-demo-service.properties, group=DEFAULT_GROUP
+2025-11-18 11:40:06.865 [main] INFO  com.example.demo.DemoApplication [node3:8083] - 应用启动完成，开始测试日志输出
+2025-11-18 11:47:02.118 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter [node3:8083] - [NotifyCenter] Start destroying Publisher
+2025-11-18 11:47:02.118 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder [node3:8083] - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-11-18 11:47:02.120 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter [node3:8083] - [NotifyCenter] Destruction of the end
+2025-11-18 11:47:02.121 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder [node3:8083] - [HttpClientBeanHolder] Destruction of the end
+2025-11-18 11:47:02.139 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry [node3:8083] - De-registering from Nacos Server now...
+2025-11-18 11:47:02.144 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry [node3:8083] - De-registration finished.
+2025-11-18 11:47:02.158 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [node3:8083] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 11:47:02.162 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [node3:8083] - HikariPool-1 - Shutdown initiated...
+2025-11-18 11:47:02.172 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [node3:8083] - HikariPool-1 - Shutdown completed.
+2025-11-18 11:47:09.210 [main] INFO  com.example.demo.DemoApplication [node3:8083] - Starting DemoApplication using Java 1.8.0_161 on zhouwenwudeMBP with PID 8185 (/Users/markchou/Downloads/demo/target/classes started by markchou in /Users/markchou/Downloads/demo)
+2025-11-18 11:47:09.217 [main] INFO  com.example.demo.DemoApplication [node3:8083] - The following 1 profile is active: "local"
+2025-11-18 11:47:09.277 [main] INFO  c.a.c.n.c.NacosConfigDataLoader [node3:8083] - [Nacos Config] Load config[dataId=nacos-demo-service.properties, group=DEFAULT_GROUP] success
+2025-11-18 11:47:10.022 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 11:47:10.023 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-11-18 11:47:10.035 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 7 ms. Found 0 Elasticsearch repository interfaces.
+2025-11-18 11:47:10.301 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 11:47:10.302 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-11-18 11:47:10.327 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2025-11-18 11:47:10.353 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 50 ms. Found 1 Elasticsearch repository interfaces.
+2025-11-18 11:47:10.359 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 11:47:10.360 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-11-18 11:47:10.367 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2025-11-18 11:47:10.370 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 9 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-11-18 11:47:10.382 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 11:47:10.383 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-18 11:47:10.399 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-11-18 11:47:10.405 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interfaces.
+2025-11-18 11:47:10.421 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 11:47:10.423 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-18 11:47:10.437 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-11-18 11:47:10.438 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-11-18 11:47:10.438 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-11-18 11:47:10.703 [main] INFO  o.s.cloud.context.scope.GenericScope [node3:8083] - BeanFactory id=12d418f6-72ba-339f-b5a9-6f2d0d29f169
+2025-11-18 11:47:11.295 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node3:8083] - Tomcat initialized with port(s): 8083 (http)
+2025-11-18 11:47:11.307 [main] INFO  o.a.catalina.core.StandardService [node3:8083] - Starting service [Tomcat]
+2025-11-18 11:47:11.307 [main] INFO  o.a.catalina.core.StandardEngine [node3:8083] - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-11-18 11:47:11.460 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [node3:8083] - Initializing Spring embedded WebApplicationContext
+2025-11-18 11:47:11.460 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [node3:8083] - Root WebApplicationContext: initialization completed in 2180 ms
+2025-11-18 11:47:12.239 [main] INFO  com.zaxxer.hikari.HikariDataSource [node3:8083] - HikariPool-1 - Starting...
+2025-11-18 11:47:12.464 [main] INFO  com.zaxxer.hikari.HikariDataSource [node3:8083] - HikariPool-1 - Start completed.
+2025-11-18 11:47:13.485 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [node3:8083] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 11:47:15.200 [main] WARN  org.elasticsearch.client.RestClient [node3:8083] - request [HEAD http://localhost:9200/products?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned 1 warnings: [299 Elasticsearch-7.17.0-bee86328705acaa9a6daede7140defd4d9ec56bd "[ignore_throttled] parameter is deprecated because frozen indices have been deprecated. Consider cold or frozen tiers in place of frozen indices."]
+2025-11-18 11:47:15.292 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [node3:8083] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-18 11:47:15.979 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node3:8083] - Tomcat started on port(s): 8083 (http) with context path ''
+2025-11-18 11:47:15.995 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [node3:8083] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-11-18 11:47:15.995 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [node3:8083] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-11-18 11:47:16.132 [main] INFO  c.a.c.n.r.NacosServiceRegistry [node3:8083] - nacos registry, DEFAULT_GROUP nacos-demo-service 192.168.31.227:8083 register finished
+2025-11-18 11:47:16.150 [main] INFO  com.example.demo.DemoApplication [node3:8083] - Started DemoApplication in 9.087 seconds (JVM running for 9.924)
+2025-11-18 11:47:16.168 [main] INFO  c.a.c.n.r.NacosContextRefresher [node3:8083] - [Nacos Config] Listening config: dataId=nacos-demo-service.properties, group=DEFAULT_GROUP
+2025-11-18 11:47:16.169 [main] INFO  com.example.demo.DemoApplication [node3:8083] - 应用启动完成，开始测试日志输出
+2025-11-18 11:56:58.087 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter [node3:8083] - [NotifyCenter] Start destroying Publisher
+2025-11-18 11:56:58.087 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder [node3:8083] - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-11-18 11:56:58.092 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter [node3:8083] - [NotifyCenter] Destruction of the end
+2025-11-18 11:56:58.094 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder [node3:8083] - [HttpClientBeanHolder] Destruction of the end
+2025-11-18 11:56:58.128 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry [node3:8083] - De-registering from Nacos Server now...
+2025-11-18 11:56:58.134 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry [node3:8083] - De-registration finished.
+2025-11-18 11:56:58.156 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [node3:8083] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 11:56:58.163 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [node3:8083] - HikariPool-1 - Shutdown initiated...
+2025-11-18 11:56:58.175 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [node3:8083] - HikariPool-1 - Shutdown completed.
+2025-11-18 11:57:06.810 [main] INFO  com.example.demo.DemoApplication [node3:8083] - Starting DemoApplication using Java 1.8.0_161 on zhouwenwudeMBP with PID 8471 (/Users/markchou/Downloads/demo/target/classes started by markchou in /Users/markchou/Downloads/demo)
+2025-11-18 11:57:06.825 [main] INFO  com.example.demo.DemoApplication [node3:8083] - The following 1 profile is active: "local"
+2025-11-18 11:57:06.923 [main] INFO  c.a.c.n.c.NacosConfigDataLoader [node3:8083] - [Nacos Config] Load config[dataId=nacos-demo-service.properties, group=DEFAULT_GROUP] success
+2025-11-18 11:57:07.678 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 11:57:07.680 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-11-18 11:57:07.695 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 8 ms. Found 0 Elasticsearch repository interfaces.
+2025-11-18 11:57:07.955 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 11:57:07.955 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-11-18 11:57:07.983 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2025-11-18 11:57:08.009 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 53 ms. Found 1 Elasticsearch repository interfaces.
+2025-11-18 11:57:08.015 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 11:57:08.016 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-11-18 11:57:08.024 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2025-11-18 11:57:08.027 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 9 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-11-18 11:57:08.038 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 11:57:08.039 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-18 11:57:08.053 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-11-18 11:57:08.059 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interfaces.
+2025-11-18 11:57:08.074 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 11:57:08.075 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-18 11:57:08.088 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-11-18 11:57:08.089 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-11-18 11:57:08.089 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-11-18 11:57:08.352 [main] INFO  o.s.cloud.context.scope.GenericScope [node3:8083] - BeanFactory id=12d418f6-72ba-339f-b5a9-6f2d0d29f169
+2025-11-18 11:57:09.003 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node3:8083] - Tomcat initialized with port(s): 8083 (http)
+2025-11-18 11:57:09.015 [main] INFO  o.a.catalina.core.StandardService [node3:8083] - Starting service [Tomcat]
+2025-11-18 11:57:09.015 [main] INFO  o.a.catalina.core.StandardEngine [node3:8083] - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-11-18 11:57:09.241 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [node3:8083] - Initializing Spring embedded WebApplicationContext
+2025-11-18 11:57:09.241 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [node3:8083] - Root WebApplicationContext: initialization completed in 2311 ms
+2025-11-18 11:57:10.008 [main] INFO  com.zaxxer.hikari.HikariDataSource [node3:8083] - HikariPool-1 - Starting...
+2025-11-18 11:57:10.200 [main] INFO  com.zaxxer.hikari.HikariDataSource [node3:8083] - HikariPool-1 - Start completed.
+2025-11-18 11:57:11.334 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [node3:8083] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 11:57:13.006 [main] WARN  org.elasticsearch.client.RestClient [node3:8083] - request [HEAD http://localhost:9200/products?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned 1 warnings: [299 Elasticsearch-7.17.0-bee86328705acaa9a6daede7140defd4d9ec56bd "[ignore_throttled] parameter is deprecated because frozen indices have been deprecated. Consider cold or frozen tiers in place of frozen indices."]
+2025-11-18 11:57:13.085 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [node3:8083] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-18 11:57:13.857 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node3:8083] - Tomcat started on port(s): 8083 (http) with context path ''
+2025-11-18 11:57:13.883 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [node3:8083] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-11-18 11:57:13.883 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [node3:8083] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-11-18 11:57:14.019 [main] INFO  c.a.c.n.r.NacosServiceRegistry [node3:8083] - nacos registry, DEFAULT_GROUP nacos-demo-service 192.168.31.227:8083 register finished
+2025-11-18 11:57:14.038 [main] INFO  com.example.demo.DemoApplication [node3:8083] - Started DemoApplication in 9.421 seconds (JVM running for 10.221)
+2025-11-18 11:57:14.054 [main] INFO  c.a.c.n.r.NacosContextRefresher [node3:8083] - [Nacos Config] Listening config: dataId=nacos-demo-service.properties, group=DEFAULT_GROUP
+2025-11-18 11:57:14.055 [main] INFO  com.example.demo.DemoApplication [node3:8083] - 应用启动完成，开始测试日志输出
+2025-11-18 11:57:29.982 [http-nio-8083-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [node3:8083] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-18 11:57:29.983 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet [node3:8083] - Initializing Servlet 'dispatcherServlet'
+2025-11-18 11:57:29.986 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet [node3:8083] - Completed initialization in 2 ms
+2025-11-18 11:57:30.011 [http-nio-8083-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node3:8083] - [请求开始] ID: 3069d72d
+2025-11-18 11:57:30.011 [http-nio-8083-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node3:8083] - 请求路径: /api
+2025-11-18 11:57:30.012 [http-nio-8083-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node3:8083] - 客户端IP: 192.168.31.227
+2025-11-18 11:57:30.012 [http-nio-8083-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node3:8083] - 方法: DemoController.request
+2025-11-18 11:57:30.052 [http-nio-8083-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node3:8083] - 参数: {}
+2025-11-18 11:57:30.109 [http-nio-8083-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node3:8083] - 响应状态: 200
+2025-11-18 11:57:30.143 [http-nio-8083-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node3:8083] - 响应内容: {"code":0,"data":{"account_":"admin","create_by":1,"create_time":"2016-05-06 10:06:52","enable_":1,"id_":1,"is_del":0,"money":0.0,"name_pinyin":"GUANLIYUAN","password_":"e10adc3949ba59abbe56e057f20f883e","remark_":"","sex_":1,"update_by":1,"update_time":"2019-02-26 22:27:39","user_name":"管理员","user_type":"2","wei_bo":""},"message":"执行成功"}
+2025-11-18 11:57:30.143 [http-nio-8083-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node3:8083] - 响应大小: 340 字符
+2025-11-18 11:57:30.143 [http-nio-8083-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node3:8083] - [请求完成] ID: 3069d72d, 耗时: 57ms
+2025-11-18 12:00:08.146 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter [node3:8083] - [NotifyCenter] Start destroying Publisher
+2025-11-18 12:00:08.146 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder [node3:8083] - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-11-18 12:00:08.148 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter [node3:8083] - [NotifyCenter] Destruction of the end
+2025-11-18 12:00:08.149 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder [node3:8083] - [HttpClientBeanHolder] Destruction of the end
+2025-11-18 12:00:08.165 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry [node3:8083] - De-registering from Nacos Server now...
+2025-11-18 12:00:08.172 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry [node3:8083] - De-registration finished.
+2025-11-18 12:00:08.189 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [node3:8083] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 12:00:08.192 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [node3:8083] - HikariPool-1 - Shutdown initiated...
+2025-11-18 12:00:08.218 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [node3:8083] - HikariPool-1 - Shutdown completed.
+2025-11-18 12:00:17.484 [main] INFO  com.example.demo.DemoApplication [node3:8083] - Starting DemoApplication using Java 1.8.0_161 on zhouwenwudeMBP with PID 8570 (/Users/markchou/Downloads/demo/target/classes started by markchou in /Users/markchou/Downloads/demo)
+2025-11-18 12:00:17.489 [main] INFO  com.example.demo.DemoApplication [node3:8083] - The following 1 profile is active: "local"
+2025-11-18 12:00:17.551 [main] INFO  c.a.c.n.c.NacosConfigDataLoader [node3:8083] - [Nacos Config] Load config[dataId=nacos-demo-service.properties, group=DEFAULT_GROUP] success
+2025-11-18 12:00:18.335 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 12:00:18.336 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-11-18 12:00:18.350 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 9 ms. Found 0 Elasticsearch repository interfaces.
+2025-11-18 12:00:18.613 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 12:00:18.615 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-11-18 12:00:18.643 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2025-11-18 12:00:18.673 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 57 ms. Found 1 Elasticsearch repository interfaces.
+2025-11-18 12:00:18.679 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 12:00:18.680 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-11-18 12:00:18.686 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2025-11-18 12:00:18.689 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 7 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-11-18 12:00:18.700 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 12:00:18.701 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-18 12:00:18.714 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-11-18 12:00:18.722 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interfaces.
+2025-11-18 12:00:18.736 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-18 12:00:18.738 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-18 12:00:18.752 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-11-18 12:00:18.752 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node3:8083] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-11-18 12:00:18.753 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node3:8083] - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-11-18 12:00:18.992 [main] INFO  o.s.cloud.context.scope.GenericScope [node3:8083] - BeanFactory id=12d418f6-72ba-339f-b5a9-6f2d0d29f169
+2025-11-18 12:00:19.675 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node3:8083] - Tomcat initialized with port(s): 8083 (http)
+2025-11-18 12:00:19.689 [main] INFO  o.a.catalina.core.StandardService [node3:8083] - Starting service [Tomcat]
+2025-11-18 12:00:19.690 [main] INFO  o.a.catalina.core.StandardEngine [node3:8083] - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-11-18 12:00:19.899 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [node3:8083] - Initializing Spring embedded WebApplicationContext
+2025-11-18 12:00:19.900 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [node3:8083] - Root WebApplicationContext: initialization completed in 2346 ms
+2025-11-18 12:00:20.598 [main] INFO  com.zaxxer.hikari.HikariDataSource [node3:8083] - HikariPool-1 - Starting...
+2025-11-18 12:00:20.761 [main] INFO  com.zaxxer.hikari.HikariDataSource [node3:8083] - HikariPool-1 - Start completed.
+2025-11-18 12:00:21.776 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [node3:8083] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 12:00:23.413 [main] WARN  org.elasticsearch.client.RestClient [node3:8083] - request [HEAD http://localhost:9200/products?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned 1 warnings: [299 Elasticsearch-7.17.0-bee86328705acaa9a6daede7140defd4d9ec56bd "[ignore_throttled] parameter is deprecated because frozen indices have been deprecated. Consider cold or frozen tiers in place of frozen indices."]
+2025-11-18 12:00:23.482 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [node3:8083] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-18 12:00:24.157 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node3:8083] - Tomcat started on port(s): 8083 (http) with context path ''
+2025-11-18 12:00:24.179 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [node3:8083] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-11-18 12:00:24.180 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [node3:8083] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-11-18 12:00:24.323 [main] INFO  c.a.c.n.r.NacosServiceRegistry [node3:8083] - nacos registry, DEFAULT_GROUP nacos-demo-service 192.168.31.227:8083 register finished
+2025-11-18 12:00:24.343 [main] INFO  com.example.demo.DemoApplication [node3:8083] - Started DemoApplication in 8.8 seconds (JVM running for 9.516)
+2025-11-18 12:00:24.359 [main] INFO  c.a.c.n.r.NacosContextRefresher [node3:8083] - [Nacos Config] Listening config: dataId=nacos-demo-service.properties, group=DEFAULT_GROUP
+2025-11-18 12:00:24.360 [main] INFO  com.example.demo.DemoApplication [node3:8083] - 应用启动完成，开始测试日志输出
+2025-11-18 12:11:18.939 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Retrograde clock change detected (housekeeper delta=28s22ms), soft-evicting connections from pool.
+2025-11-18 12:21:03.841 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m44s902ms).
+2025-11-18 12:30:50.005 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m46s164ms).
+2025-11-18 12:41:08.115 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s509ms).
+2025-11-18 12:51:23.791 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s658ms).
+2025-11-18 13:01:39.474 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s680ms).
+2025-11-18 13:11:27.398 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m47s923ms).
+2025-11-18 13:21:43.089 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s690ms).
+2025-11-18 13:31:58.194 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s120ms).
+2025-11-18 13:41:43.755 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s561ms).
+2025-11-18 13:51:59.112 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s354ms).
+2025-11-18 14:02:14.652 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s528ms).
+2025-11-18 14:11:57.985 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m43s333ms).
+2025-11-18 14:22:15.430 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m47s442ms).
+2025-11-18 14:32:31.202 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s767ms).
+2025-11-18 14:42:16.784 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s582ms).
+2025-11-18 14:52:32.241 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s433ms).
+2025-11-18 15:02:50.026 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m47s774ms).
+2025-11-18 15:12:35.297 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s271ms).
+2025-11-18 15:22:50.674 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s373ms).
+2025-11-18 15:33:06.294 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s616ms).
+2025-11-18 15:42:51.674 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s380ms).
+2025-11-18 15:53:07.212 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s546ms).
+2025-11-18 16:03:20.639 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m43s423ms).
+2025-11-18 16:12:23.044 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m2s405ms).
+2025-11-18 16:22:38.506 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s458ms).
+2025-11-18 16:32:53.815 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s304ms).
+2025-11-18 16:42:39.333 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s518ms).
+2025-11-18 16:52:54.972 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s635ms).
+2025-11-18 17:03:10.633 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s659ms).
+2025-11-18 17:12:55.321 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m44s688ms).
+2025-11-18 17:13:25.147 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s826ms), soft-evicting connections from pool.
+2025-11-18 17:23:41.426 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m46s275ms).
+2025-11-18 17:33:56.989 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s551ms).
+2025-11-18 17:44:12.316 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s324ms).
+2025-11-18 17:54:25.764 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m43s445ms).
+2025-11-18 18:04:11.627 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s863ms).
+2025-11-18 18:14:29.187 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s640ms).
+2025-11-18 18:24:44.522 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s333ms).
+2025-11-18 18:34:28.813 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m44s291ms).
+2025-11-18 18:45:15.530 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s485ms).
+2025-11-18 18:55:30.895 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s364ms).
+2025-11-18 19:05:16.406 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s511ms).
+2025-11-18 19:15:31.967 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s555ms).
+2025-11-18 19:25:50.040 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m48s66ms).
+2025-11-18 19:35:35.494 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s454ms).
+2025-11-18 19:46:19.066 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m43s562ms).
+2025-11-18 19:56:05.005 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s940ms).
+2025-11-18 20:06:23.330 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s434ms).
+2025-11-18 20:16:39.130 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s795ms).
+2025-11-18 20:26:24.005 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m44s875ms).
+2025-11-18 20:36:40.176 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s446ms).
+2025-11-18 20:47:23.712 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m43s518ms).
+2025-11-18 20:57:11.207 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m47s495ms).
+2025-11-18 21:07:26.604 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s404ms).
+2025-11-18 21:14:07.918 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m11s319ms).
+2025-11-18 21:23:53.424 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s506ms).
+2025-11-18 21:24:21.572 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Retrograde clock change detected (housekeeper delta=28s148ms), soft-evicting connections from pool.
+2025-11-18 21:34:09.206 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m47s634ms).
+2025-11-18 21:44:25.025 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s815ms).
+2025-11-18 21:54:40.497 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s462ms).
+2025-11-18 22:04:56.031 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s526ms).
+2025-11-18 22:15:11.498 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s460ms).
+2025-11-18 22:24:57.085 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s587ms).
+2025-11-18 22:35:12.468 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s374ms).
+2025-11-18 22:45:27.924 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s451ms).
+2025-11-18 22:55:43.506 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s570ms).
+2025-11-18 23:05:59.020 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s504ms).
+2025-11-18 23:15:43.086 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m44s66ms).
+2025-11-18 23:26:03.240 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m47s636ms).
+2025-11-18 23:36:18.755 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s508ms).
+2025-11-18 23:46:02.896 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m44s141ms).
+2025-11-18 23:56:49.699 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node3:8083] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m45s397ms).

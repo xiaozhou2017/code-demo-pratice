@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.pay.mapper.SysUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.demo.pay.entity.SysUser">
+        <id column="id_" property="id_" />
+        <result column="account_" property="account_" />
+        <result column="password_" property="password_" />
+        <result column="user_type" property="user_type" />
+        <result column="user_name" property="user_name" />
+        <result column="name_pinyin" property="name_pinyin" />
+        <result column="sex_" property="sex_" />
+        <result column="avatar_" property="avatar_" />
+        <result column="phone_" property="phone_" />
+        <result column="email_" property="email_" />
+        <result column="id_card" property="id_card" />
+        <result column="wei_xin" property="wei_xin" />
+        <result column="wei_bo" property="wei_bo" />
+        <result column="qq_" property="qq_" />
+        <result column="birth_day" property="birth_day" />
+        <result column="dept_id" property="dept_id" />
+        <result column="position_" property="position_" />
+        <result column="address_" property="address_" />
+        <result column="staff_no" property="staff_no" />
+        <result column="is_del" property="is_del" />
+        <result column="enable_" property="enable_" />
+        <result column="remark_" property="remark_" />
+        <result column="create_time" property="create_time" />
+        <result column="create_by" property="create_by" />
+        <result column="update_time" property="update_time" />
+        <result column="update_by" property="update_by" />
+        <result column="money" property="money" />
+    </resultMap>
+
+</mapper>

@@ -1,0 +1,21 @@
+# 使用 OpenJDK 8 基础镜像
+FROM node:16-alpine
+
+# 设置元数据
+LABEL maintainer="your-email@example.com"
+LABEL version="1.0.0"
+LABEL description="Spring Boot Application"
+
+# 设置工作目录
+WORKDIR /app
+
+
+# 复制 JAR 文件到容器
+COPY target/*.jar app.jar
+
+
+# 暴露端口（根据您的应用端口修改）
+EXPOSE 8080
+
+# 启动命令（可配置 JVM 参数）
+ENTRYPOINT ["java", "-jar", "app.jar"]

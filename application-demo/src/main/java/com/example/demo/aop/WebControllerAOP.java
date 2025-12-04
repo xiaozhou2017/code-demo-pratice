@@ -17,6 +17,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.Enumeration;
 import java.util.UUID;
 
 /**
@@ -42,6 +43,16 @@ public class WebControllerAOP {
         RequestAttributes ra = RequestContextHolder.getRequestAttributes();
         ServletRequestAttributes sra = (ServletRequestAttributes) ra;
         HttpServletRequest request = sra.getRequest();
+        Enumeration<String> headerNames = request.getHeaderNames();
+        // 遍历所有头名称
+        while (headerNames.hasMoreElements()) {
+            String headerName = headerNames.nextElement();
+            // 根据头名称获取其对应的值
+            String headerValue = request.getHeader(headerName);
+            // 打印到头名称和值
+            logger.info(headerName + ": " + headerValue);
+        }
+
         HttpServletResponse response = sra.getResponse();
 
         String requestURI = request.getRequestURI();

@@ -1,0 +1,590 @@
+2025-11-20 14:01:01.563 [main] INFO  com.example.demo.DemoApplication [unknown-node:8080] - Starting DemoApplication using Java 1.8.0_161 on zhouwenwudeMBP with PID 65181 (/Users/markchou/Downloads/demo/target/demo-0.0.1-SNAPSHOT.jar started by markchou in /Users/markchou/Downloads/demo)
+2025-11-20 14:01:01.575 [main] INFO  com.example.demo.DemoApplication [unknown-node:8080] - The following 1 profile is active: "local"
+2025-11-20 14:01:01.670 [main] INFO  c.a.c.n.c.NacosConfigDataLoader [unknown-node:8080] - [Nacos Config] Load config[dataId=nacos-demo-service.properties, group=DEFAULT_GROUP] success
+2025-11-20 14:01:02.574 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-20 14:01:02.575 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-11-20 14:01:02.590 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Finished Spring Data repository scanning in 8 ms. Found 0 Elasticsearch repository interfaces.
+2025-11-20 14:01:02.936 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-20 14:01:02.937 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-11-20 14:01:02.984 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [unknown-node:8080] - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2025-11-20 14:01:03.000 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Finished Spring Data repository scanning in 63 ms. Found 1 Elasticsearch repository interfaces.
+2025-11-20 14:01:03.005 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-20 14:01:03.006 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-11-20 14:01:03.014 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [unknown-node:8080] - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2025-11-20 14:01:03.014 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Finished Spring Data repository scanning in 7 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-11-20 14:01:03.032 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-20 14:01:03.035 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-20 14:01:03.048 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [unknown-node:8080] - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-11-20 14:01:03.060 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
+2025-11-20 14:01:03.083 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-20 14:01:03.086 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-20 14:01:03.106 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [unknown-node:8080] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-11-20 14:01:03.107 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [unknown-node:8080] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-11-20 14:01:03.107 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-11-20 14:01:03.410 [main] INFO  o.s.cloud.context.scope.GenericScope [unknown-node:8080] - BeanFactory id=48e01b9e-4c1e-3fbf-84c5-9cdf07b3f0a8
+2025-11-20 14:01:04.200 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [unknown-node:8080] - Tomcat initialized with port(s): 8080 (http)
+2025-11-20 14:01:04.221 [main] INFO  o.a.catalina.core.StandardService [unknown-node:8080] - Starting service [Tomcat]
+2025-11-20 14:01:04.221 [main] INFO  o.a.catalina.core.StandardEngine [unknown-node:8080] - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-11-20 14:01:04.366 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [unknown-node:8080] - Initializing Spring embedded WebApplicationContext
+2025-11-20 14:01:04.367 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [unknown-node:8080] - Root WebApplicationContext: initialization completed in 2692 ms
+2025-11-20 14:01:05.614 [main] INFO  com.zaxxer.hikari.HikariDataSource [unknown-node:8080] - HikariPool-1 - Starting...
+2025-11-20 14:01:05.930 [main] INFO  com.zaxxer.hikari.HikariDataSource [unknown-node:8080] - HikariPool-1 - Start completed.
+2025-11-20 14:01:08.239 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [unknown-node:8080] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-20 14:01:08.293 [main] INFO  com.example.demo.config.RedisConfig [unknown-node:8080] - 初始化 Redis Sentinel 连接工厂...
+2025-11-20 14:01:08.463 [main] INFO  r.clients.jedis.JedisSentinelPool [unknown-node:8080] - Trying to find master from available Sentinels...
+2025-11-20 14:01:08.526 [main] INFO  r.clients.jedis.JedisSentinelPool [unknown-node:8080] - Redis master running at 172.30.0.12:6379, starting Sentinel listeners...
+2025-11-20 14:01:08.530 [main] INFO  r.clients.jedis.JedisSentinelPool [unknown-node:8080] - Created JedisSentinelPool to master at 172.30.0.12:6379
+2025-11-20 14:01:08.531 [main] INFO  com.example.demo.config.RedisConfig [unknown-node:8080] - ✅ Redis Sentinel 连接工厂初始化成功
+2025-11-20 14:01:08.559 [main] INFO  r.clients.jedis.JedisSentinelPool [unknown-node:8080] - Trying to find master from available Sentinels...
+2025-11-20 14:01:08.567 [main] INFO  r.clients.jedis.JedisSentinelPool [unknown-node:8080] - Redis master running at 172.30.0.12:6379, starting Sentinel listeners...
+2025-11-20 14:01:08.571 [main] INFO  r.clients.jedis.JedisSentinelPool [unknown-node:8080] - Created JedisSentinelPool to master at 172.30.0.12:6379
+2025-11-20 14:01:10.874 [main] WARN  org.elasticsearch.client.RestClient [unknown-node:8080] - request [HEAD http://localhost:9200/products?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned 1 warnings: [299 Elasticsearch-7.17.0-bee86328705acaa9a6daede7140defd4d9ec56bd "[ignore_throttled] parameter is deprecated because frozen indices have been deprecated. Consider cold or frozen tiers in place of frozen indices."]
+2025-11-20 14:01:10.960 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [unknown-node:8080] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-20 14:01:11.699 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [unknown-node:8080] - Tomcat started on port(s): 8080 (http) with context path ''
+2025-11-20 14:01:11.740 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [unknown-node:8080] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-11-20 14:01:11.741 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [unknown-node:8080] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-11-20 14:01:11.936 [main] INFO  c.a.c.n.r.NacosServiceRegistry [unknown-node:8080] - nacos registry, DEFAULT_GROUP nacos-demo-service 192.168.31.227:8080 register finished
+2025-11-20 14:01:11.951 [main] INFO  com.example.demo.DemoApplication [unknown-node:8080] - Started DemoApplication in 13.935 seconds (JVM running for 14.534)
+2025-11-20 14:01:11.978 [main] INFO  c.a.c.n.r.NacosContextRefresher [unknown-node:8080] - [Nacos Config] Listening config: dataId=nacos-demo-service.properties, group=DEFAULT_GROUP
+2025-11-20 14:01:11.981 [main] INFO  com.example.demo.DemoApplication [unknown-node:8080] - 应用启动完成，开始测试日志输出
+2025-11-20 14:07:20.476 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder [unknown-node:8080] - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-11-20 14:07:20.476 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter [unknown-node:8080] - [NotifyCenter] Start destroying Publisher
+2025-11-20 14:07:20.476 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter [unknown-node:8080] - [NotifyCenter] Destruction of the end
+2025-11-20 14:07:26.935 [main] INFO  com.example.demo.DemoApplication [unknown-node:8080] - Starting DemoApplication using Java 1.8.0_161 on zhouwenwudeMBP with PID 65287 (/Users/markchou/Downloads/demo/target/demo-0.0.1-SNAPSHOT.jar started by markchou in /Users/markchou/Downloads/demo)
+2025-11-20 14:07:26.936 [main] INFO  com.example.demo.DemoApplication [unknown-node:8080] - The following 1 profile is active: "docker"
+2025-11-20 14:07:26.997 [main] WARN  c.a.c.n.c.NacosConfigDataLoader [unknown-node:8080] - [Nacos Config] config[dataId=nacos-demo-service.properties, group=DEFAULT_GROUP] is empty
+2025-11-20 14:07:27.763 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-20 14:07:27.764 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-11-20 14:07:27.780 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Finished Spring Data repository scanning in 10 ms. Found 0 Elasticsearch repository interfaces.
+2025-11-20 14:07:28.142 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-20 14:07:28.142 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-11-20 14:07:28.186 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [unknown-node:8080] - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2025-11-20 14:07:28.199 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Finished Spring Data repository scanning in 56 ms. Found 1 Elasticsearch repository interfaces.
+2025-11-20 14:07:28.204 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-20 14:07:28.205 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-11-20 14:07:28.210 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [unknown-node:8080] - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2025-11-20 14:07:28.211 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Finished Spring Data repository scanning in 5 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-11-20 14:07:28.226 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-20 14:07:28.230 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-20 14:07:28.249 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [unknown-node:8080] - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-11-20 14:07:28.261 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interfaces.
+2025-11-20 14:07:28.283 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-20 14:07:28.285 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-20 14:07:28.305 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [unknown-node:8080] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-11-20 14:07:28.306 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [unknown-node:8080] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-11-20 14:07:28.306 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-11-20 14:07:28.557 [main] INFO  o.s.cloud.context.scope.GenericScope [unknown-node:8080] - BeanFactory id=48e01b9e-4c1e-3fbf-84c5-9cdf07b3f0a8
+2025-11-20 14:07:29.337 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [unknown-node:8080] - Tomcat initialized with port(s): 8080 (http)
+2025-11-20 14:07:29.353 [main] INFO  o.a.catalina.core.StandardService [unknown-node:8080] - Starting service [Tomcat]
+2025-11-20 14:07:29.354 [main] INFO  o.a.catalina.core.StandardEngine [unknown-node:8080] - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-11-20 14:07:29.476 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [unknown-node:8080] - Initializing Spring embedded WebApplicationContext
+2025-11-20 14:07:29.477 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [unknown-node:8080] - Root WebApplicationContext: initialization completed in 2478 ms
+2025-11-20 14:07:30.427 [main] INFO  com.zaxxer.hikari.HikariDataSource [unknown-node:8080] - HikariPool-1 - Starting...
+2025-11-20 14:07:31.571 [main] ERROR com.zaxxer.hikari.pool.HikariPool [unknown-node:8080] - HikariPool-1 - Exception during pool initialization.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818)
+	... 57 common frames omitted
+Caused by: java.net.UnknownHostException: host.docker.internal
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:130)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 60 common frames omitted
+2025-11-20 14:07:31.656 [main] WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator [unknown-node:8080] - HHH000342: Could not obtain connection to query metadata
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818)
+	... 57 common frames omitted
+Caused by: java.net.UnknownHostException: host.docker.internal
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:130)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 60 common frames omitted
+2025-11-20 14:07:31.719 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean [unknown-node:8080] - Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2025-11-20 14:07:31.720 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [unknown-node:8080] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2025-11-20 14:07:31.726 [main] INFO  o.a.catalina.core.StandardService [unknown-node:8080] - Stopping service [Tomcat]
+2025-11-20 14:07:31.749 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener [unknown-node:8080] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-11-20 14:07:31.785 [main] ERROR o.s.boot.SpringApplication [unknown-node:8080] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 24 common frames omitted
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:138)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 41 common frames omitted
+2025-11-20 14:07:31.798 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter [unknown-node:8080] - [NotifyCenter] Start destroying Publisher
+2025-11-20 14:07:31.798 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder [unknown-node:8080] - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-11-20 14:07:31.799 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter [unknown-node:8080] - [NotifyCenter] Destruction of the end
+2025-11-20 14:07:31.800 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder [unknown-node:8080] - [HttpClientBeanHolder] Destruction of the end
+2025-11-20 14:10:13.394 [main] INFO  com.example.demo.DemoApplication [unknown-node:8080] - Starting DemoApplication using Java 1.8.0_161 on zhouwenwudeMBP with PID 65356 (/Users/markchou/Downloads/demo/target/demo-0.0.1-SNAPSHOT.jar started by markchou in /Users/markchou/Downloads/demo)
+2025-11-20 14:10:13.397 [main] INFO  com.example.demo.DemoApplication [unknown-node:8080] - The following 1 profile is active: "docker"
+2025-11-20 14:10:13.466 [main] WARN  c.a.c.n.c.NacosConfigDataLoader [unknown-node:8080] - [Nacos Config] config[dataId=nacos-demo-service.properties, group=DEFAULT_GROUP] is empty
+2025-11-20 14:10:14.126 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-20 14:10:14.126 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-11-20 14:10:14.140 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Finished Spring Data repository scanning in 8 ms. Found 0 Elasticsearch repository interfaces.
+2025-11-20 14:10:14.505 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-20 14:10:14.506 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-11-20 14:10:14.549 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [unknown-node:8080] - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2025-11-20 14:10:14.569 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Finished Spring Data repository scanning in 62 ms. Found 1 Elasticsearch repository interfaces.
+2025-11-20 14:10:14.577 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-20 14:10:14.578 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-11-20 14:10:14.585 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [unknown-node:8080] - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2025-11-20 14:10:14.586 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Finished Spring Data repository scanning in 7 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-11-20 14:10:14.601 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-20 14:10:14.602 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-20 14:10:14.614 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [unknown-node:8080] - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-11-20 14:10:14.624 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interfaces.
+2025-11-20 14:10:14.653 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-20 14:10:14.656 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-20 14:10:14.676 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [unknown-node:8080] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-11-20 14:10:14.677 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [unknown-node:8080] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-11-20 14:10:14.677 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [unknown-node:8080] - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2025-11-20 14:10:14.957 [main] INFO  o.s.cloud.context.scope.GenericScope [unknown-node:8080] - BeanFactory id=48e01b9e-4c1e-3fbf-84c5-9cdf07b3f0a8
+2025-11-20 14:10:15.732 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [unknown-node:8080] - Tomcat initialized with port(s): 8080 (http)
+2025-11-20 14:10:15.750 [main] INFO  o.a.catalina.core.StandardService [unknown-node:8080] - Starting service [Tomcat]
+2025-11-20 14:10:15.751 [main] INFO  o.a.catalina.core.StandardEngine [unknown-node:8080] - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-11-20 14:10:15.902 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [unknown-node:8080] - Initializing Spring embedded WebApplicationContext
+2025-11-20 14:10:15.902 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [unknown-node:8080] - Root WebApplicationContext: initialization completed in 2434 ms
+2025-11-20 14:10:16.776 [main] INFO  com.zaxxer.hikari.HikariDataSource [unknown-node:8080] - HikariPool-1 - Starting...
+2025-11-20 14:10:17.942 [main] ERROR com.zaxxer.hikari.pool.HikariPool [unknown-node:8080] - HikariPool-1 - Exception during pool initialization.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818)
+	... 57 common frames omitted
+Caused by: java.net.UnknownHostException: host.docker.internal
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:130)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 60 common frames omitted
+2025-11-20 14:10:17.995 [main] WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator [unknown-node:8080] - HHH000342: Could not obtain connection to query metadata
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818)
+	... 57 common frames omitted
+Caused by: java.net.UnknownHostException: host.docker.internal
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:130)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 60 common frames omitted
+2025-11-20 14:10:18.033 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean [unknown-node:8080] - Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2025-11-20 14:10:18.034 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [unknown-node:8080] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2025-11-20 14:10:18.039 [main] INFO  o.a.catalina.core.StandardService [unknown-node:8080] - Stopping service [Tomcat]
+2025-11-20 14:10:18.062 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener [unknown-node:8080] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-11-20 14:10:18.105 [main] ERROR o.s.boot.SpringApplication [unknown-node:8080] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 24 common frames omitted
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:138)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 41 common frames omitted
+2025-11-20 14:10:18.116 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder [unknown-node:8080] - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-11-20 14:10:18.117 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter [unknown-node:8080] - [NotifyCenter] Start destroying Publisher
+2025-11-20 14:10:18.117 [Thread-7] WARN  c.a.nacos.common.notify.NotifyCenter [unknown-node:8080] - [NotifyCenter] Destruction of the end
+2025-11-20 14:10:18.117 [Thread-2] WARN  c.a.n.c.http.HttpClientBeanHolder [unknown-node:8080] - [HttpClientBeanHolder] Destruction of the end

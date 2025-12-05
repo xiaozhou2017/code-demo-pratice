@@ -26,8 +26,8 @@ public class OpenApiConfig {
     @Bean
     public GroupedOpenApi adminApi() {
         return GroupedOpenApi.builder()
-                .group("demo-pratice") // 分组名
-                .pathsToMatch("/api/**") // 匹配以/admin开头的路径
+                .group("redis") // 分组名
+                .pathsToMatch("/api/redis/**") // 匹配以/admin开头的路径
                 .build();
     }
 

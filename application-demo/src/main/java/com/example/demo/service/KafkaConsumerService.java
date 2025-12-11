@@ -18,7 +18,7 @@ public class KafkaConsumerService {
     @KafkaListener(
             topics = "${app.kafka.topics.user-events}",
             groupId = "user-events-consumer",
-            containerFactory = "kafkaListenerContainerFactory"
+            containerFactory = "myManualImmediateFactory"
     )
     public void consumeUserEvent(
             @Payload String message,

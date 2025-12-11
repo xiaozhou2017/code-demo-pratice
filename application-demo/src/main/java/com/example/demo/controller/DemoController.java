@@ -16,6 +16,8 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j;
+import org.redisson.api.RBucket;
+import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
@@ -48,6 +50,7 @@ public class DemoController {
     ThreadLocal threadLocal=new ThreadLocal();
         private final ExecutorService servicelocal=Executors.newFixedThreadPool(3);
     //
+
     private  ISysUserService service;
 
     private  PayAccountGroupRepository payAccountGroupService;
@@ -62,6 +65,7 @@ public class DemoController {
     @GetMapping("/api")
     @Operation(summary = "根据用户ID获取用户信息", description = "传入用户ID，返回对应的用户详细信息")
     public ResponseData request() throws JsonProcessingException {
+
         EntityWrapper<SysUser> userWrapper = new EntityWrapper<>();
         userWrapper.eq("account_", "admin");
         Object redisUser = redisTemplate.opsForValue().get("test:sysPageList1");
@@ -77,6 +81,30 @@ public class DemoController {
         redisTemplate.opsForValue().set("test:sysPageList1",SysUser,5, TimeUnit.HOURS);
 
         return ResponseUtil.success(SysUser);
+    }
+    @Autowired
+    private RedissonClient redissonClient;
+
+    @GetMapping("/api/redisson")
+    @Operation(summary = "根据用户ID获取用户信息", description = "传入用户ID，返回对应的用户详细信息")
+    public ResponseData redissonRequest() {
+        // 使用RedissonClient替代RedisTemplate
+        EntityWrapper<SysUser> userWrapper = new EntityWrapper<>();
+        userWrapper.eq("account_", "admin");
+
+        // 使用Redisson的RBucket接口获取缓存
+        RBucket<SysUser> userBucket = redissonClient.getBucket("test:sysPageList2");
+        SysUser redisUser = userBucket.get();
+
+        if(redisUser != null){
+            // Redisson自动处理序列化，无需手动JSON转换
+            return ResponseUtil.success(redisUser);
+        }
+        // 从数据库查询
+        SysUser sysUser = service.selectOne(userWrapper);
+        // 使用Redisson设置缓存，包含5小时过期时间
+        userBucket.set(sysUser, 5, TimeUnit.HOURS);
+        return ResponseUtil.success(sysUser);
     }
     @GetMapping("/xnll")
     @Operation(summary = "根据用户ID获取用户信息", description = "传入用户ID，返回对应的用户详细信息")

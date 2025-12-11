@@ -6,11 +6,14 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import lombok.extern.slf4j.Slf4j;
+import org.redisson.Redisson;
+import org.redisson.api.RedissonClient;
+import org.redisson.codec.JsonJacksonCodec;
+import org.redisson.config.Config;
+import org.redisson.spring.starter.RedissonAutoConfigurationCustomizer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
-import org.springframework.data.redis.connection.RedisSentinelConfiguration;
-import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
@@ -85,6 +88,28 @@ public class RedisConfig {
 
         template.afterPropertiesSet();
         return template;
+    }
+
+    @Bean(destroyMethod = "shutdown")
+    public RedissonClient redissonClient() {
+        Config config = new Config();
+        // 单节点模式配置，请根据您的Redis服务器地址、端口、密码修改
+        config.useSingleServer()
+                .setAddress("redis://127.0.0.1:6379") // 您的Redis地址
+                .setPassword("xlys123456")          // 您的Redis密码，若无密码可删除此行
+                .setDatabase(0);
+        return Redisson.create(config);
+    }
+
+    @Bean
+    public RedissonAutoConfigurationCustomizer redissonCustomizer() {
+        return new RedissonAutoConfigurationCustomizer() {
+            @Override
+            public void customize(Config config) {
+                // 关键配置：设置编码器为 JsonJacksonCodec
+                config.setCodec(new JsonJacksonCodec());
+            }
+        };
     }
 
 }

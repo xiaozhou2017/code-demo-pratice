@@ -80,7 +80,7 @@ public class KafkaTopicConfig {
         return new DefaultKafkaConsumerFactory<>(props);
     }
     // 普通消费工厂（非批量）
-    @Bean
+    @Bean("myManualImmediateFactory")
     public ConcurrentKafkaListenerContainerFactory<String, String> kafkaListenerContainerFactory() {
         ConcurrentKafkaListenerContainerFactory<String, String> factory =
                 new ConcurrentKafkaListenerContainerFactory<>();

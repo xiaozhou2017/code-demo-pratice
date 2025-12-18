@@ -1,10 +1,13 @@
 package com.example.demo;
+
+import com.alibaba.fastjson.JSONObject;
 import com.example.demo.entity.PayAccountGroupEntity;
 import com.example.demo.entity.SysUser;
 import com.example.demo.repository.PayAccountGroupRepository;
 import com.example.demo.service.ISysUserService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
@@ -42,8 +45,9 @@ class DemoApplicationTests {
         System.out.println("hello world");
         test();
     }
+
     @Test
-    public void test(){
+    public void test() {
         int[] arr = {5, 3, 8, 4, 2, 7, 1, 6};
         String[] strArr = {"ac", "adx", "asx", "cx", "bx", "dx", "vx", "ex"};
         int[] reversed = IntStream.of(arr)
@@ -83,7 +87,7 @@ class DemoApplicationTests {
 
         Method toStringMethod = sysUserClass.getMethod("toString");
         String str = (String) toStringMethod.invoke(sysUser);
-        System.out.println(" systemUser.getName():"+ str);
+        System.out.println(" systemUser.getName():" + str);
         Method pkVal = sysUserClass.getDeclaredMethod("pkVal");
         int modifiers = pkVal.getModifiers();
         System.out.println("修饰符: " + Modifier.toString(modifiers));
@@ -92,16 +96,17 @@ class DemoApplicationTests {
         System.out.println("是否是private: " + Modifier.isPrivate(modifiers));
         System.out.println("是否需要setAccessible: " + !Modifier.isPublic(modifiers));
         pkVal.setAccessible(true);
-        Serializable invoke = (Serializable)pkVal.invoke(sysUser);
+        Serializable invoke = (Serializable) pkVal.invoke(sysUser);
 
-        System.out.println(" systemUser.invoke():"+ invoke);
+        System.out.println(" systemUser.invoke():" + invoke);
 
 
     }
+
     /**
      * 设置属性值
      */
-    private  void
+    private void
     setProperty(Object obj, String fieldName, Object value) throws Exception {
         Class<?> clazz = obj.getClass();
 
@@ -114,20 +119,129 @@ class DemoApplicationTests {
 
         System.out.println("设置属性: " + fieldName + " = " + value);
     }
+
     @Test
-    public void testlocalthread(){
+    public void testlocalthread() {
 
-            ExecutorService executor = Executors.newFixedThreadPool(2);
+        ExecutorService executor = Executors.newFixedThreadPool(2, r -> {
+            Thread t=new Thread(r);
+            t.setName("wodexaincheng");
+            t.setDaemon(true);
+            t.setPriority(1);
+            return t;
+        });
 
-            for (int i = 0; i < 5; i++) {
-                executor.execute(() -> {
-                    System.out.println(Thread.currentThread().getName() + " 执行任务");
-                });
-            }
-
-            executor.shutdown();
+        for (int i = 0; i < 5; i++) {
+            executor.execute(() -> {
+                System.out.println(Thread.currentThread().getName() + " 执行任务");
+            });
+        }
+        executor.shutdown();
 
     }
+
+    @Test
+    public void testThread() throws ExecutionException, InterruptedException {
+
+        Thread t1 = new Thread(() -> {
+            System.out.println("当前线程T1: " + Thread.currentThread().getName());
+        });
+//        Thread t3 =new Thread(()->{
+//            try {
+//                t1.join();
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//            System.out.println("当前线程名T3: "+Thread.currentThread().getName());
+//        });
+//
+//        Thread t2 =new Thread(()->{
+//            try {
+//                t1.join();
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//            System.out.println("当前线程名T2: "+Thread.currentThread().getName());
+//        });
+//        t3.start();
+//
+//        t1.start();
+//        t2.start();
+
+//        BlockingQueue blockingQueue=new ArrayBlockingQueue(2);
+//        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(1, 2, 1000, TimeUnit.HOURS, blockingQueue
+//        );
+//        threadPoolExecutor.submit(()->{
+//            System.out.println(Thread.currentThread().getName());
+//        });
+//        threadPoolExecutor.shutdown();
+//
+//
+//        Runnable runnable = new Runnable() {
+//            @Override
+//            public void run() {
+//                System.out.println("当前线程名2: " + Thread.currentThread().getName());
+//            }
+//        };
+//        Thread t2= new Thread(runnable,"task xiancheng");
+//        t2.start();
+//
+//
+//        FutureTask<Object> futureTask = new FutureTask<>(()->"测试");
+//        Thread thread=new Thread(futureTask);
+//        thread.start();
+//        Object o = futureTask.get();
+//        Thread thread3=new Thread(()->{
+//            System.out.println("异步任务结果: 12312");
+//        });
+//        thread3.start();
+//        System.out.println("异步任务结果: " + JSONObject.toJSONString(o));
+
+        ThreadFactory factory = r -> {
+            Thread thread = new Thread(r);
+            thread.setName("我的ThreadPoolExecutor线程---");
+            return thread;
+        };
+//        ExecutorService executor = Executors.newFixedThreadPool(2, factory);
+        ExecutorService executor = Executors.newSingleThreadExecutor( factory);
+        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(1, 2,
+                3, TimeUnit.SECONDS, new ArrayBlockingQueue<>(10), factory);
+        Runnable simpleTask = () -> {
+            System.out.println("执行Runnable任务");
+        };
+
+        Callable<Object> callable = Executors.callable(simpleTask);
+
+        Future<Object> submit = executor.submit(callable);
+
+        submit.get();
+
+        CompletableFuture<String> stringCompletableFuture = CompletableFuture.supplyAsync(() -> {
+            System.out.println("当前线程: " + Thread.currentThread().getName()); // 打印线程名
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            return "xiao ming";
+        }, threadPoolExecutor).completeOnTimeout("超时", 500, TimeUnit.MILLISECONDS);
+
+        CompletableFuture<String> stringCompletableFuture1 = CompletableFuture.supplyAsync(() -> {
+            System.out.println("当前线程: " + Thread.currentThread().getName()); // 打印线程名
+            return " love ";
+        });
+        CompletableFuture<String> stringCompletableFuture2 = CompletableFuture.supplyAsync(() -> {
+            System.out.println("当前线程: " + Thread.currentThread().getName()); // 打印线程名
+            return "xiao hua";
+        });
+
+        CompletableFuture<String> finalResult = stringCompletableFuture.
+                thenCombine(stringCompletableFuture1, (name1, name2) -> name1 + name2).thenCombine(stringCompletableFuture2, (name1, name2) -> name1 + name2);
+        System.out.println(finalResult.join());
+
+    }
+
+
     @Mock
     private ISysUserService service;
     @Mock
@@ -170,10 +284,6 @@ class DemoApplicationTests {
         executor.shutdown();
 
     }
-
-
-
-
 
 
 }

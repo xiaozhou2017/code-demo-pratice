@@ -32,6 +32,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.view.RedirectView;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisFactory;
 
@@ -68,9 +69,19 @@ public class DemoController {
         this.payAccountGroupService = payAccountGroupRepository;
     }
 
+    @GetMapping("/api/redirect")
+    public RedirectView redirectToRedissonWithView() {
+        RedirectView redirectView = new RedirectView("http://localhost:8082/api/redis/api/redisson");
+        // 可以设置为 301（永久重定向）或 302（临时重定向）
+        // redirectView.setStatusCode(HttpStatus.MOVED_PERMANENTLY); // 301
+        return redirectView;
+    }
+
     @GetMapping("/api")
     @Operation(summary = "根据用户ID获取用户信息", description = "传入用户ID，返回对应的用户详细信息")
     public ResponseData request() throws Exception {
+
+
 
         EntityWrapper<SysUser> userWrapper = new EntityWrapper<>();
         userWrapper.eq("account_", "admin");

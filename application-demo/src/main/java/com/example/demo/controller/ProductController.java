@@ -6,6 +6,7 @@ import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.example.demo.entity.Product;
 import com.example.demo.service.ProductService;
 
+import com.example.demo.service.StockService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -25,6 +26,9 @@ public class ProductController {
 
     @Autowired
     private ProductService productService;
+
+    @Autowired
+    private StockService stockService;
 
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     @Operation(summary = "创建新产品")
@@ -65,5 +69,13 @@ public class ProductController {
     @GetMapping("/health")
     public ResponseEntity<String> health() {
         return ResponseEntity.ok("Service is running");
+    }
+
+
+    @PostMapping("/order")
+    public ResponseEntity<Boolean> order(@RequestParam String id,
+                                         @RequestParam Integer quantity) {
+        boolean result = stockService.decreaseStock(id, quantity);
+        return ResponseEntity.ok(result);
     }
 }

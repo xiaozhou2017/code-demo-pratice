@@ -1,0 +1,429 @@
+2025-12-19 12:28:19.208 [main] INFO  com.example.demo.DemoApplication [node2:8082] - Starting DemoApplication using Java 11.0.11 on zhouwenwudeMacBook-Pro.local with PID 17458 (/Users/markchou/Documents/code-demo-pratice/application-demo/target/classes started by markchou in /Users/markchou/Documents/code-demo-pratice)
+2025-12-19 12:28:19.212 [main] INFO  com.example.demo.DemoApplication [node2:8082] - The following 1 profile is active: "local-nacos"
+2025-12-19 12:28:19.250 [main] INFO  c.a.c.n.c.NacosConfigDataLoader [node2:8082] - [Nacos Config] Load config[dataId=nacos-demo-service-local.properties, group=DEFAULT_GROUP] success
+2025-12-19 12:28:20.020 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:28:20.021 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-12-19 12:28:20.031 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Finished Spring Data repository scanning in 6 ms. Found 0 Elasticsearch repository interfaces.
+2025-12-19 12:28:20.190 [main] DEBUG org.apache.ibatis.logging.LogFactory [node2:8082] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2025-12-19 12:28:20.195 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner [node2:8082] - Identified candidate component class: file [/Users/markchou/Documents/code-demo-pratice/application-demo/target/classes/com/example/demo/mapper/SysUserMapper.class]
+2025-12-19 12:28:20.196 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner [node2:8082] - Creating MapperFactoryBean with name 'sysUserMapper' and 'com.example.demo.mapper.SysUserMapper' mapperInterface
+2025-12-19 12:28:20.197 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner [node2:8082] - Enabling autowire by type for MapperFactoryBean with name 'sysUserMapper'.
+2025-12-19 12:28:20.554 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:28:20.554 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-12-19 12:28:20.577 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node2:8082] - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2025-12-19 12:28:20.631 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Finished Spring Data repository scanning in 76 ms. Found 1 Elasticsearch repository interfaces.
+2025-12-19 12:28:20.636 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:28:20.637 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-12-19 12:28:20.641 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node2:8082] - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2025-12-19 12:28:20.643 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Finished Spring Data repository scanning in 6 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-12-19 12:28:20.654 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:28:20.655 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-19 12:28:20.668 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node2:8082] - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-12-19 12:28:20.673 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interfaces.
+2025-12-19 12:28:20.687 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:28:20.688 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-19 12:28:20.702 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node2:8082] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-19 12:28:20.703 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node2:8082] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-19 12:28:20.703 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-12-19 12:28:20.977 [main] INFO  o.s.cloud.context.scope.GenericScope [node2:8082] - BeanFactory id=b5547575-4fd6-3500-b4eb-b773a9f472c8
+2025-12-19 12:28:21.621 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node2:8082] - Tomcat initialized with port(s): 8082 (http)
+2025-12-19 12:28:21.633 [main] INFO  o.a.catalina.core.StandardService [node2:8082] - Starting service [Tomcat]
+2025-12-19 12:28:21.634 [main] INFO  o.a.catalina.core.StandardEngine [node2:8082] - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-12-19 12:28:21.781 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [node2:8082] - Initializing Spring embedded WebApplicationContext
+2025-12-19 12:28:21.782 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [node2:8082] - Root WebApplicationContext: initialization completed in 2529 ms
+2025-12-19 12:28:22.479 [main] INFO  com.zaxxer.hikari.HikariDataSource [node2:8082] - HikariPool-1 - Starting...
+2025-12-19 12:28:22.646 [main] INFO  com.zaxxer.hikari.HikariDataSource [node2:8082] - HikariPool-1 - Start completed.
+2025-12-19 12:28:23.575 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [node2:8082] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 12:28:23.714 [main] INFO  org.redisson.Version [node2:8082] - Redisson 3.16.0
+2025-12-19 12:28:23.751 [main] WARN  i.n.r.d.DnsServerAddressStreamProviders [node2:8082] - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+2025-12-19 12:28:23.981 [redisson-netty-2-17] INFO  o.r.c.p.MasterPubSubConnectionPool [node2:8082] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2025-12-19 12:28:24.043 [redisson-netty-2-18] INFO  o.r.c.pool.MasterConnectionPool [node2:8082] - 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2025-12-19 12:28:24.424 [main] DEBUG o.m.spring.SqlSessionFactoryBean [node2:8082] - Property 'mapperLocations' was not specified or no matching resources found
+2025-12-19 12:28:26.835 [main] WARN  org.elasticsearch.client.RestClient [node2:8082] - request [HEAD http://localhost:9200/newproducts?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned 1 warnings: [299 Elasticsearch-7.17.0-bee86328705acaa9a6daede7140defd4d9ec56bd "[ignore_throttled] parameter is deprecated because frozen indices have been deprecated. Consider cold or frozen tiers in place of frozen indices."]
+2025-12-19 12:28:27.134 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [node2:8082] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-19 12:28:27.583 [Thread-6] WARN  c.a.nacos.common.notify.NotifyCenter [node2:8082] - [NotifyCenter] Start destroying Publisher
+2025-12-19 12:28:27.583 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder [node2:8082] - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-12-19 12:28:27.584 [Thread-6] WARN  c.a.nacos.common.notify.NotifyCenter [node2:8082] - [NotifyCenter] Destruction of the end
+2025-12-19 12:28:27.585 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder [node2:8082] - [HttpClientBeanHolder] Destruction of the end
+2025-12-19 12:28:27.620 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer [node2:8082] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2025-12-19 12:28:30.205 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka version: 3.0.2
+2025-12-19 12:28:30.205 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:28:30.205 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka startTimeMs: 1766118510204
+2025-12-19 12:29:11.194 [main] INFO  com.example.demo.DemoApplication [node2:8082] - Starting DemoApplication using Java 11.0.11 on zhouwenwudeMacBook-Pro.local with PID 17493 (/Users/markchou/Documents/code-demo-pratice/application-demo/target/classes started by markchou in /Users/markchou/Documents/code-demo-pratice)
+2025-12-19 12:29:11.196 [main] INFO  com.example.demo.DemoApplication [node2:8082] - The following 1 profile is active: "local-nacos"
+2025-12-19 12:29:11.234 [main] INFO  c.a.c.n.c.NacosConfigDataLoader [node2:8082] - [Nacos Config] Load config[dataId=nacos-demo-service-local.properties, group=DEFAULT_GROUP] success
+2025-12-19 12:29:12.053 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:29:12.054 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-12-19 12:29:12.066 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Finished Spring Data repository scanning in 7 ms. Found 0 Elasticsearch repository interfaces.
+2025-12-19 12:29:12.241 [main] DEBUG org.apache.ibatis.logging.LogFactory [node2:8082] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2025-12-19 12:29:12.248 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner [node2:8082] - Identified candidate component class: file [/Users/markchou/Documents/code-demo-pratice/application-demo/target/classes/com/example/demo/mapper/SysUserMapper.class]
+2025-12-19 12:29:12.249 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner [node2:8082] - Creating MapperFactoryBean with name 'sysUserMapper' and 'com.example.demo.mapper.SysUserMapper' mapperInterface
+2025-12-19 12:29:12.251 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner [node2:8082] - Enabling autowire by type for MapperFactoryBean with name 'sysUserMapper'.
+2025-12-19 12:29:12.581 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:29:12.581 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-12-19 12:29:12.604 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node2:8082] - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2025-12-19 12:29:12.656 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Finished Spring Data repository scanning in 74 ms. Found 1 Elasticsearch repository interfaces.
+2025-12-19 12:29:12.661 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:29:12.661 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-12-19 12:29:12.664 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node2:8082] - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2025-12-19 12:29:12.666 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Finished Spring Data repository scanning in 5 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-12-19 12:29:12.675 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:29:12.676 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-19 12:29:12.688 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node2:8082] - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-12-19 12:29:12.693 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interfaces.
+2025-12-19 12:29:12.704 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:29:12.706 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-19 12:29:12.718 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node2:8082] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-19 12:29:12.719 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node2:8082] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-19 12:29:12.719 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-12-19 12:29:12.954 [main] INFO  o.s.cloud.context.scope.GenericScope [node2:8082] - BeanFactory id=b5547575-4fd6-3500-b4eb-b773a9f472c8
+2025-12-19 12:29:13.640 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node2:8082] - Tomcat initialized with port(s): 8082 (http)
+2025-12-19 12:29:13.652 [main] INFO  o.a.catalina.core.StandardService [node2:8082] - Starting service [Tomcat]
+2025-12-19 12:29:13.652 [main] INFO  o.a.catalina.core.StandardEngine [node2:8082] - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-12-19 12:29:13.787 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [node2:8082] - Initializing Spring embedded WebApplicationContext
+2025-12-19 12:29:13.787 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [node2:8082] - Root WebApplicationContext: initialization completed in 2552 ms
+2025-12-19 12:29:14.532 [main] INFO  com.zaxxer.hikari.HikariDataSource [node2:8082] - HikariPool-1 - Starting...
+2025-12-19 12:29:14.719 [main] INFO  com.zaxxer.hikari.HikariDataSource [node2:8082] - HikariPool-1 - Start completed.
+2025-12-19 12:29:15.703 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [node2:8082] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 12:29:15.827 [main] INFO  org.redisson.Version [node2:8082] - Redisson 3.16.0
+2025-12-19 12:29:15.859 [main] WARN  i.n.r.d.DnsServerAddressStreamProviders [node2:8082] - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+2025-12-19 12:29:16.127 [redisson-netty-2-16] INFO  o.r.c.p.MasterPubSubConnectionPool [node2:8082] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2025-12-19 12:29:16.219 [redisson-netty-2-19] INFO  o.r.c.pool.MasterConnectionPool [node2:8082] - 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2025-12-19 12:29:16.501 [main] DEBUG o.m.spring.SqlSessionFactoryBean [node2:8082] - Property 'mapperLocations' was not specified or no matching resources found
+2025-12-19 12:29:17.936 [main] WARN  org.elasticsearch.client.RestClient [node2:8082] - request [HEAD http://localhost:9200/newproducts?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned 1 warnings: [299 Elasticsearch-7.17.0-bee86328705acaa9a6daede7140defd4d9ec56bd "[ignore_throttled] parameter is deprecated because frozen indices have been deprecated. Consider cold or frozen tiers in place of frozen indices."]
+2025-12-19 12:29:18.096 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [node2:8082] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-19 12:29:18.433 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer [node2:8082] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2025-12-19 12:29:20.158 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka version: 3.0.2
+2025-12-19 12:29:20.159 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:29:20.159 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka startTimeMs: 1766118560157
+2025-12-19 12:29:50.171 [main] ERROR o.s.kafka.core.KafkaAdmin [node2:8082] - Could not configure topics
+org.springframework.kafka.KafkaException: Timed out waiting to get existing topics; nested exception is java.util.concurrent.TimeoutException
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$10(KafkaAdmin.java:423)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1336)
+	at org.springframework.kafka.core.KafkaAdmin.checkPartitions(KafkaAdmin.java:402)
+	at org.springframework.kafka.core.KafkaAdmin.addOrModifyTopicsIfNeeded(KafkaAdmin.java:298)
+	at org.springframework.kafka.core.KafkaAdmin.initialize(KafkaAdmin.java:201)
+	at org.springframework.kafka.core.KafkaAdmin.afterSingletonsInstantiated(KafkaAdmin.java:171)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:974)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:15)
+Caused by: java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:180)
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$10(KafkaAdmin.java:405)
+	... 15 common frames omitted
+2025-12-19 12:30:00.173 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - App info kafka.admin.client for adminclient-1 unregistered
+2025-12-19 12:30:00.178 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Metrics scheduler closed
+2025-12-19 12:30:00.178 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 12:30:00.178 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Metrics reporters closed
+2025-12-19 12:30:00.242 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka version: 3.0.2
+2025-12-19 12:30:00.242 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:30:00.242 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka startTimeMs: 1766118600242
+2025-12-19 12:30:00.262 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka version: 3.0.2
+2025-12-19 12:30:00.262 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:30:00.263 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka startTimeMs: 1766118600262
+2025-12-19 12:30:00.269 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka version: 3.0.2
+2025-12-19 12:30:00.269 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:30:00.269 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka startTimeMs: 1766118600268
+2025-12-19 12:30:00.275 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka version: 3.0.2
+2025-12-19 12:30:00.275 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:30:00.275 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka startTimeMs: 1766118600275
+2025-12-19 12:30:00.291 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node2:8082] - Tomcat started on port(s): 8082 (http) with context path ''
+2025-12-19 12:30:00.315 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [node2:8082] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-12-19 12:30:00.315 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [node2:8082] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-12-19 12:30:00.470 [main] INFO  c.a.c.n.r.NacosServiceRegistry [node2:8082] - nacos registry, DEFAULT_GROUP nacos-demo-service 192.168.31.227:8082 register finished
+2025-12-19 12:30:00.720 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node2:8082] - Tomcat initialized with port(s): 8081 (http)
+2025-12-19 12:30:00.721 [main] INFO  o.a.catalina.core.StandardService [node2:8082] - Starting service [Tomcat]
+2025-12-19 12:30:00.721 [main] INFO  o.a.catalina.core.StandardEngine [node2:8082] - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-12-19 12:30:00.738 [main] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] [node2:8082] - Initializing Spring embedded WebApplicationContext
+2025-12-19 12:30:00.738 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [node2:8082] - Root WebApplicationContext: initialization completed in 94 ms
+2025-12-19 12:30:00.750 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [node2:8082] - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-12-19 12:30:00.766 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer [node2:8082] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2025-12-19 12:30:01.068 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [node2:8082] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8081 is already in use
+2025-12-19 12:30:01.070 [main] INFO  o.a.catalina.core.StandardService [node2:8082] - Stopping service [Tomcat]
+2025-12-19 12:30:01.077 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [node2:8082] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8081 is already in use
+2025-12-19 12:30:01.081 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Metrics scheduler closed
+2025-12-19 12:30:01.081 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 12:30:01.082 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Metrics reporters closed
+2025-12-19 12:30:01.083 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - App info kafka.consumer for consumer-notification-batch-consumer-1 unregistered
+2025-12-19 12:30:01.083 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [node2:8082] - notification-batch-consumer: Consumer stopped
+2025-12-19 12:30:01.085 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Metrics scheduler closed
+2025-12-19 12:30:01.085 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 12:30:01.085 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Metrics reporters closed
+2025-12-19 12:30:01.086 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - App info kafka.consumer for consumer-pattern-consumer-2 unregistered
+2025-12-19 12:30:01.086 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [node2:8082] - pattern-consumer: Consumer stopped
+2025-12-19 12:30:01.086 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Metrics scheduler closed
+2025-12-19 12:30:01.086 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 12:30:01.086 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Metrics reporters closed
+2025-12-19 12:30:01.087 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - App info kafka.consumer for consumer-user-events-consumer-3 unregistered
+2025-12-19 12:30:01.087 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [node2:8082] - user-events-consumer: Consumer stopped
+2025-12-19 12:30:01.088 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Metrics scheduler closed
+2025-12-19 12:30:01.088 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 12:30:01.088 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Metrics reporters closed
+2025-12-19 12:30:01.089 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - App info kafka.consumer for consumer-order-events-consumer-4 unregistered
+2025-12-19 12:30:01.089 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [node2:8082] - order-events-consumer: Consumer stopped
+2025-12-19 12:30:01.098 [main] INFO  c.a.c.n.r.NacosServiceRegistry [node2:8082] - De-registering from Nacos Server now...
+2025-12-19 12:30:01.106 [main] INFO  c.a.c.n.r.NacosServiceRegistry [node2:8082] - De-registration finished.
+2025-12-19 12:30:01.475 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [node2:8082] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 12:30:01.479 [main] INFO  com.zaxxer.hikari.HikariDataSource [node2:8082] - HikariPool-1 - Shutdown initiated...
+2025-12-19 12:30:01.489 [main] INFO  com.zaxxer.hikari.HikariDataSource [node2:8082] - HikariPool-1 - Shutdown completed.
+2025-12-19 12:30:01.493 [main] INFO  o.a.catalina.core.StandardService [node2:8082] - Stopping service [Tomcat]
+2025-12-19 12:30:01.514 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener [node2:8082] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-12-19 12:30:01.535 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter [node2:8082] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2025-12-19 12:30:02.099 [Thread-6] WARN  c.a.nacos.common.notify.NotifyCenter [node2:8082] - [NotifyCenter] Start destroying Publisher
+2025-12-19 12:30:02.099 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder [node2:8082] - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-12-19 12:30:02.099 [Thread-6] WARN  c.a.nacos.common.notify.NotifyCenter [node2:8082] - [NotifyCenter] Destruction of the end
+2025-12-19 12:33:46.727 [main] INFO  com.example.demo.DemoApplication [node2:8082] - Starting DemoApplication using Java 11.0.11 on zhouwenwudeMacBook-Pro.local with PID 17579 (/Users/markchou/Documents/code-demo-pratice/application-demo/target/classes started by markchou in /Users/markchou/Documents/code-demo-pratice)
+2025-12-19 12:33:46.731 [main] INFO  com.example.demo.DemoApplication [node2:8082] - The following 1 profile is active: "local-nacos"
+2025-12-19 12:33:46.815 [main] INFO  c.a.c.n.c.NacosConfigDataLoader [node2:8082] - [Nacos Config] Load config[dataId=nacos-demo-service-local.properties, group=DEFAULT_GROUP] success
+2025-12-19 12:33:48.032 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:33:48.034 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-12-19 12:33:48.052 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Finished Spring Data repository scanning in 10 ms. Found 0 Elasticsearch repository interfaces.
+2025-12-19 12:33:48.340 [main] DEBUG org.apache.ibatis.logging.LogFactory [node2:8082] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2025-12-19 12:33:48.348 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner [node2:8082] - Identified candidate component class: file [/Users/markchou/Documents/code-demo-pratice/application-demo/target/classes/com/example/demo/mapper/SysUserMapper.class]
+2025-12-19 12:33:48.349 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner [node2:8082] - Creating MapperFactoryBean with name 'sysUserMapper' and 'com.example.demo.mapper.SysUserMapper' mapperInterface
+2025-12-19 12:33:48.350 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner [node2:8082] - Enabling autowire by type for MapperFactoryBean with name 'sysUserMapper'.
+2025-12-19 12:33:48.691 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:33:48.692 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-12-19 12:33:48.717 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node2:8082] - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2025-12-19 12:33:48.784 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Finished Spring Data repository scanning in 92 ms. Found 1 Elasticsearch repository interfaces.
+2025-12-19 12:33:48.793 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:33:48.794 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-12-19 12:33:48.798 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node2:8082] - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2025-12-19 12:33:48.800 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Finished Spring Data repository scanning in 6 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-12-19 12:33:48.809 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:33:48.810 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-19 12:33:48.834 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node2:8082] - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-12-19 12:33:48.839 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interfaces.
+2025-12-19 12:33:48.853 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:33:48.854 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-19 12:33:48.871 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node2:8082] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-19 12:33:48.871 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node2:8082] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-19 12:33:48.872 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2025-12-19 12:33:49.185 [main] INFO  o.s.cloud.context.scope.GenericScope [node2:8082] - BeanFactory id=4b7927b6-192a-3a47-bd08-50f8c9c03832
+2025-12-19 12:33:49.247 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder [node2:8082] - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-12-19 12:33:49.248 [Thread-6] WARN  c.a.nacos.common.notify.NotifyCenter [node2:8082] - [NotifyCenter] Start destroying Publisher
+2025-12-19 12:33:49.249 [Thread-6] WARN  c.a.nacos.common.notify.NotifyCenter [node2:8082] - [NotifyCenter] Destruction of the end
+2025-12-19 12:33:49.251 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder [node2:8082] - [HttpClientBeanHolder] Destruction of the end
+2025-12-19 12:33:49.989 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node2:8082] - Tomcat initialized with port(s): 8082 (http)
+2025-12-19 12:33:50.179 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [node2:8082] - Root WebApplicationContext: initialization completed in 3362 ms
+2025-12-19 12:33:51.112 [main] INFO  com.zaxxer.hikari.HikariDataSource [node2:8082] - HikariPool-1 - Starting...
+2025-12-19 12:33:51.295 [main] INFO  com.zaxxer.hikari.HikariDataSource [node2:8082] - HikariPool-1 - Start completed.
+2025-12-19 12:33:52.250 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [node2:8082] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 12:33:52.417 [main] INFO  org.redisson.Version [node2:8082] - Redisson 3.16.0
+2025-12-19 12:33:52.452 [main] WARN  i.n.r.d.DnsServerAddressStreamProviders [node2:8082] - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+2025-12-19 12:33:52.681 [redisson-netty-2-20] INFO  o.r.c.p.MasterPubSubConnectionPool [node2:8082] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2025-12-19 12:33:52.724 [redisson-netty-2-18] INFO  o.r.c.pool.MasterConnectionPool [node2:8082] - 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2025-12-19 12:33:53.010 [main] DEBUG o.m.spring.SqlSessionFactoryBean [node2:8082] - Property 'mapperLocations' was not specified or no matching resources found
+2025-12-19 12:33:54.399 [main] WARN  org.elasticsearch.client.RestClient [node2:8082] - request [HEAD http://localhost:9200/newproducts?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned 1 warnings: [299 Elasticsearch-7.17.0-bee86328705acaa9a6daede7140defd4d9ec56bd "[ignore_throttled] parameter is deprecated because frozen indices have been deprecated. Consider cold or frozen tiers in place of frozen indices."]
+2025-12-19 12:33:54.549 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [node2:8082] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-19 12:33:54.837 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer [node2:8082] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2025-12-19 12:33:56.231 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [node2:8082] - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-12-19 12:33:56.439 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka version: 3.0.2
+2025-12-19 12:33:56.439 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:33:56.439 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka startTimeMs: 1766118836437
+2025-12-19 12:34:26.451 [main] ERROR o.s.kafka.core.KafkaAdmin [node2:8082] - Could not configure topics
+org.springframework.kafka.KafkaException: Timed out waiting to get existing topics; nested exception is java.util.concurrent.TimeoutException
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$10(KafkaAdmin.java:423)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1336)
+	at org.springframework.kafka.core.KafkaAdmin.checkPartitions(KafkaAdmin.java:402)
+	at org.springframework.kafka.core.KafkaAdmin.addOrModifyTopicsIfNeeded(KafkaAdmin.java:298)
+	at org.springframework.kafka.core.KafkaAdmin.initialize(KafkaAdmin.java:201)
+	at org.springframework.kafka.core.KafkaAdmin.afterSingletonsInstantiated(KafkaAdmin.java:171)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:974)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:15)
+Caused by: java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:180)
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$10(KafkaAdmin.java:405)
+	... 15 common frames omitted
+2025-12-19 12:34:36.454 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - App info kafka.admin.client for adminclient-1 unregistered
+2025-12-19 12:34:36.459 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Metrics scheduler closed
+2025-12-19 12:34:36.459 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 12:34:36.460 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Metrics reporters closed
+2025-12-19 12:34:36.528 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka version: 3.0.2
+2025-12-19 12:34:36.529 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:34:36.529 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka startTimeMs: 1766118876528
+2025-12-19 12:34:36.549 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka version: 3.0.2
+2025-12-19 12:34:36.549 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:34:36.549 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka startTimeMs: 1766118876549
+2025-12-19 12:34:36.556 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka version: 3.0.2
+2025-12-19 12:34:36.556 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:34:36.556 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka startTimeMs: 1766118876556
+2025-12-19 12:34:36.562 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka version: 3.0.2
+2025-12-19 12:34:36.563 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:34:36.563 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka startTimeMs: 1766118876562
+2025-12-19 12:34:36.579 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node2:8082] - Tomcat started on port(s): 8082 (http) with context path ''
+2025-12-19 12:34:36.602 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [node2:8082] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-12-19 12:34:36.602 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [node2:8082] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-12-19 12:34:36.751 [main] INFO  c.a.c.n.r.NacosServiceRegistry [node2:8082] - nacos registry, DEFAULT_GROUP nacos-demo-service 192.168.31.227:8082 register finished
+2025-12-19 12:34:36.784 [main] INFO  com.example.demo.DemoApplication [node2:8082] - Started DemoApplication in 52.712 seconds (JVM running for 54.142)
+2025-12-19 12:34:36.815 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Metrics scheduler closed
+2025-12-19 12:34:36.815 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 12:34:36.815 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Metrics scheduler closed
+2025-12-19 12:34:36.815 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 12:34:36.815 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Metrics reporters closed
+2025-12-19 12:34:36.815 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Metrics scheduler closed
+2025-12-19 12:34:36.816 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 12:34:36.816 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Metrics reporters closed
+2025-12-19 12:34:36.816 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Metrics scheduler closed
+2025-12-19 12:34:36.816 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 12:34:36.816 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Metrics reporters closed
+2025-12-19 12:34:36.816 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Metrics reporters closed
+2025-12-19 12:34:36.823 [main] INFO  c.a.c.n.r.NacosContextRefresher [node2:8082] - [Nacos Config] Listening config: dataId=nacos-demo-service-local.properties, group=DEFAULT_GROUP
+2025-12-19 12:34:36.823 [main] INFO  com.example.demo.DemoApplication [node2:8082] - 应用启动完成，开始测试日志输出
+2025-12-19 12:34:36.825 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - App info kafka.consumer for consumer-notification-batch-consumer-1 unregistered
+2025-12-19 12:34:36.825 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [node2:8082] - notification-batch-consumer: Consumer stopped
+2025-12-19 12:34:36.825 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - App info kafka.consumer for consumer-order-events-consumer-4 unregistered
+2025-12-19 12:34:36.826 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [node2:8082] - order-events-consumer: Consumer stopped
+2025-12-19 12:34:36.827 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - App info kafka.consumer for consumer-pattern-consumer-2 unregistered
+2025-12-19 12:34:36.827 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [node2:8082] - pattern-consumer: Consumer stopped
+2025-12-19 12:34:36.827 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - App info kafka.consumer for consumer-user-events-consumer-3 unregistered
+2025-12-19 12:34:36.828 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [node2:8082] - user-events-consumer: Consumer stopped
+2025-12-19 12:34:36.841 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry [node2:8082] - De-registering from Nacos Server now...
+2025-12-19 12:34:36.852 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry [node2:8082] - De-registration finished.
+2025-12-19 12:34:37.231 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [node2:8082] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 12:34:37.238 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [node2:8082] - HikariPool-1 - Shutdown initiated...
+2025-12-19 12:34:37.256 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [node2:8082] - HikariPool-1 - Shutdown completed.
+2025-12-19 12:36:31.433 [main] INFO  com.example.demo.DemoApplication [node2:8082] - Starting DemoApplication using Java 11.0.11 on zhouwenwudeMacBook-Pro.local with PID 17638 (/Users/markchou/Documents/code-demo-pratice/application-demo/target/classes started by markchou in /Users/markchou/Documents/code-demo-pratice)
+2025-12-19 12:36:31.436 [main] INFO  com.example.demo.DemoApplication [node2:8082] - The following 1 profile is active: "local-nacos"
+2025-12-19 12:36:31.473 [main] INFO  c.a.c.n.c.NacosConfigDataLoader [node2:8082] - [Nacos Config] Load config[dataId=nacos-demo-service-local.properties, group=DEFAULT_GROUP] success
+2025-12-19 12:36:32.491 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:36:32.492 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-12-19 12:36:32.502 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Finished Spring Data repository scanning in 6 ms. Found 0 Elasticsearch repository interfaces.
+2025-12-19 12:36:32.654 [main] DEBUG org.apache.ibatis.logging.LogFactory [node2:8082] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2025-12-19 12:36:32.660 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner [node2:8082] - Identified candidate component class: file [/Users/markchou/Documents/code-demo-pratice/application-demo/target/classes/com/example/demo/mapper/SysUserMapper.class]
+2025-12-19 12:36:32.661 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner [node2:8082] - Creating MapperFactoryBean with name 'sysUserMapper' and 'com.example.demo.mapper.SysUserMapper' mapperInterface
+2025-12-19 12:36:32.662 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner [node2:8082] - Enabling autowire by type for MapperFactoryBean with name 'sysUserMapper'.
+2025-12-19 12:36:32.946 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:36:32.946 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-12-19 12:36:32.966 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node2:8082] - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2025-12-19 12:36:33.013 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Finished Spring Data repository scanning in 66 ms. Found 1 Elasticsearch repository interfaces.
+2025-12-19 12:36:33.018 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:36:33.018 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-12-19 12:36:33.022 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node2:8082] - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2025-12-19 12:36:33.024 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Finished Spring Data repository scanning in 5 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-12-19 12:36:33.033 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:36:33.033 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-19 12:36:33.046 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node2:8082] - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-12-19 12:36:33.052 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interfaces.
+2025-12-19 12:36:33.063 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:36:33.064 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-19 12:36:33.075 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node2:8082] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-19 12:36:33.075 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node2:8082] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-19 12:36:33.075 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node2:8082] - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-12-19 12:36:33.321 [main] INFO  o.s.cloud.context.scope.GenericScope [node2:8082] - BeanFactory id=4b7927b6-192a-3a47-bd08-50f8c9c03832
+2025-12-19 12:36:33.920 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node2:8082] - Tomcat initialized with port(s): 8082 (http)
+2025-12-19 12:36:33.929 [main] INFO  o.a.catalina.core.StandardService [node2:8082] - Starting service [Tomcat]
+2025-12-19 12:36:33.929 [main] INFO  o.a.catalina.core.StandardEngine [node2:8082] - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-12-19 12:36:34.048 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [node2:8082] - Initializing Spring embedded WebApplicationContext
+2025-12-19 12:36:34.048 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [node2:8082] - Root WebApplicationContext: initialization completed in 2573 ms
+2025-12-19 12:36:34.864 [main] INFO  com.zaxxer.hikari.HikariDataSource [node2:8082] - HikariPool-1 - Starting...
+2025-12-19 12:36:35.048 [main] INFO  com.zaxxer.hikari.HikariDataSource [node2:8082] - HikariPool-1 - Start completed.
+2025-12-19 12:36:35.931 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [node2:8082] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 12:36:36.053 [main] INFO  org.redisson.Version [node2:8082] - Redisson 3.16.0
+2025-12-19 12:36:36.092 [main] WARN  i.n.r.d.DnsServerAddressStreamProviders [node2:8082] - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+2025-12-19 12:36:36.466 [redisson-netty-2-22] INFO  o.r.c.p.MasterPubSubConnectionPool [node2:8082] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2025-12-19 12:36:36.537 [redisson-netty-2-19] INFO  o.r.c.pool.MasterConnectionPool [node2:8082] - 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2025-12-19 12:36:36.817 [main] DEBUG o.m.spring.SqlSessionFactoryBean [node2:8082] - Property 'mapperLocations' was not specified or no matching resources found
+2025-12-19 12:36:38.129 [main] WARN  org.elasticsearch.client.RestClient [node2:8082] - request [HEAD http://localhost:9200/newproducts?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned 1 warnings: [299 Elasticsearch-7.17.0-bee86328705acaa9a6daede7140defd4d9ec56bd "[ignore_throttled] parameter is deprecated because frozen indices have been deprecated. Consider cold or frozen tiers in place of frozen indices."]
+2025-12-19 12:36:38.266 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [node2:8082] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-19 12:36:38.567 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer [node2:8082] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2025-12-19 12:36:39.964 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [node2:8082] - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-12-19 12:36:40.157 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka version: 3.0.2
+2025-12-19 12:36:40.158 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:36:40.158 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka startTimeMs: 1766119000156
+2025-12-19 12:37:10.522 [main] ERROR o.s.kafka.core.KafkaAdmin [node2:8082] - Could not configure topics
+org.springframework.kafka.KafkaException: Timed out waiting to get existing topics; nested exception is java.util.concurrent.TimeoutException
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$10(KafkaAdmin.java:423)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1336)
+	at org.springframework.kafka.core.KafkaAdmin.checkPartitions(KafkaAdmin.java:402)
+	at org.springframework.kafka.core.KafkaAdmin.addOrModifyTopicsIfNeeded(KafkaAdmin.java:298)
+	at org.springframework.kafka.core.KafkaAdmin.initialize(KafkaAdmin.java:201)
+	at org.springframework.kafka.core.KafkaAdmin.afterSingletonsInstantiated(KafkaAdmin.java:171)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:974)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:15)
+Caused by: java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:180)
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$10(KafkaAdmin.java:405)
+	... 15 common frames omitted
+2025-12-19 12:37:20.535 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - App info kafka.admin.client for adminclient-1 unregistered
+2025-12-19 12:37:20.542 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Metrics scheduler closed
+2025-12-19 12:37:20.542 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 12:37:20.542 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics [node2:8082] - Metrics reporters closed
+2025-12-19 12:37:20.681 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka version: 3.0.2
+2025-12-19 12:37:20.682 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:37:20.682 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka startTimeMs: 1766119040681
+2025-12-19 12:37:20.723 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka version: 3.0.2
+2025-12-19 12:37:20.723 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:37:20.723 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka startTimeMs: 1766119040722
+2025-12-19 12:37:20.730 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka version: 3.0.2
+2025-12-19 12:37:20.731 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:37:20.731 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka startTimeMs: 1766119040730
+2025-12-19 12:37:20.738 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka version: 3.0.2
+2025-12-19 12:37:20.738 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:37:20.738 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node2:8082] - Kafka startTimeMs: 1766119040738
+2025-12-19 12:37:20.761 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node2:8082] - Tomcat started on port(s): 8082 (http) with context path ''
+2025-12-19 12:37:20.921 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [node2:8082] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-12-19 12:37:20.922 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [node2:8082] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-12-19 12:37:21.129 [main] INFO  c.a.c.n.r.NacosServiceRegistry [node2:8082] - nacos registry, DEFAULT_GROUP nacos-demo-service 192.168.31.227:8082 register finished
+2025-12-19 12:37:21.156 [main] INFO  com.example.demo.DemoApplication [node2:8082] - Started DemoApplication in 51.829 seconds (JVM running for 52.846)
+2025-12-19 12:37:21.180 [main] INFO  c.a.c.n.r.NacosContextRefresher [node2:8082] - [Nacos Config] Listening config: dataId=nacos-demo-service-local.properties, group=DEFAULT_GROUP
+2025-12-19 12:37:21.181 [main] INFO  com.example.demo.DemoApplication [node2:8082] - 应用启动完成，开始测试日志输出
+2025-12-19 12:37:22.309 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [node2:8082] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-19 12:37:22.309 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet [node2:8082] - Initializing Servlet 'dispatcherServlet'
+2025-12-19 12:37:22.313 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet [node2:8082] - Completed initialization in 4 ms
+2025-12-19 12:41:44.974 [http-nio-0.0.0.0-8082-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node2:8082] - [请求开始] ID: 8bb3c516
+2025-12-19 12:41:44.975 [http-nio-0.0.0.0-8082-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node2:8082] - 请求路径: /api/redis/api/redisson
+2025-12-19 12:41:44.975 [http-nio-0.0.0.0-8082-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node2:8082] - 客户端IP: 0:0:0:0:0:0:0:1
+2025-12-19 12:41:44.975 [http-nio-0.0.0.0-8082-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node2:8082] - 方法: DemoController.redissonRequest
+2025-12-19 12:41:45.029 [http-nio-0.0.0.0-8082-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node2:8082] - 参数: {}
+2025-12-19 12:41:45.099 [http-nio-0.0.0.0-8082-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node2:8082] - 响应状态: 200
+2025-12-19 12:41:45.133 [http-nio-0.0.0.0-8082-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node2:8082] - 响应内容: {"code":0,"data":{"account_":"admin","create_by":1,"create_time":"2016-05-06 10:06:52","enable_":1,"id_":1,"is_del":0,"money":0.0,"name_pinyin":"GUANLIYUAN","password_":"e10adc3949ba59abbe56e057f20f883e","remark_":"","sex_":1,"update_by":1,"update_time":"2019-02-26 22:27:39","user_name":"管理员","user_type":"2","wei_bo":""},"message":"执行成功"}
+2025-12-19 12:41:45.133 [http-nio-0.0.0.0-8082-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node2:8082] - 响应大小: 340 字符
+2025-12-19 12:41:45.133 [http-nio-0.0.0.0-8082-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node2:8082] - [请求完成] ID: 8bb3c516, 耗时: 69ms
+2025-12-19 20:53:07.302 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node2:8082] - HikariPool-1 - Retrograde clock change detected (housekeeper delta=27s990ms), soft-evicting connections from pool.
+2025-12-19 21:23:20.462 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node2:8082] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m13s162ms).
+2025-12-19 21:54:13.032 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node2:8082] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m22s556ms).

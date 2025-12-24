@@ -14,7 +14,7 @@
         <spring-boot.version>2.6.13</spring-boot.version>
     </properties>
     <parent>
-        <groupId>org.example</groupId>
+        <groupId>com.example</groupId>
         <artifactId>code-demo-pratice</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>

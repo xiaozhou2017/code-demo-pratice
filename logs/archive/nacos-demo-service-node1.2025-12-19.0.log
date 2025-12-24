@@ -1,0 +1,1249 @@
+2025-12-19 01:36:18.341 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node1:8080] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h8s725ms).
+2025-12-19 01:36:48.167 [redisson-timer-4-1] ERROR o.r.c.handler.PingConnectionHandler [node1:8080] - Unable to send PING command over channel: [id: 0x0b7d9dbf, L:/127.0.0.1:60132 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:219)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 01:36:48.205 [redisson-timer-4-1] ERROR o.r.c.handler.PingConnectionHandler [node1:8080] - Unable to send PING command over channel: [id: 0xf5077e53, L:/127.0.0.1:60133 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:219)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 01:36:48.207 [redisson-timer-4-1] ERROR o.r.c.handler.PingConnectionHandler [node1:8080] - Unable to send PING command over channel: [id: 0xf2a8e9e7, L:/127.0.0.1:60137 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:219)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 01:36:48.210 [redisson-timer-4-1] ERROR o.r.c.handler.PingConnectionHandler [node1:8080] - Unable to send PING command over channel: [id: 0x1649d62c, L:/127.0.0.1:60138 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:219)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 01:36:48.212 [redisson-timer-4-1] ERROR o.r.c.handler.PingConnectionHandler [node1:8080] - Unable to send PING command over channel: [id: 0x34052a6b, L:/127.0.0.1:60136 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:219)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 01:36:48.215 [redisson-timer-4-1] ERROR o.r.c.handler.PingConnectionHandler [node1:8080] - Unable to send PING command over channel: [id: 0xf6faa293, L:/127.0.0.1:60140 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:219)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 01:36:48.216 [redisson-timer-4-1] ERROR o.r.c.handler.PingConnectionHandler [node1:8080] - Unable to send PING command over channel: [id: 0xbd3b035d, L:/127.0.0.1:60135 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:219)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 01:36:48.221 [redisson-timer-4-1] ERROR o.r.c.handler.PingConnectionHandler [node1:8080] - Unable to send PING command over channel: [id: 0x54927be4, L:/127.0.0.1:60131 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:219)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 01:36:48.224 [redisson-timer-4-1] ERROR o.r.c.handler.PingConnectionHandler [node1:8080] - Unable to send PING command over channel: [id: 0xdfe42a1f, L:/127.0.0.1:60139 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:219)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 01:36:48.228 [redisson-timer-4-1] ERROR o.r.c.handler.PingConnectionHandler [node1:8080] - Unable to send PING command over channel: [id: 0xbd1353dd, L:/127.0.0.1:60141 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:219)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 01:36:48.230 [redisson-timer-4-1] ERROR o.r.c.handler.PingConnectionHandler [node1:8080] - Unable to send PING command over channel: [id: 0x4c14d0ca, L:/127.0.0.1:60134 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:219)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 01:36:48.233 [redisson-timer-4-1] ERROR o.r.c.handler.PingConnectionHandler [node1:8080] - Unable to send PING command over channel: [id: 0xad17cd2c, L:/127.0.0.1:60142 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:219)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 01:36:48.234 [redisson-timer-4-1] ERROR o.r.c.handler.PingConnectionHandler [node1:8080] - Unable to send PING command over channel: [id: 0x48cb712a, L:/127.0.0.1:60143 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:219)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 01:36:48.245 [redisson-timer-4-1] ERROR o.r.c.handler.PingConnectionHandler [node1:8080] - Unable to send PING command over channel: [id: 0xb5ab9b60, L:/127.0.0.1:60144 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:219)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 01:36:48.247 [redisson-timer-4-1] ERROR o.r.c.handler.PingConnectionHandler [node1:8080] - Unable to send PING command over channel: [id: 0xa90fcd7a, L:/127.0.0.1:60145 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:219)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 01:36:48.252 [redisson-timer-4-1] ERROR o.r.c.handler.PingConnectionHandler [node1:8080] - Unable to send PING command over channel: [id: 0x2d3eb0bc, L:/127.0.0.1:60146 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:219)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 01:36:48.255 [redisson-timer-4-1] ERROR o.r.c.handler.PingConnectionHandler [node1:8080] - Unable to send PING command over channel: [id: 0xb328e8f6, L:/127.0.0.1:60149 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:219)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 01:36:48.264 [redisson-timer-4-1] ERROR o.r.c.handler.PingConnectionHandler [node1:8080] - Unable to send PING command over channel: [id: 0x90c2f1e8, L:0.0.0.0/0.0.0.0:60153 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:219)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 01:36:48.267 [redisson-timer-4-1] ERROR o.r.c.handler.PingConnectionHandler [node1:8080] - Unable to send PING command over channel: [id: 0xe0e424e6, L:/127.0.0.1:60147 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:219)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 01:36:48.359 [redisson-timer-4-1] ERROR o.r.c.handler.PingConnectionHandler [node1:8080] - Unable to send PING command over channel: [id: 0x62dff325, L:/127.0.0.1:60152 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:219)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 03:36:25.216 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node1:8080] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h6s895ms).
+2025-12-19 03:36:25.927 [redisson-timer-4-1] ERROR o.r.c.handler.PingConnectionHandler [node1:8080] - Unable to send PING command over channel: [id: 0x172276bf, L:/127.0.0.1:60148 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:219)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 03:36:26.276 [redisson-timer-4-1] ERROR o.r.c.handler.PingConnectionHandler [node1:8080] - Unable to send PING command over channel: [id: 0x9bbdae61, L:/127.0.0.1:60151 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:219)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 03:36:26.310 [redisson-timer-4-1] ERROR o.r.c.handler.PingConnectionHandler [node1:8080] - Unable to send PING command over channel: [id: 0x0486a438, L:0.0.0.0/0.0.0.0:60154]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:219)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 03:36:26.321 [redisson-timer-4-1] ERROR o.r.c.handler.PingConnectionHandler [node1:8080] - Unable to send PING command over channel: [id: 0x27bd9faf, L:/127.0.0.1:60155 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:219)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 03:36:26.323 [redisson-timer-4-1] ERROR o.r.c.handler.PingConnectionHandler [node1:8080] - Unable to send PING command over channel: [id: 0x82f7bb04, L:/127.0.0.1:60150 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$1(RedisConnection.java:219)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 05:36:35.210 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node1:8080] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h9s919ms).
+2025-12-19 07:36:44.099 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node1:8080] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h8s961ms).
+2025-12-19 07:48:34.150 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node1:8080] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m50s47ms).
+2025-12-19 08:34:50.007 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node1:8080] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46m15s867ms).
+2025-12-19 10:05:34.249 [http-nio-8081-exec-4] INFO  o.a.coyote.http11.Http11Processor [node1:8080] - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x060xf20x010x000x060xee0x030x030xe60x1buy0xee0x8d0xa70xbfx)0xacIY0xe80x10v0xb20x92B4?0xb0d0xdd0xfd0xd9Mm5_0x9b0x80 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 10:05:34.249 [http-nio-8081-exec-3] INFO  o.a.coyote.http11.Http11Processor [node1:8080] - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x060xd20x010x000x060xce0x030x03q0xd10xaf0xfcy0xc3[0xcbb60xbdt0xb50x82/:W40xc6mm0xba0x970x0e0xe10x190xde0x890xf1Ir0xfe ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 10:06:16.673 [http-nio-0.0.0.0-8080-exec-2] INFO  o.a.coyote.http11.Http11Processor [node1:8080] - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x060xb20x010x000x060xae0x030x030x8f)0xab0xbeu"0x14A0xbe>}80xdf0x06\0x92c0xf0h0x120x010x9d0xde0x9010xa8A0xb1Q0xcaC` ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 10:06:16.695 [http-nio-0.0.0.0-8080-exec-3] INFO  o.a.coyote.http11.Http11Processor [node1:8080] - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x070x120x010x000x070x0e0x030x030xcd]c0xaeVV0x8c0xc10xed0xab0xe6Ku%0x010xe50xb40xc50x980x120x9d0x0c0xd9)0x85X0xb90xb5`>h- ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 10:06:36.393 [http-nio-0.0.0.0-8080-exec-7] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求开始] ID: 97afbd8b
+2025-12-19 10:06:36.404 [http-nio-0.0.0.0-8080-exec-7] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 请求路径: /api/redis/token
+2025-12-19 10:06:36.404 [http-nio-0.0.0.0-8080-exec-7] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 客户端IP: 0:0:0:0:0:0:0:1
+2025-12-19 10:06:36.404 [http-nio-0.0.0.0-8080-exec-7] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 方法: DemoController.token
+2025-12-19 10:06:36.512 [http-nio-0.0.0.0-8080-exec-7] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 参数: {"username":["xiaozhou"]}
+2025-12-19 10:06:36.850 [http-nio-0.0.0.0-8080-exec-7] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应状态: 200
+2025-12-19 10:06:36.853 [http-nio-0.0.0.0-8080-exec-7] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应内容: {"code":0,"data":{"expiresIn":"3600000","accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTA5OTk2LCJleHAiOjE3NjYxMTAwMDF9.lwFGTdrBzvTwsQGcjvjrjOkew40xrG0l4LMGs1afXik","tokenType":"Bearer","refreshToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTA5OTk2LCJleHAiOjE3NjczMTk1OTZ9.wWufOW79Cz9-1AsXacUk0kHAwNHD9u92RGcvoKFD75U"},"message":"执行成功"}
+2025-12-19 10:06:36.853 [http-nio-0.0.0.0-8080-exec-7] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应大小: 396 字符
+2025-12-19 10:06:36.853 [http-nio-0.0.0.0-8080-exec-7] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求完成] ID: 97afbd8b, 耗时: 336ms
+2025-12-19 10:28:26.969 [Thread-6] WARN  c.a.nacos.common.notify.NotifyCenter [node1:8080] - [NotifyCenter] Start destroying Publisher
+2025-12-19 10:28:26.967 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder [node1:8080] - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-12-19 10:28:27.001 [Thread-6] WARN  c.a.nacos.common.notify.NotifyCenter [node1:8080] - [NotifyCenter] Destruction of the end
+2025-12-19 10:28:27.072 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder [node1:8080] - [HttpClientBeanHolder] Destruction of the end
+2025-12-19 10:28:27.809 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics scheduler closed
+2025-12-19 10:28:27.809 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics scheduler closed
+2025-12-19 10:28:27.810 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 10:28:27.810 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 10:28:27.810 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics reporters closed
+2025-12-19 10:28:27.810 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics reporters closed
+2025-12-19 10:28:27.809 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics scheduler closed
+2025-12-19 10:28:27.809 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics scheduler closed
+2025-12-19 10:28:27.810 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 10:28:27.810 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 10:28:27.811 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics reporters closed
+2025-12-19 10:28:27.811 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics reporters closed
+2025-12-19 10:28:27.831 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - App info kafka.consumer for consumer-order-events-consumer-4 unregistered
+2025-12-19 10:28:27.834 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - App info kafka.consumer for consumer-user-events-consumer-3 unregistered
+2025-12-19 10:28:27.835 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - App info kafka.consumer for consumer-notification-batch-consumer-1 unregistered
+2025-12-19 10:28:27.837 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - App info kafka.consumer for consumer-pattern-consumer-2 unregistered
+2025-12-19 10:28:27.842 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [node1:8080] - user-events-consumer: Consumer stopped
+2025-12-19 10:28:27.842 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [node1:8080] - pattern-consumer: Consumer stopped
+2025-12-19 10:28:27.842 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [node1:8080] - notification-batch-consumer: Consumer stopped
+2025-12-19 10:28:27.842 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [node1:8080] - order-events-consumer: Consumer stopped
+2025-12-19 10:28:28.005 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry [node1:8080] - De-registering from Nacos Server now...
+2025-12-19 10:28:28.336 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry [node1:8080] - De-registration finished.
+2025-12-19 10:28:29.073 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [node1:8080] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 10:28:38.710 [main] INFO  com.example.demo.DemoApplication [node1:8080] - Starting DemoApplication using Java 11.0.11 on zhouwenwudeMacBook-Pro.local with PID 15548 (/Users/markchou/Documents/code-demo-pratice/application-demo/target/classes started by markchou in /Users/markchou/Documents/code-demo-pratice)
+2025-12-19 10:28:38.713 [main] INFO  com.example.demo.DemoApplication [node1:8080] - The following 1 profile is active: "local-nacos"
+2025-12-19 10:28:38.755 [main] INFO  c.a.c.n.c.NacosConfigDataLoader [node1:8080] - [Nacos Config] Load config[dataId=nacos-demo-service-local.properties, group=DEFAULT_GROUP] success
+2025-12-19 10:28:39.703 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 10:28:39.704 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-12-19 10:28:39.718 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Finished Spring Data repository scanning in 8 ms. Found 0 Elasticsearch repository interfaces.
+2025-12-19 10:28:39.905 [main] DEBUG org.apache.ibatis.logging.LogFactory [node1:8080] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2025-12-19 10:28:39.917 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner [node1:8080] - Identified candidate component class: file [/Users/markchou/Documents/code-demo-pratice/application-demo/target/classes/com/example/demo/mapper/SysUserMapper.class]
+2025-12-19 10:28:39.919 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner [node1:8080] - Creating MapperFactoryBean with name 'sysUserMapper' and 'com.example.demo.mapper.SysUserMapper' mapperInterface
+2025-12-19 10:28:39.920 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner [node1:8080] - Enabling autowire by type for MapperFactoryBean with name 'sysUserMapper'.
+2025-12-19 10:28:40.281 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 10:28:40.281 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-12-19 10:28:40.313 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node1:8080] - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2025-12-19 10:28:40.378 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Finished Spring Data repository scanning in 96 ms. Found 1 Elasticsearch repository interfaces.
+2025-12-19 10:28:40.383 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 10:28:40.383 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-12-19 10:28:40.387 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node1:8080] - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2025-12-19 10:28:40.389 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Finished Spring Data repository scanning in 5 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-12-19 10:28:40.402 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 10:28:40.402 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-19 10:28:40.418 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node1:8080] - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-12-19 10:28:40.423 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interfaces.
+2025-12-19 10:28:40.440 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 10:28:40.442 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-19 10:28:40.457 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node1:8080] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-19 10:28:40.457 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node1:8080] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-19 10:28:40.457 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-12-19 10:28:40.789 [main] INFO  o.s.cloud.context.scope.GenericScope [node1:8080] - BeanFactory id=b5547575-4fd6-3500-b4eb-b773a9f472c8
+2025-12-19 10:28:41.473 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node1:8080] - Tomcat initialized with port(s): 8080 (https)
+2025-12-19 10:28:41.487 [main] INFO  o.a.catalina.core.StandardService [node1:8080] - Starting service [Tomcat]
+2025-12-19 10:28:41.487 [main] INFO  o.a.catalina.core.StandardEngine [node1:8080] - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-12-19 10:28:41.644 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [node1:8080] - Initializing Spring embedded WebApplicationContext
+2025-12-19 10:28:41.644 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [node1:8080] - Root WebApplicationContext: initialization completed in 2886 ms
+2025-12-19 10:28:42.436 [main] INFO  com.zaxxer.hikari.HikariDataSource [node1:8080] - HikariPool-1 - Starting...
+2025-12-19 10:28:42.654 [main] INFO  com.zaxxer.hikari.HikariDataSource [node1:8080] - HikariPool-1 - Start completed.
+2025-12-19 10:28:43.936 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [node1:8080] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 10:28:44.092 [main] INFO  org.redisson.Version [node1:8080] - Redisson 3.16.0
+2025-12-19 10:28:44.131 [main] WARN  i.n.r.d.DnsServerAddressStreamProviders [node1:8080] - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+2025-12-19 10:28:44.417 [redisson-netty-2-13] INFO  o.r.c.p.MasterPubSubConnectionPool [node1:8080] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2025-12-19 10:28:44.508 [redisson-netty-2-19] INFO  o.r.c.pool.MasterConnectionPool [node1:8080] - 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2025-12-19 10:28:44.838 [main] DEBUG o.m.spring.SqlSessionFactoryBean [node1:8080] - Property 'mapperLocations' was not specified or no matching resources found
+2025-12-19 10:28:46.556 [main] WARN  org.elasticsearch.client.RestClient [node1:8080] - request [HEAD http://localhost:9200/newproducts?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned 1 warnings: [299 Elasticsearch-7.17.0-bee86328705acaa9a6daede7140defd4d9ec56bd "[ignore_throttled] parameter is deprecated because frozen indices have been deprecated. Consider cold or frozen tiers in place of frozen indices."]
+2025-12-19 10:28:46.798 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [node1:8080] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-19 10:28:47.347 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer [node1:8080] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2025-12-19 10:28:49.701 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka version: 3.0.2
+2025-12-19 10:28:49.702 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 10:28:49.702 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka startTimeMs: 1766111329700
+2025-12-19 10:29:19.718 [main] ERROR o.s.kafka.core.KafkaAdmin [node1:8080] - Could not configure topics
+org.springframework.kafka.KafkaException: Timed out waiting to get existing topics; nested exception is java.util.concurrent.TimeoutException
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$10(KafkaAdmin.java:423)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1336)
+	at org.springframework.kafka.core.KafkaAdmin.checkPartitions(KafkaAdmin.java:402)
+	at org.springframework.kafka.core.KafkaAdmin.addOrModifyTopicsIfNeeded(KafkaAdmin.java:298)
+	at org.springframework.kafka.core.KafkaAdmin.initialize(KafkaAdmin.java:201)
+	at org.springframework.kafka.core.KafkaAdmin.afterSingletonsInstantiated(KafkaAdmin.java:171)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:974)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:15)
+Caused by: java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:180)
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$10(KafkaAdmin.java:405)
+	... 15 common frames omitted
+2025-12-19 10:29:29.719 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - App info kafka.admin.client for adminclient-1 unregistered
+2025-12-19 10:29:29.724 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics scheduler closed
+2025-12-19 10:29:29.725 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 10:29:29.725 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics reporters closed
+2025-12-19 10:29:29.812 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka version: 3.0.2
+2025-12-19 10:29:29.813 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 10:29:29.813 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka startTimeMs: 1766111369812
+2025-12-19 10:29:29.838 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka version: 3.0.2
+2025-12-19 10:29:29.839 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 10:29:29.839 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka startTimeMs: 1766111369838
+2025-12-19 10:29:29.846 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka version: 3.0.2
+2025-12-19 10:29:29.846 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 10:29:29.846 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka startTimeMs: 1766111369846
+2025-12-19 10:29:29.853 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka version: 3.0.2
+2025-12-19 10:29:29.853 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 10:29:29.853 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka startTimeMs: 1766111369853
+2025-12-19 10:29:30.309 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node1:8080] - Tomcat started on port(s): 8080 (https) with context path ''
+2025-12-19 10:29:30.334 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [node1:8080] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-12-19 10:29:30.335 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [node1:8080] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-12-19 10:29:30.589 [main] INFO  c.a.c.n.r.NacosServiceRegistry [node1:8080] - nacos registry, DEFAULT_GROUP nacos-demo-service 192.168.31.227:8080 register finished
+2025-12-19 10:29:30.703 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node1:8080] - Tomcat initialized with port(s): 8081 (https)
+2025-12-19 10:29:30.704 [main] INFO  o.a.catalina.core.StandardService [node1:8080] - Starting service [Tomcat]
+2025-12-19 10:29:30.704 [main] INFO  o.a.catalina.core.StandardEngine [node1:8080] - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-12-19 10:29:30.726 [main] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] [node1:8080] - Initializing Spring embedded WebApplicationContext
+2025-12-19 10:29:30.726 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [node1:8080] - Root WebApplicationContext: initialization completed in 122 ms
+2025-12-19 10:29:30.739 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [node1:8080] - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-12-19 10:29:30.759 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer [node1:8080] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2025-12-19 10:29:31.512 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node1:8080] - Tomcat started on port(s): 8081 (https) with context path ''
+2025-12-19 10:29:31.551 [main] INFO  com.example.demo.DemoApplication [node1:8080] - Started DemoApplication in 55.466 seconds (JVM running for 57.028)
+2025-12-19 10:29:31.591 [main] INFO  c.a.c.n.r.NacosContextRefresher [node1:8080] - [Nacos Config] Listening config: dataId=nacos-demo-service-local.properties, group=DEFAULT_GROUP
+2025-12-19 10:29:31.594 [main] INFO  com.example.demo.DemoApplication [node1:8080] - 应用启动完成，开始测试日志输出
+2025-12-19 10:29:32.133 [RMI TCP Connection(5)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [node1:8080] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-19 10:29:32.134 [RMI TCP Connection(5)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet [node1:8080] - Initializing Servlet 'dispatcherServlet'
+2025-12-19 10:29:32.138 [RMI TCP Connection(5)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet [node1:8080] - Completed initialization in 4 ms
+2025-12-19 10:30:33.810 [https-jsse-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求开始] ID: 14b4fa82
+2025-12-19 10:30:33.811 [https-jsse-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 请求路径: /api/redis/token
+2025-12-19 10:30:33.811 [https-jsse-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 客户端IP: 0:0:0:0:0:0:0:1
+2025-12-19 10:30:33.811 [https-jsse-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 方法: DemoController.token
+2025-12-19 10:30:33.879 [https-jsse-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 参数: {"username":["xiaozhou"]}
+2025-12-19 10:30:33.911 [https-jsse-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应状态: 200
+2025-12-19 10:30:33.943 [https-jsse-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应内容: {"code":0,"data":{"expiresIn":"3600000","accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTExNDMzLCJleHAiOjE3NjYxMTE0Mzh9.TiJ6LI0nqCLHdkl3FGMnHZ2695qryHwiioep4jDPEoU","tokenType":"Bearer","refreshToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTExNDMzLCJleHAiOjE3NjczMjEwMzN9.S2OijdYtuaQg63v_xXYW4wFpqeG9hBXEhxcOyjg9XaI"},"message":"执行成功"}
+2025-12-19 10:30:33.943 [https-jsse-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应大小: 396 字符
+2025-12-19 10:30:33.944 [https-jsse-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求完成] ID: 14b4fa82, 耗时: 32ms
+2025-12-19 10:36:25.900 [Thread-6] WARN  c.a.nacos.common.notify.NotifyCenter [node1:8080] - [NotifyCenter] Start destroying Publisher
+2025-12-19 10:36:25.901 [Thread-6] WARN  c.a.nacos.common.notify.NotifyCenter [node1:8080] - [NotifyCenter] Destruction of the end
+2025-12-19 10:36:25.901 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder [node1:8080] - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-12-19 10:36:25.904 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder [node1:8080] - [HttpClientBeanHolder] Destruction of the end
+2025-12-19 10:36:25.944 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics scheduler closed
+2025-12-19 10:36:25.944 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 10:36:25.944 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics scheduler closed
+2025-12-19 10:36:25.944 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 10:36:25.944 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics reporters closed
+2025-12-19 10:36:25.944 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics reporters closed
+2025-12-19 10:36:25.945 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics scheduler closed
+2025-12-19 10:36:25.945 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 10:36:25.945 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics reporters closed
+2025-12-19 10:36:25.945 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics scheduler closed
+2025-12-19 10:36:25.945 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 10:36:25.946 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics reporters closed
+2025-12-19 10:36:25.950 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - App info kafka.consumer for consumer-user-events-consumer-3 unregistered
+2025-12-19 10:36:25.951 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [node1:8080] - user-events-consumer: Consumer stopped
+2025-12-19 10:36:25.951 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - App info kafka.consumer for consumer-pattern-consumer-2 unregistered
+2025-12-19 10:36:25.951 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [node1:8080] - pattern-consumer: Consumer stopped
+2025-12-19 10:36:25.951 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - App info kafka.consumer for consumer-notification-batch-consumer-1 unregistered
+2025-12-19 10:36:25.951 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [node1:8080] - notification-batch-consumer: Consumer stopped
+2025-12-19 10:36:25.952 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - App info kafka.consumer for consumer-order-events-consumer-4 unregistered
+2025-12-19 10:36:25.952 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [node1:8080] - order-events-consumer: Consumer stopped
+2025-12-19 10:36:25.970 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry [node1:8080] - De-registering from Nacos Server now...
+2025-12-19 10:36:25.986 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry [node1:8080] - De-registration finished.
+2025-12-19 10:36:26.098 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [node1:8080] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 10:36:26.115 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [node1:8080] - HikariPool-1 - Shutdown initiated...
+2025-12-19 10:36:26.135 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [node1:8080] - HikariPool-1 - Shutdown completed.
+2025-12-19 10:36:32.804 [main] INFO  com.example.demo.DemoApplication [node1:8080] - Starting DemoApplication using Java 11.0.11 on zhouwenwudeMacBook-Pro.local with PID 15622 (/Users/markchou/Documents/code-demo-pratice/application-demo/target/classes started by markchou in /Users/markchou/Documents/code-demo-pratice)
+2025-12-19 10:36:32.807 [main] INFO  com.example.demo.DemoApplication [node1:8080] - The following 1 profile is active: "local-nacos"
+2025-12-19 10:36:32.851 [main] INFO  c.a.c.n.c.NacosConfigDataLoader [node1:8080] - [Nacos Config] Load config[dataId=nacos-demo-service-local.properties, group=DEFAULT_GROUP] success
+2025-12-19 10:36:33.708 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 10:36:33.709 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-12-19 10:36:33.722 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Finished Spring Data repository scanning in 8 ms. Found 0 Elasticsearch repository interfaces.
+2025-12-19 10:36:33.892 [main] DEBUG org.apache.ibatis.logging.LogFactory [node1:8080] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2025-12-19 10:36:33.899 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner [node1:8080] - Identified candidate component class: file [/Users/markchou/Documents/code-demo-pratice/application-demo/target/classes/com/example/demo/mapper/SysUserMapper.class]
+2025-12-19 10:36:33.899 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner [node1:8080] - Creating MapperFactoryBean with name 'sysUserMapper' and 'com.example.demo.mapper.SysUserMapper' mapperInterface
+2025-12-19 10:36:33.901 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner [node1:8080] - Enabling autowire by type for MapperFactoryBean with name 'sysUserMapper'.
+2025-12-19 10:36:34.232 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 10:36:34.233 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-12-19 10:36:34.255 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node1:8080] - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2025-12-19 10:36:34.312 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Finished Spring Data repository scanning in 79 ms. Found 1 Elasticsearch repository interfaces.
+2025-12-19 10:36:34.318 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 10:36:34.319 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-12-19 10:36:34.322 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node1:8080] - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2025-12-19 10:36:34.325 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Finished Spring Data repository scanning in 5 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-12-19 10:36:34.336 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 10:36:34.336 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-19 10:36:34.349 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node1:8080] - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-12-19 10:36:34.355 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interfaces.
+2025-12-19 10:36:34.368 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 10:36:34.369 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-19 10:36:34.384 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node1:8080] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-19 10:36:34.385 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node1:8080] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-19 10:36:34.385 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2025-12-19 10:36:34.665 [main] INFO  o.s.cloud.context.scope.GenericScope [node1:8080] - BeanFactory id=b5547575-4fd6-3500-b4eb-b773a9f472c8
+2025-12-19 10:36:35.314 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node1:8080] - Tomcat initialized with port(s): 8080 (http)
+2025-12-19 10:36:35.327 [main] INFO  o.a.catalina.core.StandardService [node1:8080] - Starting service [Tomcat]
+2025-12-19 10:36:35.327 [main] INFO  o.a.catalina.core.StandardEngine [node1:8080] - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-12-19 10:36:35.456 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [node1:8080] - Initializing Spring embedded WebApplicationContext
+2025-12-19 10:36:35.456 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [node1:8080] - Root WebApplicationContext: initialization completed in 2604 ms
+2025-12-19 10:36:36.219 [main] INFO  com.zaxxer.hikari.HikariDataSource [node1:8080] - HikariPool-1 - Starting...
+2025-12-19 10:36:36.403 [main] INFO  com.zaxxer.hikari.HikariDataSource [node1:8080] - HikariPool-1 - Start completed.
+2025-12-19 10:36:37.362 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [node1:8080] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 10:36:37.497 [main] INFO  org.redisson.Version [node1:8080] - Redisson 3.16.0
+2025-12-19 10:36:37.571 [main] WARN  i.n.r.d.DnsServerAddressStreamProviders [node1:8080] - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+2025-12-19 10:36:37.862 [redisson-netty-2-18] INFO  o.r.c.p.MasterPubSubConnectionPool [node1:8080] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2025-12-19 10:36:37.932 [redisson-netty-2-19] INFO  o.r.c.pool.MasterConnectionPool [node1:8080] - 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2025-12-19 10:36:38.239 [main] DEBUG o.m.spring.SqlSessionFactoryBean [node1:8080] - Property 'mapperLocations' was not specified or no matching resources found
+2025-12-19 10:36:39.645 [main] WARN  org.elasticsearch.client.RestClient [node1:8080] - request [HEAD http://localhost:9200/newproducts?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned 1 warnings: [299 Elasticsearch-7.17.0-bee86328705acaa9a6daede7140defd4d9ec56bd "[ignore_throttled] parameter is deprecated because frozen indices have been deprecated. Consider cold or frozen tiers in place of frozen indices."]
+2025-12-19 10:36:39.807 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [node1:8080] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-19 10:36:40.112 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer [node1:8080] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2025-12-19 10:36:41.803 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka version: 3.0.2
+2025-12-19 10:36:41.803 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 10:36:41.803 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka startTimeMs: 1766111801802
+2025-12-19 10:37:11.816 [main] ERROR o.s.kafka.core.KafkaAdmin [node1:8080] - Could not configure topics
+org.springframework.kafka.KafkaException: Timed out waiting to get existing topics; nested exception is java.util.concurrent.TimeoutException
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$10(KafkaAdmin.java:423)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1336)
+	at org.springframework.kafka.core.KafkaAdmin.checkPartitions(KafkaAdmin.java:402)
+	at org.springframework.kafka.core.KafkaAdmin.addOrModifyTopicsIfNeeded(KafkaAdmin.java:298)
+	at org.springframework.kafka.core.KafkaAdmin.initialize(KafkaAdmin.java:201)
+	at org.springframework.kafka.core.KafkaAdmin.afterSingletonsInstantiated(KafkaAdmin.java:171)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:974)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:15)
+Caused by: java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:180)
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$10(KafkaAdmin.java:405)
+	... 15 common frames omitted
+2025-12-19 10:37:21.819 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - App info kafka.admin.client for adminclient-1 unregistered
+2025-12-19 10:37:21.824 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics scheduler closed
+2025-12-19 10:37:21.825 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 10:37:21.825 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics reporters closed
+2025-12-19 10:37:21.895 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka version: 3.0.2
+2025-12-19 10:37:21.895 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 10:37:21.895 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka startTimeMs: 1766111841895
+2025-12-19 10:37:21.919 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka version: 3.0.2
+2025-12-19 10:37:21.919 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 10:37:21.920 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka startTimeMs: 1766111841919
+2025-12-19 10:37:21.929 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka version: 3.0.2
+2025-12-19 10:37:21.929 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 10:37:21.929 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka startTimeMs: 1766111841929
+2025-12-19 10:37:21.937 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka version: 3.0.2
+2025-12-19 10:37:21.937 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 10:37:21.937 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka startTimeMs: 1766111841937
+2025-12-19 10:37:21.957 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node1:8080] - Tomcat started on port(s): 8080 (http) with context path ''
+2025-12-19 10:37:22.026 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [node1:8080] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-12-19 10:37:22.026 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [node1:8080] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-12-19 10:37:22.206 [main] INFO  c.a.c.n.r.NacosServiceRegistry [node1:8080] - nacos registry, DEFAULT_GROUP nacos-demo-service 192.168.31.227:8080 register finished
+2025-12-19 10:37:22.293 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node1:8080] - Tomcat initialized with port(s): 8081 (http)
+2025-12-19 10:37:22.294 [main] INFO  o.a.catalina.core.StandardService [node1:8080] - Starting service [Tomcat]
+2025-12-19 10:37:22.294 [main] INFO  o.a.catalina.core.StandardEngine [node1:8080] - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-12-19 10:37:22.311 [main] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] [node1:8080] - Initializing Spring embedded WebApplicationContext
+2025-12-19 10:37:22.312 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [node1:8080] - Root WebApplicationContext: initialization completed in 99 ms
+2025-12-19 10:37:22.325 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [node1:8080] - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-12-19 10:37:22.345 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer [node1:8080] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2025-12-19 10:37:22.662 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node1:8080] - Tomcat started on port(s): 8081 (http) with context path ''
+2025-12-19 10:37:22.687 [main] INFO  com.example.demo.DemoApplication [node1:8080] - Started DemoApplication in 52.082 seconds (JVM running for 53.089)
+2025-12-19 10:37:22.710 [main] INFO  c.a.c.n.r.NacosContextRefresher [node1:8080] - [Nacos Config] Listening config: dataId=nacos-demo-service-local.properties, group=DEFAULT_GROUP
+2025-12-19 10:37:22.711 [main] INFO  com.example.demo.DemoApplication [node1:8080] - 应用启动完成，开始测试日志输出
+2025-12-19 10:37:23.094 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [node1:8080] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-19 10:37:23.095 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet [node1:8080] - Initializing Servlet 'dispatcherServlet'
+2025-12-19 10:37:23.098 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet [node1:8080] - Completed initialization in 3 ms
+2025-12-19 10:37:25.872 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] [node1:8080] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-19 10:37:25.872 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet [node1:8080] - Initializing Servlet 'dispatcherServlet'
+2025-12-19 10:37:25.873 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet [node1:8080] - Completed initialization in 0 ms
+2025-12-19 11:22:32.038 [http-nio-0.0.0.0-8080-exec-4] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求开始] ID: fc03b020
+2025-12-19 11:22:32.049 [http-nio-0.0.0.0-8080-exec-4] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 请求路径: /api/redis/token
+2025-12-19 11:22:32.050 [http-nio-0.0.0.0-8080-exec-4] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 客户端IP: 0:0:0:0:0:0:0:1
+2025-12-19 11:22:32.050 [http-nio-0.0.0.0-8080-exec-4] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 方法: DemoController.token
+2025-12-19 11:22:32.168 [http-nio-0.0.0.0-8080-exec-4] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 参数: {"username":["xiaozhou"]}
+2025-12-19 11:22:32.293 [http-nio-0.0.0.0-8080-exec-4] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应状态: 200
+2025-12-19 11:22:32.352 [http-nio-0.0.0.0-8080-exec-4] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应内容: {"code":0,"data":{"expiresIn":"3600000","accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTE0NTUyLCJleHAiOjE3NjYxMTQ1NTd9.V6du-UPXvAK44fdKDyirK6Z_U6Td1oeSLovFvAiSYpM","tokenType":"Bearer","refreshToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTE0NTUyLCJleHAiOjE3NjczMjQxNTJ9.JUiqgS-CBrHodvTCDKTNFXTTYSq6A2GK-1Due6KGfLU"},"message":"执行成功"}
+2025-12-19 11:22:32.353 [http-nio-0.0.0.0-8080-exec-4] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应大小: 396 字符
+2025-12-19 11:22:32.353 [http-nio-0.0.0.0-8080-exec-4] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求完成] ID: fc03b020, 耗时: 124ms
+2025-12-19 11:22:37.043 [http-nio-0.0.0.0-8080-exec-5] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求开始] ID: 407566fe
+2025-12-19 11:22:37.043 [http-nio-0.0.0.0-8080-exec-5] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 请求路径: /api/redis/token
+2025-12-19 11:22:37.043 [http-nio-0.0.0.0-8080-exec-5] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 客户端IP: 127.0.0.1
+2025-12-19 11:22:37.044 [http-nio-0.0.0.0-8080-exec-5] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 方法: DemoController.token
+2025-12-19 11:22:37.044 [http-nio-0.0.0.0-8080-exec-5] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 参数: {"username":["xiaozhou"]}
+2025-12-19 11:22:37.049 [http-nio-0.0.0.0-8080-exec-5] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应状态: 200
+2025-12-19 11:22:37.050 [http-nio-0.0.0.0-8080-exec-5] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应内容: {"code":0,"data":{"expiresIn":"3600000","accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTE0NTU3LCJleHAiOjE3NjYxMTQ1NjJ9.u_3voHCXDoe42f2IuEq5dW8sPdZxuahyF7p805DGwcg","tokenType":"Bearer","refreshToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTE0NTU3LCJleHAiOjE3NjczMjQxNTd9.jjoEoSVO6PJlxWgm-x8dRqaVS6_usNwsU21ED10bqng"},"message":"执行成功"}
+2025-12-19 11:22:37.050 [http-nio-0.0.0.0-8080-exec-5] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应大小: 396 字符
+2025-12-19 11:22:37.050 [http-nio-0.0.0.0-8080-exec-5] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求完成] ID: 407566fe, 耗时: 4ms
+2025-12-19 11:24:11.558 [http-nio-0.0.0.0-8080-exec-8] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求开始] ID: a9cc055a
+2025-12-19 11:24:11.559 [http-nio-0.0.0.0-8080-exec-8] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 请求路径: /api/redis/token
+2025-12-19 11:24:11.559 [http-nio-0.0.0.0-8080-exec-8] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 客户端IP: 127.0.0.1
+2025-12-19 11:24:11.560 [http-nio-0.0.0.0-8080-exec-8] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 方法: DemoController.token
+2025-12-19 11:24:11.561 [http-nio-0.0.0.0-8080-exec-8] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 参数: {"username":["xiaozhou"]}
+2025-12-19 11:24:11.568 [http-nio-0.0.0.0-8080-exec-8] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应状态: 200
+2025-12-19 11:24:11.569 [http-nio-0.0.0.0-8080-exec-8] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应内容: {"code":0,"data":{"expiresIn":"3600000","accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTE0NjUxLCJleHAiOjE3NjYxMTQ2NTZ9.FcLJ1alnfBuFvcJG5OSWJ4XhTEl8g4UMB3r_yAGWpxI","tokenType":"Bearer","refreshToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTE0NjUxLCJleHAiOjE3NjczMjQyNTF9.OsEAGSTW2nfyyFZOwQ6aWg6Eqdv9w8sRcXMFoKHjfoo"},"message":"执行成功"}
+2025-12-19 11:24:11.569 [http-nio-0.0.0.0-8080-exec-8] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应大小: 396 字符
+2025-12-19 11:24:11.569 [http-nio-0.0.0.0-8080-exec-8] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求完成] ID: a9cc055a, 耗时: 7ms
+2025-12-19 11:48:24.364 [http-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求开始] ID: 94652cca
+2025-12-19 11:48:24.372 [http-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 请求路径: /api/redis/token
+2025-12-19 11:48:24.372 [http-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 客户端IP: 127.0.0.1
+2025-12-19 11:48:24.373 [http-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 方法: DemoController.token
+2025-12-19 11:48:24.373 [http-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 参数: {"username":["xiaozhou"]}
+2025-12-19 11:48:24.423 [http-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应状态: 200
+2025-12-19 11:48:24.424 [http-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应内容: {"code":0,"data":{"expiresIn":"3600000","accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTE2MTA0LCJleHAiOjE3NjYxMTYxMDl9.NQoykCQmjQ8CrI9V00E3FmOElkAn_Zg3O8sdptn-_aw","tokenType":"Bearer","refreshToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTE2MTA0LCJleHAiOjE3NjczMjU3MDR9.SvmBIFz2jEeb5anZcvmHrnWTPNzHKmRK2NIwlusTEOM"},"message":"执行成功"}
+2025-12-19 11:48:24.424 [http-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应大小: 396 字符
+2025-12-19 11:48:24.424 [http-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求完成] ID: 94652cca, 耗时: 50ms
+2025-12-19 11:49:29.736 [http-nio-0.0.0.0-8080-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求开始] ID: 682f5e82
+2025-12-19 11:49:29.738 [http-nio-0.0.0.0-8080-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 请求路径: /api/redis/token
+2025-12-19 11:49:29.738 [http-nio-0.0.0.0-8080-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 客户端IP: 127.0.0.1
+2025-12-19 11:49:29.739 [http-nio-0.0.0.0-8080-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 方法: DemoController.token
+2025-12-19 11:49:29.739 [http-nio-0.0.0.0-8080-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 参数: {"username":["xiaozhou"]}
+2025-12-19 11:49:29.742 [http-nio-0.0.0.0-8080-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应状态: 200
+2025-12-19 11:49:29.743 [http-nio-0.0.0.0-8080-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应内容: {"code":0,"data":{"expiresIn":"3600000","accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTE2MTY5LCJleHAiOjE3NjYxMTYxNzR9.u4R2bb1VRAgmZva-k4wwcTukoEa6hojaW7mPgkuMPZo","tokenType":"Bearer","refreshToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTE2MTY5LCJleHAiOjE3NjczMjU3Njl9.YC44mQdue1LdfqOM-7devQh3-FVRiTIo678IfdFi0cI"},"message":"执行成功"}
+2025-12-19 11:49:29.746 [http-nio-0.0.0.0-8080-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应大小: 396 字符
+2025-12-19 11:49:29.747 [http-nio-0.0.0.0-8080-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求完成] ID: 682f5e82, 耗时: 3ms
+2025-12-19 11:55:23.446 [http-nio-0.0.0.0-8080-exec-6] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求开始] ID: 86759302
+2025-12-19 11:55:23.448 [http-nio-0.0.0.0-8080-exec-6] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 请求路径: /api/redis/token
+2025-12-19 11:55:23.449 [http-nio-0.0.0.0-8080-exec-6] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 客户端IP: 127.0.0.1
+2025-12-19 11:55:23.449 [http-nio-0.0.0.0-8080-exec-6] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 方法: DemoController.token
+2025-12-19 11:55:23.450 [http-nio-0.0.0.0-8080-exec-6] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 参数: {"username":["xiaozhou"]}
+2025-12-19 11:55:23.472 [http-nio-0.0.0.0-8080-exec-6] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应状态: 200
+2025-12-19 11:55:23.474 [http-nio-0.0.0.0-8080-exec-6] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应内容: {"code":0,"data":{"expiresIn":"3600000","accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTE2NTIzLCJleHAiOjE3NjYxMTY1Mjh9.TigF4CSP1PswzZwTfsgv-4PjV6yvPNoW5BQmvikQ6LM","tokenType":"Bearer","refreshToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTE2NTIzLCJleHAiOjE3NjczMjYxMjN9.Tt0cbRQu2o5-Ul9WxtcvWx5exPSn69W2xgbKkg4qSC4"},"message":"执行成功"}
+2025-12-19 11:55:23.474 [http-nio-0.0.0.0-8080-exec-6] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应大小: 396 字符
+2025-12-19 11:55:23.474 [http-nio-0.0.0.0-8080-exec-6] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求完成] ID: 86759302, 耗时: 22ms
+2025-12-19 11:55:39.970 [http-nio-0.0.0.0-8080-exec-7] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求开始] ID: d47432b0
+2025-12-19 11:55:39.971 [http-nio-0.0.0.0-8080-exec-7] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 请求路径: /api/redis/token
+2025-12-19 11:55:39.971 [http-nio-0.0.0.0-8080-exec-7] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 客户端IP: 127.0.0.1
+2025-12-19 11:55:39.971 [http-nio-0.0.0.0-8080-exec-7] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 方法: DemoController.token
+2025-12-19 11:55:39.971 [http-nio-0.0.0.0-8080-exec-7] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 参数: {"username":["xiaozhou"]}
+2025-12-19 11:55:39.989 [http-nio-0.0.0.0-8080-exec-7] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应状态: 200
+2025-12-19 11:55:39.991 [http-nio-0.0.0.0-8080-exec-7] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应内容: {"code":0,"data":{"expiresIn":"3600000","accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTE2NTM5LCJleHAiOjE3NjYxMTY1NDR9.ISozahuxA5QaY9rPHGrpsokTwr7dEocexTn5J7-xW7s","tokenType":"Bearer","refreshToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTE2NTM5LCJleHAiOjE3NjczMjYxMzl9.--dNo_QVMTTzZU8YVag1qnKtybqh0dCKPsdYwQJEnUk"},"message":"执行成功"}
+2025-12-19 11:55:39.993 [http-nio-0.0.0.0-8080-exec-7] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应大小: 396 字符
+2025-12-19 11:55:39.994 [http-nio-0.0.0.0-8080-exec-7] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求完成] ID: d47432b0, 耗时: 18ms
+2025-12-19 11:56:14.046 [http-nio-0.0.0.0-8080-exec-8] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求开始] ID: d338ec70
+2025-12-19 11:56:14.046 [http-nio-0.0.0.0-8080-exec-8] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 请求路径: /api/redis/token
+2025-12-19 11:56:14.046 [http-nio-0.0.0.0-8080-exec-8] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 客户端IP: 0:0:0:0:0:0:0:1
+2025-12-19 11:56:14.046 [http-nio-0.0.0.0-8080-exec-8] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 方法: DemoController.token
+2025-12-19 11:56:14.047 [http-nio-0.0.0.0-8080-exec-8] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 参数: {"username":["xiaozhou"]}
+2025-12-19 11:56:14.072 [http-nio-0.0.0.0-8080-exec-8] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应状态: 200
+2025-12-19 11:56:14.072 [http-nio-0.0.0.0-8080-exec-8] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应内容: {"code":0,"data":{"expiresIn":"3600000","accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTE2NTc0LCJleHAiOjE3NjYxMTY1Nzl9.yyMsKVxNzzbkwYEVa2vVmg1PNRGTfmpZSWFr5C76-9E","tokenType":"Bearer","refreshToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTE2NTc0LCJleHAiOjE3NjczMjYxNzR9.lBERmQgbqYMeTairRW_zSsCfAm-sXR5CcVyeyuNqavc"},"message":"执行成功"}
+2025-12-19 11:56:14.072 [http-nio-0.0.0.0-8080-exec-8] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应大小: 396 字符
+2025-12-19 11:56:14.072 [http-nio-0.0.0.0-8080-exec-8] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求完成] ID: d338ec70, 耗时: 25ms
+2025-12-19 11:56:24.104 [http-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求开始] ID: 062be5e7
+2025-12-19 11:56:24.104 [http-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 请求路径: /api/redis/token
+2025-12-19 11:56:24.104 [http-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 客户端IP: 127.0.0.1
+2025-12-19 11:56:24.104 [http-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 方法: DemoController.token
+2025-12-19 11:56:24.104 [http-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 参数: {"username":["xiaozhou"]}
+2025-12-19 11:56:24.107 [http-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应状态: 200
+2025-12-19 11:56:24.108 [http-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应内容: {"code":0,"data":{"expiresIn":"3600000","accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTE2NTg0LCJleHAiOjE3NjYxMTY1ODl9._OpxZuPQfQziGWNWe4cRwvjeEldEcnuP3nT3dcoYwm0","tokenType":"Bearer","refreshToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTE2NTg0LCJleHAiOjE3NjczMjYxODR9.sSA0LN6Uf6_IbNuc2g0o5Ga6MnxXZzsnycMv02NPV8g"},"message":"执行成功"}
+2025-12-19 11:56:24.108 [http-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应大小: 396 字符
+2025-12-19 11:56:24.108 [http-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求完成] ID: 062be5e7, 耗时: 3ms
+2025-12-19 11:56:38.264 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.coyote.http11.Http11Processor [node1:8080] - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x07!0x010x000x070x1d0x030x030xf00xc10x070xb10xc90xa2#0x0c0xb8<0x860xe40x87W0xe70x8d]0x110xc270x1e0x87Pi0xd40x02b0xb70x0d0x1f0xcdb ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 11:56:38.264 [http-nio-0.0.0.0-8080-exec-10] INFO  o.a.coyote.http11.Http11Processor [node1:8080] - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x070x010x010x000x060xfd0x030x03O0x130xe8t0*0x7fPc0x9d0x97q0xe60x850xd30xa20xdf0xc10xf40x1dD0x0f0x15R0x860xf40x920xb0_$0xea0x1b ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 11:56:38.421 [http-nio-0.0.0.0-8080-exec-2] INFO  o.a.coyote.http11.Http11Processor [node1:8080] - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x060xf20x010x000x060xee0x030x030xffJY0x980xcfmbN0x0c0x130xc8,{0xbf0xc20x090xc4tx0xcf4"0x05*O0xfb0xb0"0x150x930xb10xba ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-12-19 11:56:43.846 [http-nio-0.0.0.0-8080-exec-4] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求开始] ID: 1e4cc7ae
+2025-12-19 11:56:43.847 [http-nio-0.0.0.0-8080-exec-4] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 请求路径: /api/redis/token
+2025-12-19 11:56:43.847 [http-nio-0.0.0.0-8080-exec-4] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 客户端IP: 0:0:0:0:0:0:0:1
+2025-12-19 11:56:43.847 [http-nio-0.0.0.0-8080-exec-4] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 方法: DemoController.token
+2025-12-19 11:56:43.847 [http-nio-0.0.0.0-8080-exec-4] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 参数: {"username":["xiaozhou"]}
+2025-12-19 11:56:43.852 [http-nio-0.0.0.0-8080-exec-4] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应状态: 200
+2025-12-19 11:56:43.852 [http-nio-0.0.0.0-8080-exec-4] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应内容: {"code":0,"data":{"expiresIn":"3600000","accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTE2NjAzLCJleHAiOjE3NjYxMTY2MDh9.i4VcS-rf9XhSoByj0vwRxVh3h5A1UyaVPwqXH1XBAFg","tokenType":"Bearer","refreshToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTE2NjAzLCJleHAiOjE3NjczMjYyMDN9.4uDbtKtbjAi_DDShHDrRFNVLCb3sWTOCf_-uZJs6sv0"},"message":"执行成功"}
+2025-12-19 11:56:43.852 [http-nio-0.0.0.0-8080-exec-4] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应大小: 396 字符
+2025-12-19 11:56:43.852 [http-nio-0.0.0.0-8080-exec-4] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求完成] ID: 1e4cc7ae, 耗时: 5ms
+2025-12-19 11:57:55.622 [http-nio-0.0.0.0-8080-exec-7] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求开始] ID: 47dd57c5
+2025-12-19 11:57:55.623 [http-nio-0.0.0.0-8080-exec-7] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 请求路径: /api/redis/token
+2025-12-19 11:57:55.623 [http-nio-0.0.0.0-8080-exec-7] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 客户端IP: 0:0:0:0:0:0:0:1
+2025-12-19 11:57:55.623 [http-nio-0.0.0.0-8080-exec-7] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 方法: DemoController.token
+2025-12-19 11:57:55.623 [http-nio-0.0.0.0-8080-exec-7] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 参数: {"username":["xiaozhou"]}
+2025-12-19 11:57:55.641 [http-nio-0.0.0.0-8080-exec-7] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应状态: 200
+2025-12-19 11:57:55.641 [http-nio-0.0.0.0-8080-exec-7] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应内容: {"code":0,"data":{"expiresIn":"3600000","accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTE2Njc1LCJleHAiOjE3NjYxMTY2ODB9.CJvbwX1wUP7c0GUYMV6rERXP0o-aO-5R3vc-bDMBat8","tokenType":"Bearer","refreshToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTE2Njc1LCJleHAiOjE3NjczMjYyNzV9.GI4bJsUqTzjnoK6m30zAwDN1oTfW2zVAZBpqySANy4k"},"message":"执行成功"}
+2025-12-19 11:57:55.645 [http-nio-0.0.0.0-8080-exec-7] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应大小: 396 字符
+2025-12-19 11:57:55.645 [http-nio-0.0.0.0-8080-exec-7] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求完成] ID: 47dd57c5, 耗时: 8ms
+2025-12-19 12:08:20.830 [http-nio-0.0.0.0-8080-exec-10] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求开始] ID: ded175b1
+2025-12-19 12:08:20.830 [http-nio-0.0.0.0-8080-exec-10] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 请求路径: /api/redis/token
+2025-12-19 12:08:20.832 [http-nio-0.0.0.0-8080-exec-10] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 客户端IP: 0:0:0:0:0:0:0:1
+2025-12-19 12:08:20.832 [http-nio-0.0.0.0-8080-exec-10] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 方法: DemoController.token
+2025-12-19 12:08:20.833 [http-nio-0.0.0.0-8080-exec-10] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 参数: {"username":["xiaozhou"]}
+2025-12-19 12:08:20.837 [http-nio-0.0.0.0-8080-exec-10] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应状态: 200
+2025-12-19 12:08:20.837 [http-nio-0.0.0.0-8080-exec-10] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应内容: {"code":0,"data":{"expiresIn":"3600000","accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTE3MzAwLCJleHAiOjE3NjYxMTczMDV9.BqA7KGtOpadC2yWvMtPdKS5WPae9Eckl9N7dkhI08cM","tokenType":"Bearer","refreshToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTE3MzAwLCJleHAiOjE3NjczMjY5MDB9.0KTo9pIJU7_b3Is8RrbX6vuhNT_mQ_alqNweRlLOREM"},"message":"执行成功"}
+2025-12-19 12:08:20.837 [http-nio-0.0.0.0-8080-exec-10] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应大小: 396 字符
+2025-12-19 12:08:20.837 [http-nio-0.0.0.0-8080-exec-10] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求完成] ID: ded175b1, 耗时: 4ms
+2025-12-19 12:08:35.914 [http-nio-0.0.0.0-8080-exec-3] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求开始] ID: 3fa00f05
+2025-12-19 12:08:35.916 [http-nio-0.0.0.0-8080-exec-3] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 请求路径: /api/redis/token
+2025-12-19 12:08:35.916 [http-nio-0.0.0.0-8080-exec-3] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 客户端IP: 127.0.0.1
+2025-12-19 12:08:35.916 [http-nio-0.0.0.0-8080-exec-3] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 方法: DemoController.token
+2025-12-19 12:08:35.917 [http-nio-0.0.0.0-8080-exec-3] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 参数: {"username":["xiaozhou"]}
+2025-12-19 12:08:35.927 [http-nio-0.0.0.0-8080-exec-3] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应状态: 200
+2025-12-19 12:08:35.927 [http-nio-0.0.0.0-8080-exec-3] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应内容: {"code":0,"data":{"expiresIn":"3600000","accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTE3MzE1LCJleHAiOjE3NjYxMTczMjB9.eqboCFpJQ-TD3np1kLPYVY6fpHkurwG63lGXfdBIio0","tokenType":"Bearer","refreshToken":"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InhpYW96aG91IiwiaWF0IjoxNzY2MTE3MzE1LCJleHAiOjE3NjczMjY5MTV9.8Yrguvd29FDMv5kW1FOvJ1iF3Bo86m5vyY-60GOn3KE"},"message":"执行成功"}
+2025-12-19 12:08:35.927 [http-nio-0.0.0.0-8080-exec-3] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应大小: 396 字符
+2025-12-19 12:08:35.927 [http-nio-0.0.0.0-8080-exec-3] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求完成] ID: 3fa00f05, 耗时: 10ms
+2025-12-19 12:15:57.608 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder [node1:8080] - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-12-19 12:15:57.612 [Thread-6] WARN  c.a.nacos.common.notify.NotifyCenter [node1:8080] - [NotifyCenter] Start destroying Publisher
+2025-12-19 12:15:57.632 [Thread-6] WARN  c.a.nacos.common.notify.NotifyCenter [node1:8080] - [NotifyCenter] Destruction of the end
+2025-12-19 12:15:57.692 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder [node1:8080] - [HttpClientBeanHolder] Destruction of the end
+2025-12-19 12:15:58.752 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics scheduler closed
+2025-12-19 12:15:58.751 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics scheduler closed
+2025-12-19 12:15:58.756 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 12:15:58.756 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 12:15:58.760 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics scheduler closed
+2025-12-19 12:15:58.761 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 12:15:58.761 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics reporters closed
+2025-12-19 12:15:58.760 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics reporters closed
+2025-12-19 12:15:58.762 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics scheduler closed
+2025-12-19 12:15:58.762 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 12:15:58.762 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics reporters closed
+2025-12-19 12:15:58.763 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics reporters closed
+2025-12-19 12:15:58.804 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - App info kafka.consumer for consumer-notification-batch-consumer-1 unregistered
+2025-12-19 12:15:58.805 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - App info kafka.consumer for consumer-order-events-consumer-4 unregistered
+2025-12-19 12:15:58.806 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - App info kafka.consumer for consumer-pattern-consumer-2 unregistered
+2025-12-19 12:15:58.806 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - App info kafka.consumer for consumer-user-events-consumer-3 unregistered
+2025-12-19 12:15:58.813 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [node1:8080] - user-events-consumer: Consumer stopped
+2025-12-19 12:15:58.813 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [node1:8080] - order-events-consumer: Consumer stopped
+2025-12-19 12:15:58.813 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [node1:8080] - pattern-consumer: Consumer stopped
+2025-12-19 12:15:58.814 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [node1:8080] - notification-batch-consumer: Consumer stopped
+2025-12-19 12:15:59.104 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry [node1:8080] - De-registering from Nacos Server now...
+2025-12-19 12:15:59.318 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry [node1:8080] - De-registration finished.
+2025-12-19 12:16:00.542 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [node1:8080] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 12:16:00.629 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [node1:8080] - HikariPool-1 - Shutdown initiated...
+2025-12-19 12:16:00.652 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [node1:8080] - HikariPool-1 - Shutdown completed.
+2025-12-19 12:19:26.495 [main] INFO  com.example.demo.DemoApplication [node1:8080] - Starting DemoApplication using Java 11.0.11 on zhouwenwudeMacBook-Pro.local with PID 17268 (/Users/markchou/Documents/code-demo-pratice/application-demo/target/classes started by markchou in /Users/markchou/Documents/code-demo-pratice)
+2025-12-19 12:19:26.499 [main] INFO  com.example.demo.DemoApplication [node1:8080] - The following 1 profile is active: "local-nacos"
+2025-12-19 12:19:26.539 [main] INFO  c.a.c.n.c.NacosConfigDataLoader [node1:8080] - [Nacos Config] Load config[dataId=nacos-demo-service-local.properties, group=DEFAULT_GROUP] success
+2025-12-19 12:19:27.487 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:19:27.488 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-12-19 12:19:27.500 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Finished Spring Data repository scanning in 7 ms. Found 0 Elasticsearch repository interfaces.
+2025-12-19 12:19:27.674 [main] DEBUG org.apache.ibatis.logging.LogFactory [node1:8080] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2025-12-19 12:19:27.681 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner [node1:8080] - Identified candidate component class: file [/Users/markchou/Documents/code-demo-pratice/application-demo/target/classes/com/example/demo/mapper/SysUserMapper.class]
+2025-12-19 12:19:27.682 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner [node1:8080] - Creating MapperFactoryBean with name 'sysUserMapper' and 'com.example.demo.mapper.SysUserMapper' mapperInterface
+2025-12-19 12:19:27.684 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner [node1:8080] - Enabling autowire by type for MapperFactoryBean with name 'sysUserMapper'.
+2025-12-19 12:19:28.074 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:19:28.075 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-12-19 12:19:28.105 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node1:8080] - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2025-12-19 12:19:28.174 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Finished Spring Data repository scanning in 98 ms. Found 1 Elasticsearch repository interfaces.
+2025-12-19 12:19:28.181 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:19:28.181 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-12-19 12:19:28.186 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node1:8080] - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2025-12-19 12:19:28.189 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Finished Spring Data repository scanning in 7 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-12-19 12:19:28.201 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:19:28.201 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-19 12:19:28.214 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node1:8080] - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-12-19 12:19:28.219 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interfaces.
+2025-12-19 12:19:28.233 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:19:28.235 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-19 12:19:28.249 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node1:8080] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-19 12:19:28.249 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node1:8080] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-19 12:19:28.249 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-12-19 12:19:28.603 [main] INFO  o.s.cloud.context.scope.GenericScope [node1:8080] - BeanFactory id=b5547575-4fd6-3500-b4eb-b773a9f472c8
+2025-12-19 12:19:29.343 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node1:8080] - Tomcat initialized with port(s): 8080 (http)
+2025-12-19 12:19:29.355 [main] INFO  o.a.catalina.core.StandardService [node1:8080] - Starting service [Tomcat]
+2025-12-19 12:19:29.356 [main] INFO  o.a.catalina.core.StandardEngine [node1:8080] - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-12-19 12:19:29.490 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [node1:8080] - Initializing Spring embedded WebApplicationContext
+2025-12-19 12:19:29.490 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [node1:8080] - Root WebApplicationContext: initialization completed in 2949 ms
+2025-12-19 12:19:30.329 [main] INFO  com.zaxxer.hikari.HikariDataSource [node1:8080] - HikariPool-1 - Starting...
+2025-12-19 12:19:30.523 [main] INFO  com.zaxxer.hikari.HikariDataSource [node1:8080] - HikariPool-1 - Start completed.
+2025-12-19 12:19:31.678 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [node1:8080] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 12:19:31.820 [main] INFO  org.redisson.Version [node1:8080] - Redisson 3.16.0
+2025-12-19 12:19:31.859 [main] WARN  i.n.r.d.DnsServerAddressStreamProviders [node1:8080] - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+2025-12-19 12:19:32.151 [redisson-netty-2-20] INFO  o.r.c.p.MasterPubSubConnectionPool [node1:8080] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2025-12-19 12:19:32.224 [redisson-netty-2-19] INFO  o.r.c.pool.MasterConnectionPool [node1:8080] - 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2025-12-19 12:19:32.575 [main] DEBUG o.m.spring.SqlSessionFactoryBean [node1:8080] - Property 'mapperLocations' was not specified or no matching resources found
+2025-12-19 12:19:35.523 [main] WARN  org.elasticsearch.client.RestClient [node1:8080] - request [HEAD http://localhost:9200/newproducts?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned 1 warnings: [299 Elasticsearch-7.17.0-bee86328705acaa9a6daede7140defd4d9ec56bd "[ignore_throttled] parameter is deprecated because frozen indices have been deprecated. Consider cold or frozen tiers in place of frozen indices."]
+2025-12-19 12:19:36.142 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [node1:8080] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-19 12:19:37.438 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer [node1:8080] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2025-12-19 12:19:39.547 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka version: 3.0.2
+2025-12-19 12:19:39.547 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:19:39.547 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka startTimeMs: 1766117979546
+2025-12-19 12:20:09.563 [main] ERROR o.s.kafka.core.KafkaAdmin [node1:8080] - Could not configure topics
+org.springframework.kafka.KafkaException: Timed out waiting to get existing topics; nested exception is java.util.concurrent.TimeoutException
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$10(KafkaAdmin.java:423)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1336)
+	at org.springframework.kafka.core.KafkaAdmin.checkPartitions(KafkaAdmin.java:402)
+	at org.springframework.kafka.core.KafkaAdmin.addOrModifyTopicsIfNeeded(KafkaAdmin.java:298)
+	at org.springframework.kafka.core.KafkaAdmin.initialize(KafkaAdmin.java:201)
+	at org.springframework.kafka.core.KafkaAdmin.afterSingletonsInstantiated(KafkaAdmin.java:171)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:974)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:15)
+Caused by: java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:180)
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$10(KafkaAdmin.java:405)
+	... 15 common frames omitted
+2025-12-19 12:20:19.565 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - App info kafka.admin.client for adminclient-1 unregistered
+2025-12-19 12:20:19.571 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics scheduler closed
+2025-12-19 12:20:19.571 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 12:20:19.571 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics reporters closed
+2025-12-19 12:20:19.637 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka version: 3.0.2
+2025-12-19 12:20:19.638 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:20:19.638 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka startTimeMs: 1766118019637
+2025-12-19 12:20:19.662 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka version: 3.0.2
+2025-12-19 12:20:19.662 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:20:19.662 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka startTimeMs: 1766118019662
+2025-12-19 12:20:19.672 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka version: 3.0.2
+2025-12-19 12:20:19.672 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:20:19.672 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka startTimeMs: 1766118019672
+2025-12-19 12:20:19.680 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka version: 3.0.2
+2025-12-19 12:20:19.681 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:20:19.681 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka startTimeMs: 1766118019680
+2025-12-19 12:20:19.700 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node1:8080] - Tomcat started on port(s): 8080 (http) with context path ''
+2025-12-19 12:20:19.725 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [node1:8080] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-12-19 12:20:19.726 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [node1:8080] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-12-19 12:20:19.948 [main] INFO  c.a.c.n.r.NacosServiceRegistry [node1:8080] - nacos registry, DEFAULT_GROUP nacos-demo-service 192.168.31.227:8080 register finished
+2025-12-19 12:20:20.069 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node1:8080] - Tomcat initialized with port(s): 8081 (http)
+2025-12-19 12:20:20.071 [main] INFO  o.a.catalina.core.StandardService [node1:8080] - Starting service [Tomcat]
+2025-12-19 12:20:20.071 [main] INFO  o.a.catalina.core.StandardEngine [node1:8080] - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-12-19 12:20:20.092 [main] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] [node1:8080] - Initializing Spring embedded WebApplicationContext
+2025-12-19 12:20:20.092 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [node1:8080] - Root WebApplicationContext: initialization completed in 136 ms
+2025-12-19 12:20:20.106 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [node1:8080] - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-12-19 12:20:20.123 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer [node1:8080] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2025-12-19 12:20:20.760 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node1:8080] - Tomcat started on port(s): 8081 (http) with context path ''
+2025-12-19 12:20:20.817 [main] INFO  com.example.demo.DemoApplication [node1:8080] - Started DemoApplication in 57.066 seconds (JVM running for 58.24)
+2025-12-19 12:20:20.921 [main] INFO  c.a.c.n.r.NacosContextRefresher [node1:8080] - [Nacos Config] Listening config: dataId=nacos-demo-service-local.properties, group=DEFAULT_GROUP
+2025-12-19 12:20:20.923 [main] INFO  com.example.demo.DemoApplication [node1:8080] - 应用启动完成，开始测试日志输出
+2025-12-19 12:20:21.403 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [node1:8080] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-19 12:20:21.403 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet [node1:8080] - Initializing Servlet 'dispatcherServlet'
+2025-12-19 12:20:21.405 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet [node1:8080] - Completed initialization in 2 ms
+2025-12-19 12:20:36.859 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] [node1:8080] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-19 12:20:36.881 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet [node1:8080] - Initializing Servlet 'dispatcherServlet'
+2025-12-19 12:20:36.979 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet [node1:8080] - Completed initialization in 95 ms
+2025-12-19 12:21:44.330 [http-nio-0.0.0.0-8080-exec-5] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求开始] ID: d41b3a22
+2025-12-19 12:21:44.332 [http-nio-0.0.0.0-8080-exec-5] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 请求路径: /api/redis/api/redirect
+2025-12-19 12:21:44.333 [http-nio-0.0.0.0-8080-exec-5] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 客户端IP: 127.0.0.1
+2025-12-19 12:21:44.333 [http-nio-0.0.0.0-8080-exec-5] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 方法: DemoController.redirectToRedissonWithView
+2025-12-19 12:21:44.426 [http-nio-0.0.0.0-8080-exec-5] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 参数: {}
+2025-12-19 12:21:44.440 [http-nio-0.0.0.0-8080-exec-5] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应状态: 200
+2025-12-19 12:21:44.694 [http-nio-0.0.0.0-8080-exec-5] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应内容: {"attributesMap":{},"contentType":"text/html;charset=ISO-8859-1","exposePathVariables":false,"propagateQueryProperties":false,"redirectView":true,"staticAttributes":{},"url":"/api/redisson"}
+2025-12-19 12:21:44.695 [http-nio-0.0.0.0-8080-exec-5] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应大小: 190 字符
+2025-12-19 12:21:44.695 [http-nio-0.0.0.0-8080-exec-5] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求完成] ID: d41b3a22, 耗时: 14ms
+2025-12-19 12:22:24.260 [Thread-6] WARN  c.a.nacos.common.notify.NotifyCenter [node1:8080] - [NotifyCenter] Start destroying Publisher
+2025-12-19 12:22:24.261 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder [node1:8080] - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-12-19 12:22:24.273 [Thread-6] WARN  c.a.nacos.common.notify.NotifyCenter [node1:8080] - [NotifyCenter] Destruction of the end
+2025-12-19 12:22:24.320 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder [node1:8080] - [HttpClientBeanHolder] Destruction of the end
+2025-12-19 12:22:24.642 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics scheduler closed
+2025-12-19 12:22:24.643 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics scheduler closed
+2025-12-19 12:22:24.643 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 12:22:24.644 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 12:22:24.645 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics scheduler closed
+2025-12-19 12:22:24.645 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 12:22:24.645 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics reporters closed
+2025-12-19 12:22:24.646 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics scheduler closed
+2025-12-19 12:22:24.646 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 12:22:24.646 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics reporters closed
+2025-12-19 12:22:24.647 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics reporters closed
+2025-12-19 12:22:24.648 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics reporters closed
+2025-12-19 12:22:24.685 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - App info kafka.consumer for consumer-pattern-consumer-2 unregistered
+2025-12-19 12:22:24.689 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - App info kafka.consumer for consumer-user-events-consumer-3 unregistered
+2025-12-19 12:22:24.692 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [node1:8080] - pattern-consumer: Consumer stopped
+2025-12-19 12:22:24.694 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - App info kafka.consumer for consumer-notification-batch-consumer-1 unregistered
+2025-12-19 12:22:24.694 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [node1:8080] - notification-batch-consumer: Consumer stopped
+2025-12-19 12:22:24.692 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [node1:8080] - user-events-consumer: Consumer stopped
+2025-12-19 12:22:24.695 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - App info kafka.consumer for consumer-order-events-consumer-4 unregistered
+2025-12-19 12:22:24.696 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [node1:8080] - order-events-consumer: Consumer stopped
+2025-12-19 12:22:24.813 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry [node1:8080] - De-registering from Nacos Server now...
+2025-12-19 12:22:24.960 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry [node1:8080] - De-registration finished.
+2025-12-19 12:22:27.480 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [node1:8080] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 12:22:27.517 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [node1:8080] - HikariPool-1 - Shutdown initiated...
+2025-12-19 12:22:27.654 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [node1:8080] - HikariPool-1 - Shutdown completed.
+2025-12-19 12:22:59.767 [main] INFO  com.example.demo.DemoApplication [node1:8080] - Starting DemoApplication using Java 11.0.11 on zhouwenwudeMacBook-Pro.local with PID 17316 (/Users/markchou/Documents/code-demo-pratice/application-demo/target/classes started by markchou in /Users/markchou/Documents/code-demo-pratice)
+2025-12-19 12:22:59.773 [main] INFO  com.example.demo.DemoApplication [node1:8080] - The following 1 profile is active: "local-nacos"
+2025-12-19 12:22:59.849 [main] INFO  c.a.c.n.c.NacosConfigDataLoader [node1:8080] - [Nacos Config] Load config[dataId=nacos-demo-service-local.properties, group=DEFAULT_GROUP] success
+2025-12-19 12:23:03.022 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:23:03.031 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-12-19 12:23:03.081 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Finished Spring Data repository scanning in 20 ms. Found 0 Elasticsearch repository interfaces.
+2025-12-19 12:23:03.463 [main] DEBUG org.apache.ibatis.logging.LogFactory [node1:8080] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2025-12-19 12:23:03.476 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner [node1:8080] - Identified candidate component class: file [/Users/markchou/Documents/code-demo-pratice/application-demo/target/classes/com/example/demo/mapper/SysUserMapper.class]
+2025-12-19 12:23:03.480 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner [node1:8080] - Creating MapperFactoryBean with name 'sysUserMapper' and 'com.example.demo.mapper.SysUserMapper' mapperInterface
+2025-12-19 12:23:03.483 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner [node1:8080] - Enabling autowire by type for MapperFactoryBean with name 'sysUserMapper'.
+2025-12-19 12:23:04.375 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:23:04.379 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-12-19 12:23:04.463 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node1:8080] - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2025-12-19 12:23:04.644 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Finished Spring Data repository scanning in 261 ms. Found 1 Elasticsearch repository interfaces.
+2025-12-19 12:23:04.659 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:23:04.660 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-12-19 12:23:04.670 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node1:8080] - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2025-12-19 12:23:04.674 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Finished Spring Data repository scanning in 13 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-12-19 12:23:04.746 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:23:04.748 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-19 12:23:04.784 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node1:8080] - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-12-19 12:23:04.806 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+2025-12-19 12:23:04.871 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:23:04.876 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-19 12:23:04.919 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node1:8080] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-19 12:23:04.921 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node1:8080] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-19 12:23:04.922 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2025-12-19 12:23:05.599 [main] INFO  o.s.cloud.context.scope.GenericScope [node1:8080] - BeanFactory id=b5547575-4fd6-3500-b4eb-b773a9f472c8
+2025-12-19 12:23:08.159 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node1:8080] - Tomcat initialized with port(s): 8080 (http)
+2025-12-19 12:23:08.223 [main] INFO  o.a.catalina.core.StandardService [node1:8080] - Starting service [Tomcat]
+2025-12-19 12:23:08.224 [main] INFO  o.a.catalina.core.StandardEngine [node1:8080] - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-12-19 12:23:08.524 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [node1:8080] - Initializing Spring embedded WebApplicationContext
+2025-12-19 12:23:08.524 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [node1:8080] - Root WebApplicationContext: initialization completed in 8672 ms
+2025-12-19 12:23:09.349 [main] INFO  com.zaxxer.hikari.HikariDataSource [node1:8080] - HikariPool-1 - Starting...
+2025-12-19 12:23:09.593 [main] INFO  com.zaxxer.hikari.HikariDataSource [node1:8080] - HikariPool-1 - Start completed.
+2025-12-19 12:23:10.779 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [node1:8080] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 12:23:11.063 [main] INFO  org.redisson.Version [node1:8080] - Redisson 3.16.0
+2025-12-19 12:23:11.097 [main] WARN  i.n.r.d.DnsServerAddressStreamProviders [node1:8080] - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+2025-12-19 12:23:11.579 [redisson-netty-2-20] INFO  o.r.c.p.MasterPubSubConnectionPool [node1:8080] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2025-12-19 12:23:11.759 [redisson-netty-2-19] INFO  o.r.c.pool.MasterConnectionPool [node1:8080] - 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2025-12-19 12:23:12.253 [main] DEBUG o.m.spring.SqlSessionFactoryBean [node1:8080] - Property 'mapperLocations' was not specified or no matching resources found
+2025-12-19 12:23:15.768 [main] WARN  org.elasticsearch.client.RestClient [node1:8080] - request [HEAD http://localhost:9200/newproducts?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned 1 warnings: [299 Elasticsearch-7.17.0-bee86328705acaa9a6daede7140defd4d9ec56bd "[ignore_throttled] parameter is deprecated because frozen indices have been deprecated. Consider cold or frozen tiers in place of frozen indices."]
+2025-12-19 12:23:16.151 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [node1:8080] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-19 12:23:16.540 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer [node1:8080] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2025-12-19 12:23:21.345 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka version: 3.0.2
+2025-12-19 12:23:21.350 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:23:21.350 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka startTimeMs: 1766118201342
+2025-12-19 12:23:51.427 [main] ERROR o.s.kafka.core.KafkaAdmin [node1:8080] - Could not configure topics
+org.springframework.kafka.KafkaException: Timed out waiting to get existing topics; nested exception is java.util.concurrent.TimeoutException
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$10(KafkaAdmin.java:423)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1336)
+	at org.springframework.kafka.core.KafkaAdmin.checkPartitions(KafkaAdmin.java:402)
+	at org.springframework.kafka.core.KafkaAdmin.addOrModifyTopicsIfNeeded(KafkaAdmin.java:298)
+	at org.springframework.kafka.core.KafkaAdmin.initialize(KafkaAdmin.java:201)
+	at org.springframework.kafka.core.KafkaAdmin.afterSingletonsInstantiated(KafkaAdmin.java:171)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:974)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:15)
+Caused by: java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:180)
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$10(KafkaAdmin.java:405)
+	... 15 common frames omitted
+2025-12-19 12:24:01.447 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - App info kafka.admin.client for adminclient-1 unregistered
+2025-12-19 12:24:01.531 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics scheduler closed
+2025-12-19 12:24:01.531 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 12:24:01.531 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics reporters closed
+2025-12-19 12:24:01.955 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka version: 3.0.2
+2025-12-19 12:24:01.955 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:24:01.955 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka startTimeMs: 1766118241954
+2025-12-19 12:24:01.997 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka version: 3.0.2
+2025-12-19 12:24:01.997 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:24:01.997 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka startTimeMs: 1766118241997
+2025-12-19 12:24:02.010 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka version: 3.0.2
+2025-12-19 12:24:02.010 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:24:02.010 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka startTimeMs: 1766118242010
+2025-12-19 12:24:02.021 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka version: 3.0.2
+2025-12-19 12:24:02.021 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:24:02.021 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka startTimeMs: 1766118242020
+2025-12-19 12:24:02.049 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node1:8080] - Tomcat started on port(s): 8080 (http) with context path ''
+2025-12-19 12:24:02.145 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [node1:8080] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-12-19 12:24:02.146 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [node1:8080] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-12-19 12:24:02.350 [main] INFO  c.a.c.n.r.NacosServiceRegistry [node1:8080] - nacos registry, DEFAULT_GROUP nacos-demo-service 192.168.31.227:8080 register finished
+2025-12-19 12:24:02.666 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node1:8080] - Tomcat initialized with port(s): 8081 (http)
+2025-12-19 12:24:02.668 [main] INFO  o.a.catalina.core.StandardService [node1:8080] - Starting service [Tomcat]
+2025-12-19 12:24:02.668 [main] INFO  o.a.catalina.core.StandardEngine [node1:8080] - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-12-19 12:24:02.702 [main] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] [node1:8080] - Initializing Spring embedded WebApplicationContext
+2025-12-19 12:24:02.702 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [node1:8080] - Root WebApplicationContext: initialization completed in 341 ms
+2025-12-19 12:24:02.730 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [node1:8080] - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-12-19 12:24:02.772 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer [node1:8080] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2025-12-19 12:24:04.805 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node1:8080] - Tomcat started on port(s): 8081 (http) with context path ''
+2025-12-19 12:24:05.363 [main] INFO  com.example.demo.DemoApplication [node1:8080] - Started DemoApplication in 70.501 seconds (JVM running for 73.607)
+2025-12-19 12:24:05.671 [main] INFO  c.a.c.n.r.NacosContextRefresher [node1:8080] - [Nacos Config] Listening config: dataId=nacos-demo-service-local.properties, group=DEFAULT_GROUP
+2025-12-19 12:24:05.673 [main] INFO  com.example.demo.DemoApplication [node1:8080] - 应用启动完成，开始测试日志输出
+2025-12-19 12:24:08.809 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [node1:8080] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-19 12:24:08.845 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet [node1:8080] - Initializing Servlet 'dispatcherServlet'
+2025-12-19 12:24:09.239 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet [node1:8080] - Completed initialization in 392 ms
+2025-12-19 12:24:18.516 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] [node1:8080] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-19 12:24:18.521 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet [node1:8080] - Initializing Servlet 'dispatcherServlet'
+2025-12-19 12:24:18.527 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet [node1:8080] - Completed initialization in 5 ms
+2025-12-19 12:24:40.128 [http-nio-0.0.0.0-8080-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求开始] ID: d78c0e00
+2025-12-19 12:24:40.131 [http-nio-0.0.0.0-8080-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 请求路径: /api/redis/api/redirect
+2025-12-19 12:24:40.131 [http-nio-0.0.0.0-8080-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 客户端IP: 127.0.0.1
+2025-12-19 12:24:40.132 [http-nio-0.0.0.0-8080-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 方法: DemoController.redirectToRedissonWithView
+2025-12-19 12:24:40.373 [http-nio-0.0.0.0-8080-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 参数: {}
+2025-12-19 12:24:40.447 [http-nio-0.0.0.0-8080-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应状态: 200
+2025-12-19 12:24:41.190 [http-nio-0.0.0.0-8080-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应内容: {"attributesMap":{},"contentType":"text/html;charset=ISO-8859-1","exposePathVariables":false,"propagateQueryProperties":false,"redirectView":true,"staticAttributes":{},"url":"/api/redis/api/redisson"}
+2025-12-19 12:24:41.190 [http-nio-0.0.0.0-8080-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应大小: 200 字符
+2025-12-19 12:24:41.191 [http-nio-0.0.0.0-8080-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求完成] ID: d78c0e00, 耗时: 70ms
+2025-12-19 12:26:25.410 [http-nio-0.0.0.0-8080-exec-2] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求开始] ID: b0bf46a2
+2025-12-19 12:26:25.412 [http-nio-0.0.0.0-8080-exec-2] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 请求路径: /api/redis/api/redisson
+2025-12-19 12:26:25.412 [http-nio-0.0.0.0-8080-exec-2] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 客户端IP: 0:0:0:0:0:0:0:1
+2025-12-19 12:26:25.413 [http-nio-0.0.0.0-8080-exec-2] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 方法: DemoController.redissonRequest
+2025-12-19 12:26:25.413 [http-nio-0.0.0.0-8080-exec-2] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 参数: {}
+2025-12-19 12:26:25.513 [http-nio-0.0.0.0-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils [node1:8080] - Creating a new SqlSession
+2025-12-19 12:26:25.527 [http-nio-0.0.0.0-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils [node1:8080] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@789e0931] was not registered for synchronization because synchronization is not active
+2025-12-19 12:26:25.609 [http-nio-0.0.0.0-8080-exec-2] DEBUG o.m.s.t.SpringManagedTransaction [node1:8080] - JDBC Connection [HikariProxyConnection@1519259520 wrapping com.mysql.cj.jdbc.ConnectionImpl@4e2fdaf3] will not be managed by Spring
+2025-12-19 12:26:26.118 [http-nio-0.0.0.0-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils [node1:8080] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@789e0931]
+2025-12-19 12:26:26.288 [http-nio-0.0.0.0-8080-exec-2] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应状态: 200
+2025-12-19 12:26:26.335 [http-nio-0.0.0.0-8080-exec-2] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应内容: {"code":0,"data":{"account_":"admin","create_by":1,"create_time":"2016-05-06 10:06:52","enable_":1,"id_":1,"is_del":0,"money":0.0,"name_pinyin":"GUANLIYUAN","password_":"e10adc3949ba59abbe56e057f20f883e","remark_":"","sex_":1,"update_by":1,"update_time":"2019-02-26 22:27:39","user_name":"管理员","user_type":"2","wei_bo":""},"message":"执行成功"}
+2025-12-19 12:26:26.336 [http-nio-0.0.0.0-8080-exec-2] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应大小: 340 字符
+2025-12-19 12:26:26.336 [http-nio-0.0.0.0-8080-exec-2] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求完成] ID: b0bf46a2, 耗时: 875ms
+2025-12-19 12:26:43.239 [http-nio-0.0.0.0-8080-exec-5] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求开始] ID: 38b478bb
+2025-12-19 12:26:43.239 [http-nio-0.0.0.0-8080-exec-5] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 请求路径: /api/redis/api/redirect
+2025-12-19 12:26:43.239 [http-nio-0.0.0.0-8080-exec-5] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 客户端IP: 0:0:0:0:0:0:0:1
+2025-12-19 12:26:43.240 [http-nio-0.0.0.0-8080-exec-5] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 方法: DemoController.redirectToRedissonWithView
+2025-12-19 12:26:43.240 [http-nio-0.0.0.0-8080-exec-5] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 参数: {}
+2025-12-19 12:26:43.240 [http-nio-0.0.0.0-8080-exec-5] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应状态: 200
+2025-12-19 12:26:43.241 [http-nio-0.0.0.0-8080-exec-5] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应内容: {"attributesMap":{},"contentType":"text/html;charset=ISO-8859-1","exposePathVariables":false,"propagateQueryProperties":false,"redirectView":true,"staticAttributes":{},"url":"/api/redis/api/redisson"}
+2025-12-19 12:26:43.241 [http-nio-0.0.0.0-8080-exec-5] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应大小: 200 字符
+2025-12-19 12:26:43.241 [http-nio-0.0.0.0-8080-exec-5] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求完成] ID: 38b478bb, 耗时: 0ms
+2025-12-19 12:26:43.246 [http-nio-0.0.0.0-8080-exec-6] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求开始] ID: ee5d705e
+2025-12-19 12:26:43.248 [http-nio-0.0.0.0-8080-exec-6] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 请求路径: /api/redis/api/redisson
+2025-12-19 12:26:43.248 [http-nio-0.0.0.0-8080-exec-6] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 客户端IP: 0:0:0:0:0:0:0:1
+2025-12-19 12:26:43.248 [http-nio-0.0.0.0-8080-exec-6] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 方法: DemoController.redissonRequest
+2025-12-19 12:26:43.248 [http-nio-0.0.0.0-8080-exec-6] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 参数: {}
+2025-12-19 12:26:43.329 [http-nio-0.0.0.0-8080-exec-6] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应状态: 200
+2025-12-19 12:26:43.330 [http-nio-0.0.0.0-8080-exec-6] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应内容: {"code":0,"data":{"account_":"admin","create_by":1,"create_time":"2016-05-06 10:06:52","enable_":1,"id_":1,"is_del":0,"money":0.0,"name_pinyin":"GUANLIYUAN","password_":"e10adc3949ba59abbe56e057f20f883e","remark_":"","sex_":1,"update_by":1,"update_time":"2019-02-26 22:27:39","user_name":"管理员","user_type":"2","wei_bo":""},"message":"执行成功"}
+2025-12-19 12:26:43.330 [http-nio-0.0.0.0-8080-exec-6] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应大小: 340 字符
+2025-12-19 12:26:43.330 [http-nio-0.0.0.0-8080-exec-6] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求完成] ID: ee5d705e, 耗时: 80ms
+2025-12-19 12:27:06.328 [http-nio-0.0.0.0-8080-exec-8] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求开始] ID: 459c9e4b
+2025-12-19 12:27:06.328 [http-nio-0.0.0.0-8080-exec-8] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 请求路径: /api/redis/api/redirect
+2025-12-19 12:27:06.329 [http-nio-0.0.0.0-8080-exec-8] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 客户端IP: 0:0:0:0:0:0:0:1
+2025-12-19 12:27:06.329 [http-nio-0.0.0.0-8080-exec-8] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 方法: DemoController.redirectToRedissonWithView
+2025-12-19 12:27:06.329 [http-nio-0.0.0.0-8080-exec-8] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 参数: {}
+2025-12-19 12:27:06.329 [http-nio-0.0.0.0-8080-exec-8] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应状态: 200
+2025-12-19 12:27:06.329 [http-nio-0.0.0.0-8080-exec-8] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应内容: {"attributesMap":{},"contentType":"text/html;charset=ISO-8859-1","exposePathVariables":false,"propagateQueryProperties":false,"redirectView":true,"staticAttributes":{},"url":"/api/redis/api/redisson"}
+2025-12-19 12:27:06.329 [http-nio-0.0.0.0-8080-exec-8] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应大小: 200 字符
+2025-12-19 12:27:06.329 [http-nio-0.0.0.0-8080-exec-8] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求完成] ID: 459c9e4b, 耗时: 0ms
+2025-12-19 12:27:06.337 [http-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求开始] ID: b022cfa4
+2025-12-19 12:27:06.337 [http-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 请求路径: /api/redis/api/redisson
+2025-12-19 12:27:06.338 [http-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 客户端IP: 0:0:0:0:0:0:0:1
+2025-12-19 12:27:06.338 [http-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 方法: DemoController.redissonRequest
+2025-12-19 12:27:06.339 [http-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 参数: {}
+2025-12-19 12:27:06.346 [http-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应状态: 200
+2025-12-19 12:27:06.347 [http-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应内容: {"code":0,"data":{"account_":"admin","create_by":1,"create_time":"2016-05-06 10:06:52","enable_":1,"id_":1,"is_del":0,"money":0.0,"name_pinyin":"GUANLIYUAN","password_":"e10adc3949ba59abbe56e057f20f883e","remark_":"","sex_":1,"update_by":1,"update_time":"2019-02-26 22:27:39","user_name":"管理员","user_type":"2","wei_bo":""},"message":"执行成功"}
+2025-12-19 12:27:06.349 [http-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应大小: 340 字符
+2025-12-19 12:27:06.350 [http-nio-0.0.0.0-8080-exec-9] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求完成] ID: b022cfa4, 耗时: 7ms
+2025-12-19 12:34:08.461 [Thread-6] WARN  c.a.nacos.common.notify.NotifyCenter [node1:8080] - [NotifyCenter] Start destroying Publisher
+2025-12-19 12:34:08.462 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder [node1:8080] - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-12-19 12:34:08.468 [Thread-6] WARN  c.a.nacos.common.notify.NotifyCenter [node1:8080] - [NotifyCenter] Destruction of the end
+2025-12-19 12:34:08.477 [Thread-1] WARN  c.a.n.c.http.HttpClientBeanHolder [node1:8080] - [HttpClientBeanHolder] Destruction of the end
+2025-12-19 12:34:08.730 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics scheduler closed
+2025-12-19 12:34:08.730 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 12:34:08.731 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics reporters closed
+2025-12-19 12:34:08.730 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics scheduler closed
+2025-12-19 12:34:08.731 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics scheduler closed
+2025-12-19 12:34:08.731 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 12:34:08.731 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 12:34:08.731 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics reporters closed
+2025-12-19 12:34:08.731 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics reporters closed
+2025-12-19 12:34:08.732 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics scheduler closed
+2025-12-19 12:34:08.733 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 12:34:08.736 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics reporters closed
+2025-12-19 12:34:08.739 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - App info kafka.consumer for consumer-pattern-consumer-2 unregistered
+2025-12-19 12:34:08.740 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - App info kafka.consumer for consumer-notification-batch-consumer-1 unregistered
+2025-12-19 12:34:08.741 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - App info kafka.consumer for consumer-user-events-consumer-3 unregistered
+2025-12-19 12:34:08.743 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [node1:8080] - user-events-consumer: Consumer stopped
+2025-12-19 12:34:08.743 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [node1:8080] - pattern-consumer: Consumer stopped
+2025-12-19 12:34:08.743 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [node1:8080] - notification-batch-consumer: Consumer stopped
+2025-12-19 12:34:08.743 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - App info kafka.consumer for consumer-order-events-consumer-4 unregistered
+2025-12-19 12:34:08.743 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer [node1:8080] - order-events-consumer: Consumer stopped
+2025-12-19 12:34:08.776 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry [node1:8080] - De-registering from Nacos Server now...
+2025-12-19 12:34:08.791 [SpringApplicationShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry [node1:8080] - De-registration finished.
+2025-12-19 12:34:08.951 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [node1:8080] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 12:34:08.972 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [node1:8080] - HikariPool-1 - Shutdown initiated...
+2025-12-19 12:34:08.992 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [node1:8080] - HikariPool-1 - Shutdown completed.
+2025-12-19 12:34:15.357 [main] INFO  com.example.demo.DemoApplication [node1:8080] - Starting DemoApplication using Java 11.0.11 on zhouwenwudeMacBook-Pro.local with PID 17590 (/Users/markchou/Documents/code-demo-pratice/application-demo/target/classes started by markchou in /Users/markchou/Documents/code-demo-pratice)
+2025-12-19 12:34:15.359 [main] INFO  com.example.demo.DemoApplication [node1:8080] - The following 1 profile is active: "local-nacos"
+2025-12-19 12:34:15.398 [main] INFO  c.a.c.n.c.NacosConfigDataLoader [node1:8080] - [Nacos Config] Load config[dataId=nacos-demo-service-local.properties, group=DEFAULT_GROUP] success
+2025-12-19 12:34:16.188 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:34:16.188 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-12-19 12:34:16.200 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Finished Spring Data repository scanning in 8 ms. Found 0 Elasticsearch repository interfaces.
+2025-12-19 12:34:16.349 [main] DEBUG org.apache.ibatis.logging.LogFactory [node1:8080] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2025-12-19 12:34:16.356 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner [node1:8080] - Identified candidate component class: file [/Users/markchou/Documents/code-demo-pratice/application-demo/target/classes/com/example/demo/mapper/SysUserMapper.class]
+2025-12-19 12:34:16.356 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner [node1:8080] - Creating MapperFactoryBean with name 'sysUserMapper' and 'com.example.demo.mapper.SysUserMapper' mapperInterface
+2025-12-19 12:34:16.357 [main] DEBUG o.m.s.mapper.ClassPathMapperScanner [node1:8080] - Enabling autowire by type for MapperFactoryBean with name 'sysUserMapper'.
+2025-12-19 12:34:16.620 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:34:16.620 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-12-19 12:34:16.638 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node1:8080] - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2025-12-19 12:34:16.681 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Finished Spring Data repository scanning in 60 ms. Found 1 Elasticsearch repository interfaces.
+2025-12-19 12:34:16.686 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:34:16.686 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-12-19 12:34:16.690 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node1:8080] - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2025-12-19 12:34:16.691 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Finished Spring Data repository scanning in 4 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-12-19 12:34:16.708 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:34:16.709 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-19 12:34:16.719 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node1:8080] - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2025-12-19 12:34:16.723 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interfaces.
+2025-12-19 12:34:16.733 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-12-19 12:34:16.734 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-12-19 12:34:16.743 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node1:8080] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.PayAccountGroupRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-19 12:34:16.744 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport [node1:8080] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-12-19 12:34:16.744 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [node1:8080] - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-12-19 12:34:16.949 [main] INFO  o.s.cloud.context.scope.GenericScope [node1:8080] - BeanFactory id=4b7927b6-192a-3a47-bd08-50f8c9c03832
+2025-12-19 12:34:17.492 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node1:8080] - Tomcat initialized with port(s): 8080 (http)
+2025-12-19 12:34:17.502 [main] INFO  o.a.catalina.core.StandardService [node1:8080] - Starting service [Tomcat]
+2025-12-19 12:34:17.502 [main] INFO  o.a.catalina.core.StandardEngine [node1:8080] - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-12-19 12:34:17.645 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [node1:8080] - Initializing Spring embedded WebApplicationContext
+2025-12-19 12:34:17.645 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [node1:8080] - Root WebApplicationContext: initialization completed in 2245 ms
+2025-12-19 12:34:18.285 [main] INFO  com.zaxxer.hikari.HikariDataSource [node1:8080] - HikariPool-1 - Starting...
+2025-12-19 12:34:18.458 [main] INFO  com.zaxxer.hikari.HikariDataSource [node1:8080] - HikariPool-1 - Start completed.
+2025-12-19 12:34:19.331 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [node1:8080] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 12:34:19.440 [main] INFO  org.redisson.Version [node1:8080] - Redisson 3.16.0
+2025-12-19 12:34:19.469 [main] WARN  i.n.r.d.DnsServerAddressStreamProviders [node1:8080] - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+2025-12-19 12:34:19.659 [redisson-netty-2-23] INFO  o.r.c.p.MasterPubSubConnectionPool [node1:8080] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2025-12-19 12:34:19.704 [redisson-netty-2-19] INFO  o.r.c.pool.MasterConnectionPool [node1:8080] - 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2025-12-19 12:34:19.956 [main] DEBUG o.m.spring.SqlSessionFactoryBean [node1:8080] - Property 'mapperLocations' was not specified or no matching resources found
+2025-12-19 12:34:21.224 [main] WARN  org.elasticsearch.client.RestClient [node1:8080] - request [HEAD http://localhost:9200/newproducts?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned 1 warnings: [299 Elasticsearch-7.17.0-bee86328705acaa9a6daede7140defd4d9ec56bd "[ignore_throttled] parameter is deprecated because frozen indices have been deprecated. Consider cold or frozen tiers in place of frozen indices."]
+2025-12-19 12:34:21.362 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [node1:8080] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-19 12:34:21.626 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer [node1:8080] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2025-12-19 12:34:22.934 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [node1:8080] - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-12-19 12:34:23.120 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka version: 3.0.2
+2025-12-19 12:34:23.120 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:34:23.120 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka startTimeMs: 1766118863119
+2025-12-19 12:34:53.129 [main] ERROR o.s.kafka.core.KafkaAdmin [node1:8080] - Could not configure topics
+org.springframework.kafka.KafkaException: Timed out waiting to get existing topics; nested exception is java.util.concurrent.TimeoutException
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$10(KafkaAdmin.java:423)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1336)
+	at org.springframework.kafka.core.KafkaAdmin.checkPartitions(KafkaAdmin.java:402)
+	at org.springframework.kafka.core.KafkaAdmin.addOrModifyTopicsIfNeeded(KafkaAdmin.java:298)
+	at org.springframework.kafka.core.KafkaAdmin.initialize(KafkaAdmin.java:201)
+	at org.springframework.kafka.core.KafkaAdmin.afterSingletonsInstantiated(KafkaAdmin.java:171)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:974)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:15)
+Caused by: java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:180)
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$10(KafkaAdmin.java:405)
+	... 15 common frames omitted
+2025-12-19 12:35:03.131 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - App info kafka.admin.client for adminclient-1 unregistered
+2025-12-19 12:35:03.136 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics scheduler closed
+2025-12-19 12:35:03.136 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-12-19 12:35:03.136 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics [node1:8080] - Metrics reporters closed
+2025-12-19 12:35:03.183 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka version: 3.0.2
+2025-12-19 12:35:03.183 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:35:03.183 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka startTimeMs: 1766118903183
+2025-12-19 12:35:03.199 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka version: 3.0.2
+2025-12-19 12:35:03.199 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:35:03.199 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka startTimeMs: 1766118903199
+2025-12-19 12:35:03.206 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka version: 3.0.2
+2025-12-19 12:35:03.207 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:35:03.207 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka startTimeMs: 1766118903206
+2025-12-19 12:35:03.212 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka version: 3.0.2
+2025-12-19 12:35:03.212 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka commitId: 25b1aea02e37da14
+2025-12-19 12:35:03.212 [main] INFO  o.a.kafka.common.utils.AppInfoParser [node1:8080] - Kafka startTimeMs: 1766118903212
+2025-12-19 12:35:03.257 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [node1:8080] - Tomcat started on port(s): 8080 (http) with context path ''
+2025-12-19 12:35:03.273 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [node1:8080] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-12-19 12:35:03.274 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager [node1:8080] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-12-19 12:35:03.428 [main] INFO  c.a.c.n.r.NacosServiceRegistry [node1:8080] - nacos registry, DEFAULT_GROUP nacos-demo-service 192.168.31.227:8080 register finished
+2025-12-19 12:35:03.623 [main] INFO  com.example.demo.DemoApplication [node1:8080] - Started DemoApplication in 50.204 seconds (JVM running for 51.301)
+2025-12-19 12:35:03.642 [main] INFO  c.a.c.n.r.NacosContextRefresher [node1:8080] - [Nacos Config] Listening config: dataId=nacos-demo-service-local.properties, group=DEFAULT_GROUP
+2025-12-19 12:35:03.643 [main] INFO  com.example.demo.DemoApplication [node1:8080] - 应用启动完成，开始测试日志输出
+2025-12-19 12:35:04.220 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [node1:8080] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-19 12:35:04.221 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet [node1:8080] - Initializing Servlet 'dispatcherServlet'
+2025-12-19 12:35:04.223 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet [node1:8080] - Completed initialization in 2 ms
+2025-12-19 12:35:54.910 [http-nio-0.0.0.0-8080-exec-2] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求开始] ID: e083dcd6
+2025-12-19 12:35:54.911 [http-nio-0.0.0.0-8080-exec-2] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 请求路径: /api/products/search
+2025-12-19 12:35:54.911 [http-nio-0.0.0.0-8080-exec-2] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 客户端IP: 0:0:0:0:0:0:0:1
+2025-12-19 12:35:54.911 [http-nio-0.0.0.0-8080-exec-2] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 方法: ProductController.searchProducts
+2025-12-19 12:35:54.971 [http-nio-0.0.0.0-8080-exec-2] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 参数: {"name":["笔记本电脑"]}
+2025-12-19 12:35:56.255 [http-nio-0.0.0.0-8080-exec-2] WARN  org.elasticsearch.client.RestClient [node1:8080] - request [POST http://localhost:9200/newproducts/_search?typed_keys=true&max_concurrent_shard_requests=5&ignore_unavailable=false&expand_wildcards=open&allow_no_indices=true&ignore_throttled=true&search_type=query_then_fetch&batched_reduce_size=512] returned 1 warnings: [299 Elasticsearch-7.17.0-bee86328705acaa9a6daede7140defd4d9ec56bd "[ignore_throttled] parameter is deprecated because frozen indices have been deprecated. Consider cold or frozen tiers in place of frozen indices."]
+2025-12-19 12:35:56.274 [http-nio-0.0.0.0-8080-exec-2] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应状态: 200
+2025-12-19 12:35:56.308 [http-nio-0.0.0.0-8080-exec-2] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应内容: {"body":[],"headers":{},"statusCode":"OK","statusCodeValue":200}
+2025-12-19 12:35:56.309 [http-nio-0.0.0.0-8080-exec-2] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应大小: 64 字符
+2025-12-19 12:35:56.309 [http-nio-0.0.0.0-8080-exec-2] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求完成] ID: e083dcd6, 耗时: 1303ms
+2025-12-19 12:41:34.947 [http-nio-0.0.0.0-8080-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求开始] ID: 82e7c6bc
+2025-12-19 12:41:34.950 [http-nio-0.0.0.0-8080-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 请求路径: /api/redis/api/redisson
+2025-12-19 12:41:34.951 [http-nio-0.0.0.0-8080-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 客户端IP: 0:0:0:0:0:0:0:1
+2025-12-19 12:41:34.951 [http-nio-0.0.0.0-8080-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 方法: DemoController.redissonRequest
+2025-12-19 12:41:34.952 [http-nio-0.0.0.0-8080-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 参数: {}
+2025-12-19 12:41:35.273 [http-nio-0.0.0.0-8080-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应状态: 200
+2025-12-19 12:41:35.298 [http-nio-0.0.0.0-8080-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应内容: {"code":0,"data":{"account_":"admin","create_by":1,"create_time":"2016-05-06 10:06:52","enable_":1,"id_":1,"is_del":0,"money":0.0,"name_pinyin":"GUANLIYUAN","password_":"e10adc3949ba59abbe56e057f20f883e","remark_":"","sex_":1,"update_by":1,"update_time":"2019-02-26 22:27:39","user_name":"管理员","user_type":"2","wei_bo":""},"message":"执行成功"}
+2025-12-19 12:41:35.298 [http-nio-0.0.0.0-8080-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应大小: 340 字符
+2025-12-19 12:41:35.298 [http-nio-0.0.0.0-8080-exec-1] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求完成] ID: 82e7c6bc, 耗时: 320ms
+2025-12-19 12:41:44.313 [http-nio-0.0.0.0-8080-exec-3] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求开始] ID: 9d2e169a
+2025-12-19 12:41:44.313 [http-nio-0.0.0.0-8080-exec-3] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 请求路径: /api/redis/api/redirect
+2025-12-19 12:41:44.313 [http-nio-0.0.0.0-8080-exec-3] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 客户端IP: 0:0:0:0:0:0:0:1
+2025-12-19 12:41:44.313 [http-nio-0.0.0.0-8080-exec-3] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 方法: DemoController.redirectToRedissonWithView
+2025-12-19 12:41:44.314 [http-nio-0.0.0.0-8080-exec-3] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 参数: {}
+2025-12-19 12:41:44.315 [http-nio-0.0.0.0-8080-exec-3] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应状态: 200
+2025-12-19 12:41:44.329 [http-nio-0.0.0.0-8080-exec-3] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应内容: {"attributesMap":{},"contentType":"text/html;charset=ISO-8859-1","exposePathVariables":false,"propagateQueryProperties":false,"redirectView":true,"staticAttributes":{},"url":"http://localhost:8082/api/redis/api/redisson"}
+2025-12-19 12:41:44.330 [http-nio-0.0.0.0-8080-exec-3] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - 响应大小: 221 字符
+2025-12-19 12:41:44.330 [http-nio-0.0.0.0-8080-exec-3] INFO  c.example.demo.aop.WebControllerAOP [node1:8080] - [请求完成] ID: 9d2e169a, 耗时: 1ms
+2025-12-19 21:23:03.681 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node1:8080] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m11s84ms).
+2025-12-19 21:53:59.708 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [node1:8080] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m22s554ms).

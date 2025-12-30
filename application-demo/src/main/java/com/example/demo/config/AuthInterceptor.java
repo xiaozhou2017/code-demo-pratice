@@ -1,5 +1,7 @@
 package com.example.demo.config;
 
+import com.example.demo.threadLocal.UserContext;
+import com.example.demo.threadLocal.UserSession;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -18,12 +20,18 @@ public class AuthInterceptor implements HandlerInterceptor{
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        // 在Controller方法执行前调用，常用于登录校验、权限验证
-//        String token = request.getHeader("Authorization");
-//        if (StringUtils.isBlank(token)) {
-//            response.setStatus(500);
-//            return false; // 请求中断
-//        }
-        return true; // 继续执行
+        // 从请求头中获取用户信息（示例，实际可能从Token解析）
+        String userId = request.getHeader("X-User-Id");
+        String username = request.getHeader("X-Username");
+        if (userId != null && username != null) {
+            // 将用户信息存入ThreadLocal
+            UserContext.setCurrentUser(new UserSession(userId, username));
+        }
+        return true;
+    }
+    @Override
+    public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) {
+        // 请求处理完毕后，无论如何都要清理ThreadLocal
+        UserContext.clear();
     }
 }

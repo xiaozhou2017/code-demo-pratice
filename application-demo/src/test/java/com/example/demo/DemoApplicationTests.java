@@ -143,9 +143,6 @@ class DemoApplicationTests {
     @Test
     public void testThread() throws ExecutionException, InterruptedException {
 
-        Thread t1 = new Thread(() -> {
-            System.out.println("当前线程T1: " + Thread.currentThread().getName());
-        });
 //        Thread t3 =new Thread(()->{
 //            try {
 //                t1.join();
@@ -229,11 +226,11 @@ class DemoApplicationTests {
         CompletableFuture<String> stringCompletableFuture1 = CompletableFuture.supplyAsync(() -> {
             System.out.println("当前线程: " + Thread.currentThread().getName()); // 打印线程名
             return " love ";
-        });
+        },threadPoolExecutor);
         CompletableFuture<String> stringCompletableFuture2 = CompletableFuture.supplyAsync(() -> {
             System.out.println("当前线程: " + Thread.currentThread().getName()); // 打印线程名
             return "xiao hua";
-        });
+        },threadPoolExecutor);
 
         CompletableFuture<String> finalResult = stringCompletableFuture.
                 thenCombine(stringCompletableFuture1, (name1, name2) -> name1 + name2).thenCombine(stringCompletableFuture2, (name1, name2) -> name1 + name2);

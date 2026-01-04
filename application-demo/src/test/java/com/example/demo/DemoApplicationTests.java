@@ -1,51 +1,86 @@
 package com.example.demo;
 
-import com.alibaba.fastjson.JSONObject;
+import com.example.demo.config.JwtUtils;
+import com.example.demo.config.UuidV7Utils;
+import com.example.demo.controller.DemoController;
 import com.example.demo.entity.PayAccountGroupEntity;
 import com.example.demo.entity.SysUser;
 import com.example.demo.repository.PayAccountGroupRepository;
 import com.example.demo.service.ISysUserService;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.junit.jupiter.api.extension.ExtensionContext;
-import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.junit.MockitoJUnitRunner;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.mock.web.MockHttpServletResponse;
+import org.springframework.test.util.ReflectionTestUtils;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.MvcResult;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import java.io.Serializable;
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.*;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-import static org.mockito.ArgumentMatchers.anyLong;
-import static org.mockito.ArgumentMatchers.anyString;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.when;
-
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 //@RunWith(SpringRunner.class) // 对于 JUnit 4
 //@SpringBootTest // 启动 Spring 上下文
 //@SpringBootTest
 @ExtendWith(MockitoExtension.class)
 class DemoApplicationTests {
 
-    @Test
-    void contextLoads() {
-        System.out.println("hello world");
-        test();
+    private MockMvc mockMvc;
+
+    @Mock // 关键：如果你的Controller依赖JwtUtils，你需要模拟它
+    private JwtUtils jwtUtils;
+
+    @InjectMocks
+    private DemoController demoController; // 被测试的Controller，JwtUtils会被注入
+
+    @BeforeEach
+    public void setup() {
+        // 构建MockMvc实例，只配置这一个控制器
+        ReflectionTestUtils.setField(demoController, "jwtUtils", jwtUtils);
+        mockMvc = MockMvcBuilders.standaloneSetup(demoController).build();
     }
 
+    @Test
+    public void testToken() throws Exception {
+        // 1. 为JwtUtils的模拟对象设定行为
+        when(jwtUtils.generateAccessToken(anyMap())).thenReturn("mock-access-token");
+        when(jwtUtils.generateRefreshToken(anyMap())).thenReturn("mock-refresh-token");
+
+        // 2. 使用MockMvc模拟HTTP请求，而不是直接调用Controller方法
+        MvcResult mvcResult = mockMvc.perform(get("/api/redis/token")
+                .param("username", "zhouwenuwen"))
+                .andDo(print()) // 打印请求详细信息，有助于调试
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.data.accessToken").value("mock-access-token"))
+                .andReturn();
+        MockHttpServletResponse response = mvcResult.getResponse();    // 2. 进行任意自定义验证
+        String content = response.getContentAsString();
+
+        System.out.println("结果："+content);
+
+        assertThat(content).contains("accessToken");
+
+
+    }
     @Test
     public void test() {
         int[] arr = {5, 3, 8, 4, 2, 7, 1, 6};
@@ -283,4 +318,38 @@ class DemoApplicationTests {
     }
 
 
+    @Test
+    public void generateBatchUuid() {
+        // 批量生成10个UUIDv7，观察其有序性
+        List<String> uuidList = IntStream.range(0, 10)
+                .mapToObj(i -> UuidV7Utils.generate())
+                .collect(Collectors.toList());
+        System.out.println("生成的UUIDv7列表（按时间有序）：");
+        System.out.println("==================================================");
+        for (int i = 0; i < uuidList.size(); i++) {
+            System.out.printf("%2d: %s%n", i + 1, uuidList.get(i));
+            System.out.flush();
+        }
+
+        System.out.println("==================================================");
+        System.out.flush();
+        // 验证有序性：提取时间戳部分进行简单分析
+        if (uuidList.size() > 1) {
+            System.out.println("有序性分析：");
+            String first = uuidList.get(0);
+            String last = uuidList.get(uuidList.size() - 1);
+
+            // UUIDv7的前缀是时间戳，可以直接比较字符串顺序
+            int comparison = first.compareTo(last);
+            if (comparison < 0) {
+                System.out.println("✓ UUIDv7 严格按时间递增");
+            }
+
+            // 显示前几个字符的时间戳部分对比
+            System.out.printf("首UUID前缀: %s%n", first.substring(0, 8));
+            System.out.printf("尾UUID前缀: %s%n", last.substring(0, 8));
+        }
+//
+//        return uuidList;
+    }
 }

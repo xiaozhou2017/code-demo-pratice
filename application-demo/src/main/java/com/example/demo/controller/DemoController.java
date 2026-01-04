@@ -11,6 +11,7 @@ import com.example.demo.entity.PayAccountGroupEntity;
 import com.example.demo.entity.SysUser;
 import com.example.demo.repository.PayAccountGroupRepository;
 import com.example.demo.service.ISysUserService;
+import com.example.demo.service.UserServiceConsumerClient;
 import com.example.demo.service.impl.SysUserServiceImpl;
 import com.example.demo.threadLocal.UserContext;
 import com.example.demo.threadLocal.UserSession;
@@ -23,31 +24,23 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RBloomFilter;
-import org.redisson.api.RLock;
-import org.springframework.aop.framework.AopProxyUtils;
 import org.redisson.api.RBucket;
+import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
-import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.view.RedirectView;
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisFactory;
 
-import javax.annotation.PostConstruct;
-import java.awt.print.Pageable;
-import java.util.*;
-import java.util.concurrent.Executor;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -466,5 +459,20 @@ public class DemoController {
     public ResponseEntity<List<SysUser>> getAllUsers() {
         List<SysUser> users = serviceiml.selectList(null);
         return ResponseEntity.ok(users);
+    }
+
+
+    private final RestTemplate restTemplate;
+    @GetMapping("/order/user/{id}")
+    public String getOrderWithUser(@PathVariable Long id) {
+        String url =  "http://localhost:8061/order/user/" + id;
+        return restTemplate.getForObject(url, String.class);
+    }
+
+
+    private final UserServiceConsumerClient userServiceConsumerClient;
+    @GetMapping("/getFeignClient/user/{id}")
+    public String getFeignClient(@PathVariable Long id) {
+        return userServiceConsumerClient.getOrderWithUser(id);
     }
 }

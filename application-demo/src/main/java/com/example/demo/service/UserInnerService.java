@@ -16,7 +16,7 @@ public class UserInnerService {
 
     /**
      * 使用REQUIRES_NEW传播行为的方法
-     * 无论外部是否存在事务，都会启动一个新事务。外部事务会被挂起。
+     * 无论外部是否存在事务，都会启动一个新事务。外部事务会被挂起。
      */
     @Transactional(propagation = Propagation.REQUIRES_NEW)
     public void innerMethodWithRequiresNew(SysUser user) {

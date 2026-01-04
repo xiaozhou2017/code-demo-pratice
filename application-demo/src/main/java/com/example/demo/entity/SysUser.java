@@ -1,12 +1,14 @@
 package com.example.demo.entity;
 
-import com.baomidou.mybatisplus.enums.IdType;
-import java.time.LocalDate;
-import com.baomidou.mybatisplus.annotations.TableId;
-import java.time.LocalDateTime;
 import com.baomidou.mybatisplus.activerecord.Model;
+import com.baomidou.mybatisplus.annotations.TableField;
+import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableName;
+import com.baomidou.mybatisplus.enums.IdType;
+
 import java.io.Serializable;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 /**
  * <p>
@@ -26,7 +28,8 @@ public class SysUser extends Model<SysUser> {
   /**
    * 登陆帐户
    */
-  private String account_;
+  @TableField("account_")
+  private String account;
   /**
    * 密码
    */
@@ -117,14 +120,6 @@ public class SysUser extends Model<SysUser> {
 
   public void setId_(Long id_) {
     this.id_ = id_;
-  }
-
-  public String getAccount_() {
-    return account_;
-  }
-
-  public void setAccount_(String account_) {
-    this.account_ = account_;
   }
 
   public String getPassword_() {
@@ -336,7 +331,7 @@ public class SysUser extends Model<SysUser> {
   public String toString() {
     return "SysUser{" +
             ", id_=" + id_ +
-            ", account_=" + account_ +
+            ", account_=" + account +
             ", password_=" + password_ +
             ", user_type=" + user_type +
             ", user_name=" + user_name +
@@ -363,5 +358,13 @@ public class SysUser extends Model<SysUser> {
             ", update_by=" + update_by +
             ", money=" + money +
             "}";
+  }
+
+  public String getAccount() {
+    return account;
+  }
+
+  public void setAccount(String account) {
+    this.account = account;
   }
 }

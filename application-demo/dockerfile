@@ -1,21 +1,31 @@
-# 使用 OpenJDK 8 基础镜像
-FROM node:16-alpine
+# 使用Alpine Linux的JRE 11镜像
+FROM eclipse-temurin:11-jre-alpine
 
-# 设置元数据
-LABEL maintainer="your-email@example.com"
-LABEL version="1.0.0"
-LABEL description="Spring Boot Application"
+# 安装必要的工具并设置时区
+RUN apk add --no-cache tzdata && \
+    cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
+    echo "Asia/Shanghai" > /etc/timezone
 
 # 设置工作目录
 WORKDIR /app
 
+# 1. 首先，创建用户和组（提前创建，以便后续操作）
+RUN addgroup -S -g 1000 spring && adduser -S -u 1000 -G spring spring
 
-# 复制 JAR 文件到容器
-COPY target/*.jar app.jar
+# 2. 创建日志目录，并立即将其所有者改为spring用户
+RUN mkdir -p /app/logs && chown -R spring:spring /app/logs
 
+# 3. 复制JAR包（此时仍为root用户，有复制权限）
+COPY --chown=spring:spring target/*.jar app.jar
 
-# 暴露端口（根据您的应用端口修改）
+# 4. 切换到非root用户运行应用
+USER spring:spring
+
+# 暴露端口
 EXPOSE 8080
 
-# 启动命令（可配置 JVM 参数）
-ENTRYPOINT ["java", "-jar", "app.jar"]
+# 设置JVM参数
+ENV JAVA_OPTS="-XX:+UseContainerSupport -XX:MaxRAMPercentage=75.0 -XX:+UseSerialGC"
+
+# 启动应用
+ENTRYPOINT ["sh", "-c", "exec java $JAVA_OPTS -jar app.jar"]

@@ -18,7 +18,7 @@
     <property name="LOG_FILE" value="${LOG_PATH}/${APP_NAME}-${NODE_ID}.log"/>
     <property name="CONSOLE_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} [${NODE_ID}:${SERVER_PORT}] - %msg%n"/>
 
-    <!-- 1. 控制台输出 -->
+<!--     1. 控制台输出-->
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>${CONSOLE_PATTERN}</pattern>
@@ -65,10 +65,10 @@
     </appender>
 
     <!-- 4. Logstash输出 - 根据环境启用 -->
-    <springProfile name="local, test, prod">
-        <!-- 临时简化：在现有配置基础上修改 -->
+    <springProfile name="docker">
+<!--         临时简化：在现有配置基础上修改 -->
         <appender name="LOGSTASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
-            <destination>localhost:5000</destination>
+            <destination>host.docker.internal:5000</destination>
             <encoder class="net.logstash.logback.encoder.LogstashEncoder">
                 <!-- 大幅减少自定义字段 -->
                 <customFields>{
@@ -96,16 +96,50 @@
         </appender>
     </springProfile>
 
-    <!-- 根日志配置 -->
+
+    <springProfile name="local-nacos">
+        <!--         临时简化：在现有配置基础上修改 -->
+        <appender name="LOGSTASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+            <destination>127.0.0.1:5000</destination>
+            <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+                <!-- 大幅减少自定义字段 -->
+                <customFields>{
+                    "app": "${APP_NAME}",
+                    "node": "${NODE_ID}",
+                    "port": ${SERVER_PORT}
+                    }</customFields>
+
+                <!-- 排除冗余字段 -->
+                <includeMdc>false</includeMdc>
+                <includeContext>false</includeContext>
+
+                <!-- 简化字段命名 -->
+                <fieldNames>
+                    <timestamp>@timestamp</timestamp>
+                    <version>[ignore]</version>
+                    <message>message</message>
+                    <logger>logger</logger>
+                    <thread>thread</thread>
+                    <level>level</level>
+                    <levelValue>[ignore]</levelValue>
+                    <caller>[ignore]</caller>
+                </fieldNames>
+            </encoder>
+        </appender>
+    </springProfile>
+
+<!--     根日志配置 -->
     <root level="${LOG_LEVEL}">
         <appender-ref ref="CONSOLE"/>
         <appender-ref ref="FILE"/>
         <appender-ref ref="ERROR_FILE"/>
         <!-- 根据环境启用Logstash -->
-        <springProfile name="local, test, prod">
-            <appender-ref ref="LOGSTASH"/>
-        </springProfile>
+<!--        <springProfile name="local, test, prod">-->
+<!--            <appender-ref ref="LOGSTASH"/>-->
+<!--        </springProfile>-->
     </root>
+
+
 
     <!-- 应用特定日志配置 -->
     <logger name="com.example" level="info" additivity="false">

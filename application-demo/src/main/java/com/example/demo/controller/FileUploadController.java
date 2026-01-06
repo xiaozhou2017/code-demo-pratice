@@ -25,18 +25,18 @@ public class FileUploadController {
 
     @PostConstruct
     public void init() {
-        // 这里示例使用Windows路径，实际项目请根据环境调整
-        baseUploadPath = "/Users/markchou/uploads/";
-
-        // 确保目录存在
-        Path path = Paths.get(baseUploadPath);
-        if (!Files.exists(path)) {
-            try {
-                Files.createDirectories(path);
-            } catch (IOException e) {
-                throw new RuntimeException("无法创建上传目录: " + baseUploadPath, e);
-            }
-        }
+//        // 这里示例使用Windows路径，实际项目请根据环境调整
+//        baseUploadPath = "/Users/markchou/uploads/";
+//
+//        // 确保目录存在
+//        Path path = Paths.get(baseUploadPath);
+//        if (!Files.exists(path)) {
+//            try {
+//                Files.createDirectories(path);
+//            } catch (IOException e) {
+//                throw new RuntimeException("无法创建上传目录: " + baseUploadPath, e);
+//            }
+//        }
     }
 
     /**

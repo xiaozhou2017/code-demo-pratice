@@ -11,6 +11,7 @@ import org.redisson.api.RedissonClient;
 import org.redisson.codec.JsonJacksonCodec;
 import org.redisson.config.Config;
 import org.redisson.spring.starter.RedissonAutoConfigurationCustomizer;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
@@ -89,13 +90,17 @@ public class RedisConfig {
         template.afterPropertiesSet();
         return template;
     }
+    @Value("${spring.redis.host}")
+    private String redisHost;
 
+    @Value("${spring.redis.port}")
+    private int redisPort;
     @Bean(destroyMethod = "shutdown")
     public RedissonClient redissonClient() {
         Config config = new Config();
         // 单节点模式配置，请根据您的Redis服务器地址、端口、密码修改
         config.useSingleServer()
-                .setAddress("redis://127.0.0.1:6379") // 您的Redis地址
+                .setAddress("redis://" + redisHost + ":" + redisPort)// 您的Redis地址
                 .setPassword("xlys123456")          // 您的Redis密码，若无密码可删除此行
                 .setDatabase(0);
         return Redisson.create(config);

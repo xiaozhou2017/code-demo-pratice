@@ -38,7 +38,7 @@ public class BloomFilterConfig {
         List<SysUser> allUsers = userService.selectList(wrapper);
 
         for (SysUser user : allUsers) {
-            userBloomFilter.add(user.getAccount_());
+            userBloomFilter.add(user.getAccount());
         }
 
         StringBuilder debugInfo = new StringBuilder();

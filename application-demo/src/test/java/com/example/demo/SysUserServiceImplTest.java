@@ -36,7 +36,7 @@ public  class SysUserServiceImplTest {
     public void testCreateUserSuccess() {
         // 准备测试数据
         SysUser user = new SysUser();
-        user.setAccount_("test_account");
+        user.setAccount("test_account");
         user.setUser_name("测试用户");
         user.setEmail_("test@example.com");
 

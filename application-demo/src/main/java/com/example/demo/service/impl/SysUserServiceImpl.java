@@ -95,7 +95,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
     private SysUser createAnotherUser() {
         SysUser user = new SysUser();
         user.setUser_name("temp_account_" + System.currentTimeMillis());
-        user.setAccount_("临时用户");
+        user.setAccount("临时用户");
         return user;
     }
 

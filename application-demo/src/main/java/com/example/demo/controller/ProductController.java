@@ -5,12 +5,8 @@ import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.example.demo.entity.Product;
 import com.example.demo.service.ProductService;
-
 import com.example.demo.service.StockService;
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.media.Content;
-import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -76,7 +72,7 @@ public class ProductController {
     }
 
 
-    @PostMapping("/order")
+    @PostMapping("/order/decreaseStock")
     public ResponseEntity<Boolean> order(@RequestParam String id,
                                          @RequestParam Integer quantity) {
         boolean result = stockService.decreaseStock(id, quantity);

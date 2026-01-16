@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import com.alibaba.fastjson.JSONObject;
 import com.example.demo.config.JwtUtils;
 import com.example.demo.config.UuidV7Utils;
 import com.example.demo.controller.DemoController;
@@ -7,6 +8,7 @@ import com.example.demo.entity.PayAccountGroupEntity;
 import com.example.demo.entity.SysUser;
 import com.example.demo.repository.PayAccountGroupRepository;
 import com.example.demo.service.ISysUserService;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -26,6 +28,7 @@ import java.lang.reflect.Modifier;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.concurrent.*;
 import java.util.stream.Collectors;
@@ -41,6 +44,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 //@RunWith(SpringRunner.class) // 对于 JUnit 4
 //@SpringBootTest // 启动 Spring 上下文
 //@SpringBootTest
+@Slf4j
 @ExtendWith(MockitoExtension.class)
 class DemoApplicationTests {
 
@@ -177,6 +181,16 @@ class DemoApplicationTests {
 
     @Test
     public void testThread() throws ExecutionException, InterruptedException {
+        Runnable runnable = () -> log.info("当前线程名2: " + Thread.currentThread().getName());
+         Thread t1=new Thread(runnable);
+         t1.start();
+        FutureTask<Object> futureTask = new FutureTask<>(()->"测试");
+        Thread t2=new Thread(futureTask);
+        t2.start();
+        Object o = futureTask.get();
+        System.out.println(JSONObject.toJSONString(o));
+
+
 
 //        Thread t3 =new Thread(()->{
 //            try {
@@ -238,40 +252,52 @@ class DemoApplicationTests {
         ExecutorService executor = Executors.newSingleThreadExecutor( factory);
         ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(1, 2,
                 3, TimeUnit.SECONDS, new ArrayBlockingQueue<>(10), factory);
-        Runnable simpleTask = () -> {
-            System.out.println("执行Runnable任务");
-        };
+//        Runnable simpleTask = () -> {
+//            System.out.println("执行Runnable任务");
+//        };
+//
+//        Callable<Object> callable = Executors.callable(simpleTask);
+//
+//        Future<Object> submit = executor.submit(callable);
+//
+//        submit.get();
+//
+//        CompletableFuture<String> stringCompletableFuture = CompletableFuture.supplyAsync(() -> {
+//            System.out.println("当前线程: " + Thread.currentThread().getName()); // 打印线程名
+//            try {
+//                Thread.sleep(100);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//            return "xiao ming";
+//        }, threadPoolExecutor).completeOnTimeout("超时", 500, TimeUnit.MILLISECONDS);
+//
+//        CompletableFuture<String> stringCompletableFuture1 = CompletableFuture.supplyAsync(() -> {
+//            System.out.println("当前线程: " + Thread.currentThread().getName()); // 打印线程名
+//            return " love ";
+//        },threadPoolExecutor);
+//        CompletableFuture<String> stringCompletableFuture2 = CompletableFuture.supplyAsync(() -> {
+//            System.out.println("当前线程: " + Thread.currentThread().getName()); // 打印线程名
+//            return "xiao hua";
+//        },threadPoolExecutor);
+//
+//        CompletableFuture<String> finalResult = stringCompletableFuture.
+//                thenCombine(stringCompletableFuture1, (name1, name2) -> name1 + name2).thenCombine(stringCompletableFuture2, (name1, name2) -> name1 + name2);
+//        System.out.println(finalResult.join());
 
-        Callable<Object> callable = Executors.callable(simpleTask);
-
-        Future<Object> submit = executor.submit(callable);
-
-        submit.get();
 
         CompletableFuture<String> stringCompletableFuture = CompletableFuture.supplyAsync(() -> {
-            System.out.println("当前线程: " + Thread.currentThread().getName()); // 打印线程名
-            try {
-                Thread.sleep(100);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            return "xiao ming";
-        }, threadPoolExecutor).completeOnTimeout("超时", 500, TimeUnit.MILLISECONDS);
-
-        CompletableFuture<String> stringCompletableFuture1 = CompletableFuture.supplyAsync(() -> {
-            System.out.println("当前线程: " + Thread.currentThread().getName()); // 打印线程名
-            return " love ";
-        },threadPoolExecutor);
-        CompletableFuture<String> stringCompletableFuture2 = CompletableFuture.supplyAsync(() -> {
-            System.out.println("当前线程: " + Thread.currentThread().getName()); // 打印线程名
+            System.out.println("当前线程: 返回值" + Thread.currentThread().getName()); // 打印线程名
             return "xiao hua";
         },threadPoolExecutor);
-
-        CompletableFuture<String> finalResult = stringCompletableFuture.
-                thenCombine(stringCompletableFuture1, (name1, name2) -> name1 + name2).thenCombine(stringCompletableFuture2, (name1, name2) -> name1 + name2);
-        System.out.println(finalResult.join());
-
+        System.out.println(stringCompletableFuture.get());
+        CompletableFuture<Void> voidCompletableFuture = CompletableFuture.runAsync(() -> {
+            System.out.println("当前线程: 无返回值" + Thread.currentThread().getName()); // 打印线程名
+        });
+        voidCompletableFuture.get();
     }
+
+
 
 
     @Mock
@@ -312,7 +338,6 @@ class DemoApplicationTests {
 
         System.out.println("用户信息: " + sysUser);
         System.out.println("账户组信息: " + payAccountGroup);
-
         executor.shutdown();
 
     }
@@ -352,4 +377,59 @@ class DemoApplicationTests {
 //
 //        return uuidList;
     }
+
+
+    @Test
+    public  void testSort(){
+        int[] arr = new int[]{1, 2, 3, 4, 56};
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr));
+        int[] ints = Arrays.stream(arr).boxed().sorted(Comparator.reverseOrder()).mapToInt(Integer::intValue).toArray();
+        System.out.println(Arrays.toString(ints));
+
+    }
+
+    @Test
+    public  void testString(){
+        String[] arr = new String[]{"1", "2", "1", "9", "56"};
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr));
+        //冒泡排序
+        int[] arr1 = new int[]{1, 2, 10, 4, 56};
+        for(int i=0;i<arr1.length-1;i++){
+            for (int j = 0; j < arr1.length-j-i; j++) {
+                if(arr1[j] > arr1[j + 1]){
+                    int temp=arr1[j];
+                    arr1[j]=arr1[j+1];
+                    arr1[j+1]=temp;
+                }
+            }
+        }
+        System.out.println("升序排序结果："+Arrays.toString(arr1));
+
+        //降序
+        int n = arr1.length;
+        boolean swapped; // 优化标志位
+        for (int i = 0; i < n - 1; i++) {
+//            swapped = false;
+            // 修正1：内层循环条件改为 j < n - 1 - i
+            for (int j = 0; j < n - 1 - i; j++) {
+                // 修正2：比较条件改为小于号(<)，实现降序
+                if (arr1[j] < arr1[j + 1]) {
+                    int temp = arr1[j];
+                    arr1[j] = arr1[j + 1];
+                    arr1[j + 1] = temp;
+//                    swapped = true; // 记录本轮发生了交换
+                }
+            }
+            // 优化：如果本轮没有发生交换，说明数组已完全有序，提前结束
+//            if (!swapped) {
+//                break;
+//            }
+        }
+
+        System.out.println("降序排序结果：" + Arrays.toString(arr1));
+    }
+
+
 }

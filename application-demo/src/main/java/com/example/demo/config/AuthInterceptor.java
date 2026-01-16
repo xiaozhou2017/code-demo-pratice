@@ -2,7 +2,6 @@ package com.example.demo.config;
 
 import com.example.demo.threadLocal.UserContext;
 import com.example.demo.threadLocal.UserSession;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 
